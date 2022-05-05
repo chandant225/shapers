@@ -1,0 +1,50 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ContactController;
+
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+Route::get('/', [PageController::class, 'index'])->name('home');
+
+Route::get('/mental_health', [PageController::class, 'mental_health'])->name('mental_health');
+
+Route::get('/about', [PageController::class, 'about'])->name('about');
+
+Route::get('/alumni', [PageController::class, 'alumni']);
+
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+
+Route::get('/single_impact', [PageController::class, 'single_impact']);
+
+Route::get('/become_a_shaper', [PageController::class, 'become_a_shaper']);
+
+Route::get('/become_a_sponser', [PageController::class, 'become_a_sponser']);
+
+Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
+
+Route::get('/project_details/{slug}', [ProjectController::class, 'show'])->name('single_project');
+
+Route::get('/impact_details/{slug}', [PageController::class,'impact_details'])->name('single_impact');
+
+Route::post('/contact/add', [ContactController::class,'store'])->name('contact_add');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+// Auth::routes();
+Route::get('/thankyou', [PageController::class,'thankyou']);
+
+
