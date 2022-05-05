@@ -22,7 +22,7 @@ class CreateProjectsTable extends Migration
             $table->longText('bottom_description');
             $table->string('status');
             $table->string('image');
-            $table->boolean('past_project');
+            // $table->boolean('past_project');
             $table->timestamps();
         });
     }
