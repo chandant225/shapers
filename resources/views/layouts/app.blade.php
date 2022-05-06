@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/fontcss.css') }}">
   <link rel="stylesheet" href="{{ asset('css/glightbox.min.css') }}">
@@ -16,7 +17,6 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
 
 </head>
 
@@ -36,6 +36,7 @@
   <a href="#" class="scroll-top btn-hover">
     <i class="fas fa-arrow-up"></i>
   </a>
+  <script type="text/javascript" src={{asset('js/app.js') }}></script>
   <script type="text/javascript" src={{asset('js/bootstrap.min.js') }}></script>
   <script type="text/javascript" src={{asset('js/count-up.min.js') }}></script>
   <script type="text/javascript" src={{asset('js/glightbox.min.js') }}></script>

@@ -4,9 +4,9 @@
         <div class="row">
           <div class="col-12">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand d-flex align-items-center" href="/">
-                  <img src={{asset('pictures/Logo.svg')}} alt="Logo"/>
-                  <h6>Global Shapers Kathmandu Hub</h6>
+              <a class="navbar-brand d-flex align-items-center col-6" href="/">
+                  <img class="w-25" src={{asset('pictures/Logo.svg')}} alt="Logo"/>
+                  <h6>Global Shapers <br />Kathmandu Hub</h6>
                 </a>
               <button
                 class="navbar-toggler"

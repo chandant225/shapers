@@ -10,6 +10,7 @@ use App\Models\Feature;
 use App\Models\Aboutus;
 use App\Models\Shaper;
 use App\Models\Impact;
+use App\Models\Alumuni;
 
 
 class PageController extends Controller
@@ -31,9 +32,9 @@ class PageController extends Controller
     }
 
     public function alumni() {
-        $shapers = Shaper::orderBy('updated_at','desc')->get();
+        $alumunis = Alumuni::orderBy('updated_at','desc')->get();
         return view('alumni')
-        ->with(['shapers' => $shapers]);
+        ->with(['alumunis' => $alumunis]);
     }
 
         /**
@@ -69,5 +70,10 @@ class PageController extends Controller
     }
     public function mental_health() {
         return view('mental_health');
+    }
+    public function Alumuni_details($name){
+        $alumuni = Alumuni::where('name', $name)->first();
+        return view('team-details')
+        ->with(['alumuni' => $alumuni]);
     }
 }
