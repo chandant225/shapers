@@ -21,23 +21,24 @@
           <div class="col-lg-3 col-12">
             <div class="single-footer sm-custom-border f-link">
               <ul>
-               <li>
-                  <a href="#"><span>Home</span></a>
+           
+                <li>
+                  <a href="{{route('about')}}"><span>About Us</span></a>
                 </li>
                 <li>
-                  <a href="#"><span>About Us</span></a>
+                  <a href="{{route('alumni')}}"><span>Our Alumni</span></a>
                 </li>
                 <li>
-                  <a href="#"><span>Our Alumni</span></a>
+                  <a href="{{route('shaper')}}"><span>Our Shapers</span></a>
                 </li>
                 <li>
-                  <a href="#"><span>Our Shapers</span></a>
+                  <a href="{{route('projects')}}"><span>Projects</span></a>
                 </li>
                 <li>
-                  <a href="#"><span>Projects</span></a>
+                  <a href="{{route('past-projects')}}"><span>Past Projects</span></a>
                 </li>
                 <li>
-                  <a href="#"><span>Contact US</span></a>
+                  <a href="{{route('contact')}}"><span>Contact US</span></a>
                 </li>
               </ul>
             </div>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PastProjectController;
 
 
 /*
@@ -22,9 +23,9 @@ Route::get('/mental_health', [PageController::class, 'mental_health'])->name('me
 
 Route::get('/about', [PageController::class, 'about'])->name('about');
 
-Route::get('/alumni', [PageController::class, 'alumni']);
+Route::get('/alumni', [PageController::class, 'alumni'])->name('alumni');
 
-Route::get('/shaper', [PageController::class, 'shaper']);
+Route::get('/shaper', [PageController::class, 'shaper'])->name('shaper');
 
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
@@ -37,6 +38,8 @@ Route::get('/become_a_sponser', [PageController::class, 'become_a_sponser']);
 Route::get('/projects', [ProjectController::class, 'index'])->name('projects');
 
 Route::get('/project_details/{slug}', [ProjectController::class, 'show'])->name('single_project');
+
+Route::get('/past-projects', [PastProjectController::class, 'index'])->name('past-projects');
 
 Route::get('/impact_details/{slug}', [PageController::class,'impact_details'])->name('single_impact');
 

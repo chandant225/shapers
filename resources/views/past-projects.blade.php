@@ -16,7 +16,7 @@
           <div class="col-lg-4 col-md-4 grid-item mental-health-portfolio">
             <div class="portfolio-item-wrapper">
                 <div class="portfolio-img">
-                    <a href="#"><img src="/storage/{{$project->image}}" alt="#"></a>
+                    <a href="#"><img style="width:100vw; object-fit:cover" class="" src="/storage/{{$project->image}}" alt="#"></a>
                 </div>
                 <div class="portfolio-overlay">
                     <div class="pf-content">
