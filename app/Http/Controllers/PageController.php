@@ -37,6 +37,12 @@ class PageController extends Controller
         ->with(['alumunis' => $alumunis]);
     }
 
+    public function shaper() {
+        $shapers = Shaper::orderBy('updated_at','desc')->get();
+        return view('shapers')
+        ->with(['shapers' => $shapers]);
+    }
+
         /**
      * Display the specified resource.
      *
@@ -75,5 +81,11 @@ class PageController extends Controller
         $alumuni = Alumuni::where('name', $name)->first();
         return view('team-details')
         ->with(['alumuni' => $alumuni]);
+    }
+    
+    public function shaper_details($name){
+        $shaper = Shaper::where('name', $name)->first();
+        return view('shaper-team-details')
+        ->with(['shaper' => $shaper]);
     }
 }

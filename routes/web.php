@@ -24,6 +24,8 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 
 Route::get('/alumni', [PageController::class, 'alumni']);
 
+Route::get('/shaper', [PageController::class, 'shaper']);
+
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
 Route::get('/single_impact', [PageController::class, 'single_impact']);
@@ -41,6 +43,8 @@ Route::get('/impact_details/{slug}', [PageController::class,'impact_details'])->
 Route::post('/contact/add', [ContactController::class,'store'])->name('contact_add');
 
 Route::get('/alumuni_details/{name}',[PageController::class,'Alumuni_details'])->name('alumuni_details');
+
+Route::get('/shaper_details/{name}',[PageController::class,'shaper_details'])->name('shaper_details');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

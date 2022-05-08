@@ -57,6 +57,9 @@
                       <li>
                         <a class="dropdown-item" href="/alumni">Alumni</a>
                       </li>
+                      <li>
+                        <a class="dropdown-item" href="/shaper">Shaper</a>
+                      </li>
                     </ul>
                   </li>
                       {{-- @if(Route::currentRouteName() === 'projects' || Route::currentRouteName() === 'mental_health')
