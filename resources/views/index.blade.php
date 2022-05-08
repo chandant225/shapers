@@ -167,12 +167,13 @@
                   <h3 class="overlay-text">Testimonials</h3>
                 </div>
             <div class="testimonial-slider-head">
-              <div class="testimonial-slider">
+          
                  @if(count($testimonials) === 0)
                  <center>
                   <p class="text-2xl text-red-600 font-bold">There is no any testimonials avaliable yet</p>
                 </center>
                  @elseif(count($testimonials) >= 1)
+                 <div class="testimonial-slider">
                  @foreach($testimonials as $testimonial)
                  <div class="single-testimonial">
                   <div class="row align-items-center">
@@ -180,7 +181,7 @@
                       <div class="testimonial-content text-center">
    
                         <p>
-                       {!! $testimonial->description !!}
+                       {{ $testimonial->description }}
                         </p>
                         <div class="bottom">
                           <h4 style="" class="name">
@@ -193,9 +194,8 @@
                   </div>
                 </div>
                @endforeach
-                 @endif
-          
               </div>
+              @endif
             </div>
           </div>
         </section>

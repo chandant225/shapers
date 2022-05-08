@@ -17,6 +17,12 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 </head>
 
