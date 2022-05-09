@@ -13,10 +13,6 @@
                   Shapers
                 </h2>
                 <h3 class="gray-bg">Shapers</h3>
-                <p class="wow fadeInUp" data-wow-delay=".6s">
-                  There are many variations of passages of Lorem Ipsum available,
-                  but the majority have suffered alteration in some form.
-                </p>
               </div>
             </div>
           </div>
@@ -30,12 +26,12 @@
            <div class="col-lg-3 col-md-6 col-12">
             <div class="single-team wow fadeInUp" data-wow-delay=".2s">
               <div class="image">
-                <img class="w-100" src="/storage/{{$shaper->image}}" alt="#" />
+                <img style="height: 230px" class="w-100" src="/storage/{{$shaper->image}}" alt="#" />
               </div>
               <div class="info-head">
                 <div class="info-box">
                   <h4 class="name">
-                    <a href="{{route('shaper_details',['name'=>$shaper->name])}}" class="">{{$shaper->name}}</a>
+                    <a data-bs-toggle="modal" data-bs-target="#open{{$loop->iteration}}">{{$shaper->name}}</a>
                   </h4>
                   <span class="designation">{{$shaper->designation}}</span>
                 </div>
@@ -48,6 +44,62 @@
          </div>
         </div>
       </section>
+
+    
+          
+
+    
 </div>
+@foreach($shapers as $shaper)
+<div class="modal fade" id="open{{$loop->iteration}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      {{-- <div class="modal-header"> --}}
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      {{-- </div> --}}
+      <div class="row mt-5 py-5">
+         <div class="col-lg-6 col-sm-12 mt-2">
+             <div class="">
+             <h2 >{{$shaper->name}}</h2>
+              <span class="text-primary fw-bold mt-1">{{$shaper->designation}}</span>
+              <p class="mt-1">{!! $shaper->description !!}</p>
+              <ul style="list-style: none" class="social d-flex flex-row mt-2">
+                @if($shaper->facebook_link)
+                <li class="ms-3">
+                  <a href="https://{{$shaper->facebook_link}}"
+                    ><i class="lni lni-facebook-original"></i
+                  ></a>
+                </li>
+                @endif
+                @if($shaper->twitter_link)
+                <li class="ms-3">
+                  <a href="https://{{$shaper->twitter_link}}"
+                    ><i class="lni lni-twitter-original"></i
+                  ></a>
+                </li>
+                @endif
+                @if($shaper->linkedin_link)
+                <li class="ms-3">
+                  <a href="https://{{$shaper->linkedin_link}}"
+                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                </li>
+                @endif
+                @if($shaper->instagram_link)
+                <li class="ms-3">
+                  <a href="https://{{$shaper->instagram_link}}"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                @endif
+              </ul>
+            </div>
+         </div>
+         <div class="col-lg-6 col-sm-12">
+            <img src="/storage/{{$shaper->image}}" alt="" class="w-100 rounded" />
+        </div>
+     </div>
+    
+    </div>
+  </div>
+</div>
+@endforeach
 
 @endsection

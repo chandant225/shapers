@@ -51,16 +51,16 @@
               <div class="footer-social">
                 <ul class="text-xl">
                   <li>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://{{$social_links->facebook_link}}"><i class="fab fa-facebook-square"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://{{$social_links->twitter_link}}"><i class="fab fa-twitter-square"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://{{$social_links->linkedin_link}}"><i class="fab fa-linkedin"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="https://{{$social_links->gmail_link}}"><i class="fab fa-google"></i></a>
                   </li>
                 </ul>
               </div>

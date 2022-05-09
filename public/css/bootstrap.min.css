@@ -5923,6 +5923,7 @@ fieldset:disabled .btn {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
     outline: 0;
+    padding: 0 20px;
 }
 
 .modal-backdrop {
@@ -5996,7 +5997,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
     .modal-dialog {
-        max-width: 500px;
+        max-width: 960px;
         margin: 1.75rem auto;
     }
 

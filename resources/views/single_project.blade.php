@@ -22,11 +22,11 @@
                         <div class="content">
                             <div class="row">
                                  @if($impacts->isNotEmpty())
-                                <h3>Impacts</h3>
+                                <h3 class="py-4">Impacts</h3>
                                 @foreach($impacts as $impact)
                                 <div class="col-md-4 shadow-sm">
                                     <img src="/storage/{{$impact->image}}" alt="" class="img-fluid">
-                                 <a style="text-decoration:none" href="{{route('single_impact',['slug' =>$impact->slug])}}"><h3 class="mt-2">{{$impact->title}}</h3></a>
+                                 <a style="text-decoration:none" href="{{route('single_impact',['slug' =>$impact->slug])}}"><h3 class="mt-2 py-2">{{$impact->title}}</h3></a>
                                     <p><i class="fas fa-alarm-clock"></i>{{$impact->status}}</p>
                                 </div>
                                 @endforeach

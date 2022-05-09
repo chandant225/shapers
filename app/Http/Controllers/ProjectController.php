@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Project;
 use App\Models\Impact;
+use App\Models\Project_des;
 
 class ProjectController extends Controller
 {
@@ -15,9 +16,10 @@ class ProjectController extends Controller
      */
     public function index()
     {
+        $project_description = Project_des::orderBy('updated_at','DESC')->first();
         $projects = Project::where('past_project','0')->latest()->paginate(8);
         return view('project')
-        ->with(['projects' => $projects]);
+        ->with(['projects' => $projects,'project_description' => $project_description]);
     }
 
     /**

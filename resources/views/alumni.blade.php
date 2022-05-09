@@ -13,10 +13,6 @@
                   Alumuni
                 </h2>
                 <h3 class="gray-bg">Alumuni</h3>
-                <p class="wow fadeInUp" data-wow-delay=".6s">
-                  There are many variations of passages of Lorem Ipsum available,
-                  but the majority have suffered alteration in some form.
-                </p>
               </div>
             </div>
           </div>
@@ -30,12 +26,12 @@
            <div class="col-lg-3 col-md-6 col-12">
             <div class="single-team wow fadeInUp" data-wow-delay=".2s">
               <div class="image">
-                <img class="w-100" src="/storage/{{$alumuni->image}}" alt="#" />
+                <img style="height:230px" class="w-100" src="/storage/{{$alumuni->image}}" alt="#" />
               </div>
               <div class="info-head">
                 <div class="info-box">
                   <h4 class="name">
-                    <a href="{{route('alumuni_details',['name'=>$alumuni->name])}}" class="">{{$alumuni->name}}</a>
+                    <a data-bs-toggle="modal" data-bs-target="#open{{$loop->iteration}}">{{$alumuni->name}}</a>
                   </h4>
                   <span class="designation">{{$alumuni->designation}}</span>
                 </div>
@@ -49,5 +45,61 @@
         </div>
       </section>
 </div>
+
+@foreach($alumunis as $alumuni)
+<div class="modal fade" id="open{{$loop->iteration}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      {{-- <div class="modal-header"> --}}
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      {{-- </div> --}}
+      <div class="row mt-5 py-5">
+         <div class="col-lg-6 col-sm-12 mt-2">
+             <div class="">
+             <h2>{{$alumuni->name}}</h2>
+              <span class="text-primary fw-bold mt-1">{{$alumuni->designation}}</span>
+              <p class="mt-1">{!! $alumuni->description !!}</p>
+              <ul style="list-style: none" class="social d-flex flex-row mt-2">
+                @if($alumuni->facebook_link)
+                <li class="ms-3">
+                  <a href="https://{{$alumuni->facebook_link}}"
+                    ><i class="lni lni-facebook-original"></i
+                  ></a>
+                </li>
+                @endif
+                @if($alumuni->twitter_link)
+                <li class="ms-3">
+                  <a href="https://{{$alumuni->twitter_link}}"
+                    ><i class="lni lni-twitter-original"></i
+                  ></a>
+                </li>
+                @endif
+                @if($alumuni->linkedin_link)
+                <li class="ms-3">
+                  <a href="https://{{$alumuni->linkedin_link}}"
+                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                </li>
+                @endif
+                @if($alumuni->instagram_link)
+                <li class="ms-3">
+                  <a href="https://{{$alumuni->instagram_link}}"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                @endif
+              </ul>
+            </div>
+         </div>
+         <div class="col-lg-6 col-sm-12">
+            <img src="/storage/{{$alumuni->image}}" alt="" class="w-100 rounded" />
+        </div>
+     </div>
+    
+    </div>
+  </div>
+</div>
+@endforeach
+
+
+
+
 
 @endsection
