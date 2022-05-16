@@ -3,7 +3,7 @@
     <div class="footer-middle">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-12">
+          <div class="col-lg-4 col-12">
             <div class="single-footer sm-custom-border f-link">
               <div class="f-about single-footer">
                 <div class="logo">
@@ -18,7 +18,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-2 col-12">
             <div class="single-footer sm-custom-border f-link">
               <ul>
            
@@ -43,7 +43,14 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4 col-12">
+          <div class="col-md-3 col-lg-3">
+            <div class="single-footer sm-custom-border f-link">
+              <h3>Join Us</h3>
+              <a href="#" class="text-white my-3"> <i class="fa fa-hand-point-right">&nbsp; </i>Become a Shaper</a>
+              <a href="#" class="text-white my-3> <i class="fa fa-hand-point-right">&nbsp; </i>Become an Alumni</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
             <div
               class="single-footer md-custom-border sm-custom-border f-link"
             >
