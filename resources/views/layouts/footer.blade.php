@@ -49,20 +49,32 @@
             >
               <h3>Follow Us</h3>
               <div class="footer-social">
+                @if(!$social_links)
+                 <p>No social links are available yet</p>
+                @elseif($social_links)
                 <ul class="text-xl">
+                  @if($social_links->facebook_link)
                   <li>
                     <a href="https://{{$social_links->facebook_link}}"><i class="fab fa-facebook-square"></i></a>
                   </li>
+                  @endif
+                  @if($social_links->twitter_link)
                   <li>
                     <a href="https://{{$social_links->twitter_link}}"><i class="fab fa-twitter-square"></i></a>
                   </li>
+                  @endif
+                  @if($social_links->linkedin_link)
                   <li>
                     <a href="https://{{$social_links->linkedin_link}}"><i class="fab fa-linkedin"></i></a>
                   </li>
+                  @endif
+                  @if($social_links->gmail_link)
                   <li>
                     <a href="https://{{$social_links->gmail_link}}"><i class="fab fa-google"></i></a>
                   </li>
+                  @endif
                 </ul>
+                @endif
               </div>
             </div>
           </div>

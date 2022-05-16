@@ -60,10 +60,17 @@
       <div class="row mt-5 py-5">
          <div class="col-lg-6 col-sm-12 mt-2">
              <div class="">
-             <h2 >{{$shaper->name}}</h2>
-              <span class="text-primary fw-bold mt-1">{{$shaper->designation}}</span>
-              <p class="mt-1">{!! $shaper->description !!}</p>
-              <ul style="list-style: none" class="social d-flex flex-row mt-2">
+             <h2 style="
+             margin-top: -125px;
+             padding-left: 0px;
+         " >{{$shaper->name}}</h2>
+              <span style="
+              padding-left: 16px;
+          " class="text-primary fw-bold mt-1">{{$shaper->designation}}</span>
+              <p style="
+              padding: 26px 0px 0px 0px;
+          " class="mt-1">{!! $shaper->description !!}</p>
+              <ul style="list-style: none;padding-top: 37px;" class="social d-flex flex-row mt-2">
                 @if($shaper->facebook_link)
                 <li class="ms-3">
                   <a href="https://{{$shaper->facebook_link}}"
