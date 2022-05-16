@@ -3263,7 +3263,6 @@ ol {
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 400;
-    background-image: url(../images/about/pattern.png);
 }
 
 .about-us .about-right .project span {
@@ -3273,10 +3272,10 @@ ol {
     font-weight: 900;
 }
 
-.our-achievement {
+/* .our-achievement {
     background-color: rgb(0, 92, 156);
     background-image: url(../images/hero/hero1-pattern.html);
-}
+} */
 
 .our-achievement .single-achievement {
     margin-top: 70px;
@@ -3296,10 +3295,6 @@ ol {
 }
 
 .our-achievement {
-    background-color: rgb(0, 92, 156);
-    background-image: url(../images/achievement/achievement-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 70px;
     padding: 90px 0 120px;
 }
@@ -3307,7 +3302,8 @@ ol {
 .our-achievement .single-achievement {
     margin-top: 30px;
     text-align: center;
-    padding: 0 50px;
+    padding: 20px 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .our-achievement .single-achievement h3 {
@@ -3315,12 +3311,13 @@ ol {
     font-weight: bold;
     display: block;
     margin-bottom: 15px;
-    color: #fff;
+    color: rgb(0, 92, 156);;
 }
 
 .our-achievement .single-achievement p {
-    font-size: 15px;
-    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(59, 58, 58);
 }
 
 .why-choose {
