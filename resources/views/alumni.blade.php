@@ -4,7 +4,7 @@
 @section('content')
 <div>
     <section id="team" class="team section">
-        <div style="margin-top:17px" class="container">
+        <div style="margin-top:24px" class="container">
           <div class="row">
             <div class="col-12">
               <div class="section-title align-center gray-bg">
@@ -27,13 +27,13 @@
             <div  data-bs-toggle="modal" data-bs-target="#open{{$loop->iteration}}" class="single-team wow fadeInUp" data-wow-delay=".2s">
               <div class="image">
                 @if(!$alumuni->image && $alumuni->is_male == "0")
-                <img style="width:300px;height:425px"  src="{{asset('pictures/female.jpeg')}}" alt="#" />
+                <img style="width:300px;height:425px" class="w-100"  src="{{asset('pictures/female.jpeg')}}" alt="#" />
                 @endif
                 @if(!$alumuni->image && $alumuni->is_male == "1")
-                <img style="width:300px;height:425px"  src="{{asset('pictures/male.jpeg')}}" alt="#" />
+                <img style="width:300px;height:425px" class="w-100"  src="{{asset('pictures/male.jpeg')}}" alt="#" />
                 @endif
                 @if($alumuni->image)
-                <img style="width:300px;height:425px" src="/storage/{{$alumuni->image}}" alt="#" />
+                <img style="width:300px;height:425px" class="w-100" src="/storage/{{$alumuni->image}}" alt="#" />
                 @endif
               </div>
               <div class="info-head">

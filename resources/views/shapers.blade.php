@@ -4,7 +4,7 @@
 @section('content')
 <div>
     <section id="team" class="team section">
-        <div class="container">
+        <div  style="margin-top:24px" class="container">
           <div class="row">
             <div class="col-12">
               <div class="section-title align-center gray-bg">
