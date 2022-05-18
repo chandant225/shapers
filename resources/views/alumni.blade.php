@@ -91,7 +91,7 @@
          <div class="col-lg-6 col-sm-12 mt-2">
              <div class="">
              <h2 style="
-             margin-top:25px;
+             margin-top:-40px;
              padding-left: 0px;
          ">{{$alumuni->name}}</h2>
               <p style="
@@ -103,13 +103,13 @@
          <div class="col-lg-6 col-sm-12">
           <div style="margin-top: -55px;" class="">
             @if(!$alumuni->image && $alumuni->is_male == "0")
-            <img style="height:230px" class="w-100" src="{{asset('pictures/female.jpeg')}}" alt="#" />
+            <img style="height:100vh" class="w-100" src="{{asset('pictures/female.jpeg')}}" alt="#" />
             @endif
             @if(!$alumuni->image && $alumuni->is_male == "1")
-            <img style="height:230px" class="w-100" src="{{asset('pictures/male.jpeg')}}" alt="#" />
+            <img style="height:100vh" class="w-100" src="{{asset('pictures/male.jpeg')}}" alt="#" />
             @endif
             @if($alumuni->image)
-            <img  style="width:300px;height:425px" class="w-100" src="/storage/{{$alumuni->image}}" alt="#" />
+            <img  style="height:100vh" class="w-100" src="/storage/{{$alumuni->image}}" alt="#" />
             @endif
           </div>
           <ul style="list-style: none;padding-top: 37px;" class="social d-flex flex-row mt-2">
