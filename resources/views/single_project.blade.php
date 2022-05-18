@@ -9,13 +9,15 @@
                         <h2>
                          {{$project_details->title}}
                         </h2>
-                        <p>
+                        <p style="
+                        margin-top: 30px;
+                    ">
                             {!! $project_details->top_description !!}
                         </p>
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
                         <div class="thumb">
-                            <img src="/storage/{{$project_details->image}}" alt=" {{$project_details->title}}" class="img-fluid">
+                            <img style="height:54vh" src="/storage/{{$project_details->image}}" alt=" {{$project_details->title}}" class="img-fluid">
                             </div>
                     </div>
                     <div class="col-md-12 mt-5">

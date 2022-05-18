@@ -11,6 +11,7 @@ use App\Models\Aboutus;
 use App\Models\Shaper;
 use App\Models\Impact;
 use App\Models\Alumuni;
+use App\Models\Counter;
 
 
 class PageController extends Controller
@@ -21,8 +22,9 @@ class PageController extends Controller
         $testimonials = Testimonial::orderBy('updated_at','DESC')->get();
         $slogan = Slogan::orderBy('updated_at','DESC')->first();
         $features = Feature::orderBy('updated_at','DESC')->get();
+        $counters = Counter::orderBy('updated_at','DESC')->take(4)->get();
         return view('index')
-        ->with(['sliders' => $sliders,'testimonials' => $testimonials, 'slogan' =>$slogan,'features' =>$features,'testimonials' =>$testimonials]);
+        ->with(['sliders' => $sliders,'testimonials' => $testimonials, 'slogan' =>$slogan,'features' =>$features,'testimonials' =>$testimonials,'counters'=>$counters]);
     }
 
     public function about(){

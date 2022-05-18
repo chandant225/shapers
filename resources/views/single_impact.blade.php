@@ -11,13 +11,15 @@
                     <h2>
                        {{$impact_details->title}}
                     </h2>
-                    <p>
+                    <p style="
+                    margin-top: 30px;
+                ">
                       {!! $impact_details->top_description !!}
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="thumb">
-                        <img src="/storage/{{$impact_details->image}}" alt="#" class="img-fluid">
+                        <img style="height:54vh" src="/storage/{{$impact_details->image}}" alt="#" class="img-fluid">
                      </div>
                     <div class="pf-details-sidebar" style="margin-top: -2.6rem;">
                         <h4>Project Info</h4>

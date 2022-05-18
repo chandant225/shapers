@@ -84,7 +84,7 @@
                         class="about-right wow fadeInRight"
                         data-wow-delay=".4s"
                     >
-                        <img src="/storage/{{$slogan->image}}" alt="#" />
+                        <img class="" src="/storage/{{$slogan->image}}" alt="#" />
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
@@ -118,7 +118,7 @@
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">
                             Hub Verticals
                         </h2>
-                        <h3 class="overlay-text">Features</h3>
+                        <h3 class="overlay-text">Hub Verticals</h3>
                     </div>
                 </div>
             </div>
@@ -232,27 +232,23 @@
             </div>
         </div>
     </section>
-   <section class="our-achievement section">
+   <section style="background-color: #f4f7fa;" class="our-achievement section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-12">
-                <div class="single-achievement wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                    <h3 class="counter"><span id="secondo1" class="countup" cup-end="5">5 </span></h3>
-                    <p>Shapers</p>
-                </div>
+        @if(count($counters) === 0)
+           <center>
+             <p>There is no any counter avaliable yet.</p>
+           </center>
+        @elseif(count($counters) >= 1)
+        @foreach($counters as $counter)
+        <div class="col-lg-3 col-md-4 col-12">
+            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;border-radius: 10px;">
+                <h3 class="counter"><span id="secondo1" class="countup" cup-end="5">{{$counter->number}}</span></h3>
+                <p>{{$counter->title}}</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-12">
-                <div class="single-achievement wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                    <h3 class="counter"><span id="secondo2" class="countup" cup-end="92">92 </span></h3>
-                    <p>Shapers</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-12">
-                <div class="single-achievement wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-                    <h3 class="counter"><span id="secondo3" class="countup" cup-end="5000">5000 </span></h3>
-                    <p>Shapers</p>
-                </div>
-            </div>
+        </div>
+        @endforeach
+        @endif     
         </div>
     </div>
 </section>

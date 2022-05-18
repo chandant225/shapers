@@ -9,11 +9,8 @@
                 <div class="logo">
                   <a href="/"><img src={{asset('pictures/Logo-Inverted.svg')}} alt="Logo"/></a>
                 </div>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't
-                  look even slightly believable.
+                <p style="margin-top: -17px">
+                  Kathmandu Hub was formed in 2012 bringing together youth from diverse backgrounds united in their collective goal to shape a more equitable, inclusive, and greener future for our community. Past hub initiatives include raising over $500,000 to build one school and two health clinics in response to the devastating earthquake in 2015.
                 </p>
               </div>
             </div>

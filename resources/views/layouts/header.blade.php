@@ -1,12 +1,12 @@
 <header class="header">
     <div class="header-inner sticky top-0">
-      <div class="container">
+      <div style="padding: 12px 0px;" class="container">
         <div class="row">
           <div class="col-12">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand d-flex align-items-center col-6" href="/">
-                  <img class="w-25" src={{asset('pictures/Logo.svg')}} alt="Logo"/>
-                  <h6>Global Shapers <br />Kathmandu Hub</h6>
+              <a class="navbar-brand d-flex align-items-center col-6" href="/"> 
+                  <img class="" src={{asset('pictures/Logo.svg')}} alt="Logo"/>
+                  <h6 style="font-size:20px;margin-left: 10px;">Global Shapers <br />Kathmandu Hub</h6>
                 </a>
               <button
                 class="navbar-toggler"
@@ -55,11 +55,12 @@
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="/alumni">Alumni</a>
+                        <a class="dropdown-item" href="/shaper">Shapers</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="/shaper">Shaper</a>
+                        <a class="dropdown-item" href="/alumni">Alumni</a>
                       </li>
+                   
                     </ul>
                   </li>
                       {{-- @if(Route::currentRouteName() === 'projects' || Route::currentRouteName() === 'mental_health')

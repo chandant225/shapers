@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center mt-5">
+            <div style="padding: 0px 105px;" class="row align-items-center mt-5">
                 <div class="col-lg-6">
                     <div class="left wow fadeInLeft" data-wow-delay=".3s">
                         <h3>About Global Shapers Kathmandu Hub</h3>
@@ -73,32 +73,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center mt-5">
+
+
+              <div style="padding: 0px 105px;" >
+                <h3 style="padding:5px 0px;"><strong>Our Objective</strong></h3>
+                <p>{!! $aboutus->objective !!}</p>
+              </div>  
+
+
+            <div style="padding: 0px 105px;" class="row align-items-center mt-5">
                 <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button
-                                class="accordion-button"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne"
-                                aria-expanded="true"
-                                aria-controls="collapseOne"
-                            >
-                                <span>Our Objective</span><i class="lni lni-chevron-down"></i>
-                            </button>
-                        </h2>
-                        <div
-                            id="collapseOne"
-                            class="accordion-collapse collapse show"
-                            aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample"
-                        >
-                            <div class="accordion-body">
-                                 <p>{!! $aboutus->objective !!}</p>
-                            </div>
-                        </div>
-                    </div>
+                  
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button

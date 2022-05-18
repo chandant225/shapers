@@ -984,8 +984,8 @@ ol {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-bottom: 80px;
     position: relative;
     z-index: 1;
 }
@@ -2563,7 +2563,7 @@ ol {
     text-align: center;
     /* background-color: #fff; */
     padding: 70px 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 5;
     position: relative;
     overflow: hidden;
@@ -3243,12 +3243,12 @@ ol {
 
 .about-us .about-right img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .about-us .about-right .project {
@@ -3311,7 +3311,7 @@ ol {
     font-weight: bold;
     display: block;
     margin-bottom: 15px;
-    color: rgb(0, 92, 156);;
+    color: rgb(0, 92, 156);
 }
 
 .our-achievement .single-achievement p {
@@ -4058,7 +4058,8 @@ ol {
 .team .single-team .info-box .name a {
     font-weight: bold;
     color: #081828;
-    font-size: 17px;
+    font-size: 25px;
+    text-align: center;
 }
 
 .team .single-team .info-box .name a:hover {
@@ -4308,7 +4309,7 @@ ol {
 
 @media (min-width: 992px) {
     .testimonials .single-testimonial {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%) !important;
     }
     .testimonials .single-testimonial .testimonial-content {
         min-height: 20rem;

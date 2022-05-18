@@ -16,6 +16,7 @@ class CreateAlumunisTable extends Migration
         Schema::create('alumunis', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->boolean('is_male');
             $table->string('designation');
             $table->string('facebook_link');
             $table->string('twitter_link');
