@@ -36,7 +36,7 @@
                 <img style="width:300px;height:425px" class="w-100" src="/storage/{{$alumuni->image}}" alt="#" />
                 @endif
               </div>
-              <div class="info-head">
+              <div style="height: 7rem;" class="info-head">
                 <div class="info-box">
                   <h4 class="name">
                     <a data-bs-toggle="modal" data-bs-target="#open{{$loop->iteration}}">{{$alumuni->name}}</a>
