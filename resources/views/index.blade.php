@@ -128,7 +128,7 @@
                                 @foreach ($features as $feature)
                                     <div class="swiper-slide">
                                         <!-- single-feature -->
-                                        <div class="single-feature wow fadeInUp shadow-lg" data-wow-delay=".2s">
+                                        <div class="single-feature wow fadeInUp shadow" data-wow-delay=".2s">
                                             <img src="/storage/{{ $feature->image }}" alt="" />
                                             <h3>
                                                 <a href="#">{{ $feature->title }}</a>
@@ -256,17 +256,17 @@
                         <div class="section-title">
                             <span class="wow fadeInDown" data-wow-delay=".2s"
                                 style="
-                                                                                                                                                                                    visibility: visible;
-                                                                                                                                                                                    animation-delay: 0.2s;
-                                                                                                                                                                                    animation-name: fadeInDown;
-                                                                                                                                                                                ">Subscribe
+                                                                                                                                                                                            visibility: visible;
+                                                                                                                                                                                            animation-delay: 0.2s;
+                                                                                                                                                                                            animation-name: fadeInDown;
+                                                                                                                                                                                        ">Subscribe
                                 Now</span>
                             <h2 class="wow fadeInUp" data-wow-delay=".4s"
                                 style="
-                                                                                                                                                                                    visibility: visible;
-                                                                                                                                                                                    animation-delay: 0.4s;
-                                                                                                                                                                                    animation-name: fadeInUp;
-                                                                                                                                                                                ">
+                                                                                                                                                                                            visibility: visible;
+                                                                                                                                                                                            animation-delay: 0.4s;
+                                                                                                                                                                                            animation-name: fadeInUp;
+                                                                                                                                                                                        ">
                                 Subscribe with your email to get news and updates to join our events.
                             </h2>
                             <h3 class="gray-bg">Newsletter</h3>
@@ -274,10 +274,10 @@
                         <!-- Subscribe- Email Text Box -->
                         <div class="subscribe-text wow fadeInUp" data-wow-delay=".2s"
                             style="
-                                                                                                                                                                                visibility: visible;
-                                                                                                                                                                                animation-delay: 0.2s;
-                                                                                                                                                                                animation-name: fadeInUp;
-                                                                                                                                                                            ">
+                                                                                                                                                                                        visibility: visible;
+                                                                                                                                                                                        animation-delay: 0.2s;
+                                                                                                                                                                                        animation-name: fadeInUp;
+                                                                                                                                                                                    ">
                             <form class="newsletter-inner">
                                 <input name="EMAIL" placeholder="Your email address" class="common-input"
                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
