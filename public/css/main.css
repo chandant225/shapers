@@ -2283,7 +2283,7 @@ ol {
 }
 
 .hero-area.style2 .hero-inner {
-    height: auto;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -5586,7 +5586,7 @@ blockquote span {
 }
 
 .footer .logo img {
-    width: 120px;
+    width: 80%;
 }
 
 .footer .f-about p {
@@ -8081,6 +8081,10 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 
 .swiper {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+img.carousel-img {
+    width: 100%;
 }
