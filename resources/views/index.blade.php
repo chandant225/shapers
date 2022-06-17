@@ -32,8 +32,8 @@
                                                     <a href="" class="btn" data-bs-toggle="modal"
                                                         data-bs-target="#exampleModal">Discover
                                                         More</a>
-                                                    <a href="{{ $slider->video_link }}" class="video btn"><i
-                                                            class="fas fa-play"></i> Play
+                                                    <a href="{{ $slider->video_link }}" target="_blank"
+                                                        class="video btn"><i class="fas fa-play"></i> Play
                                                         Video</a>
                                                 </div>
                                             </div>
