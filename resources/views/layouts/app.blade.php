@@ -65,7 +65,7 @@
         tns({
             container: '.testimonial-slider',
             slideBy: 'page',
-            autoplay: false,
+            autoplay: true,
             mouseDrag: true,
             gutter: 10,
             nav: false,

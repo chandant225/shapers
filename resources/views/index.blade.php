@@ -12,8 +12,7 @@
                 <div class="hero-slider">
                     <!-- hero-inner -->
                     @foreach ($sliders as $slider)
-                        <div class="hero-inner style2 overlay"
-                            style="background-image: url('/storage/{{ $slider->image }}')">
+                        <div class="hero-inner style2" style="background-image: url('/storage/{{ $slider->image }}')">
                             <div class="container">
                                 <div class="row">
                                     <!-- Home-slider -->
@@ -58,7 +57,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/rxrdAntMiPc?autoplay=1&mute=1">
+                        <iframe width="100%" height="500"
+                            src="https://www.youtube.com/embed/rxrdAntMiPc?autoplay=1&mute=1">
                         </iframe>
                     </div>
 
@@ -193,8 +193,33 @@
                             </p>
                         </center>
                     @elseif(count($testimonials) >= 1)
-                        <div class="testimonial-slider">
-                            @foreach ($testimonials as $testimonial)
+                        <div class="">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    @foreach ($testimonials as $testimonial)
+                                        <div class="swiper-slide">
+                                            <div class="single-testimonial shadow">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-12 col-md-12 col-12">
+                                                        <div class="testimonial-content text-center">
+                                                            <p>
+                                                                {{ $testimonial->description }}
+                                                            </p>
+                                                            <div class="bottom">
+                                                                <h4 style="" class="name">
+                                                                    {{ $testimonial->name }}
+                                                                </h4>
+                                                                <span>{{ $testimonial->designation }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                            {{-- @foreach ($testimonials as $testimonial)
                                 <div class="single-testimonial">
                                     <div class="row align-items-center">
                                         <div class="col-lg-12 col-md-12 col-12">
@@ -212,7 +237,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            @endforeach
+                            @endforeach --}}
                         </div>
                     @endif
                 </div>
@@ -220,10 +245,10 @@
         </section>
         <section style="background-color: #f4f7fa;" class="our-achievement section">
             <div class="container">
-                <div class="section-title">
+                {{-- <div class="section-title">
                     <h2 class="wow fadeInUp" data-wow-delay=".4s">Count me in</h2>
                     <h3 class="overlay-text">Count me in</h3>
-                </div>
+                </div> --}}
                 <div class="row">
                     @if (count($counters) === 0)
                         <center>
@@ -255,12 +280,9 @@
                         <!-- Section-title -->
                         <div class="section-title">
                             <span class="wow fadeInDown" data-wow-delay=".2s"
-                                style="
-                                                                                                                                                                                            visibility: visible;
-                                                                                                                                                                                            animation-delay: 0.2s;
-                                                                                                                                                                                            animation-name: fadeInDown;
-                                                                                                                                                                                        ">Subscribe
-                                Now</span>
+                                style="visibility: visible;animation-delay:2s;                                                                                                                   animation-name: fadeInDown;
+                                                                                                                                                                                        ">Count
+                                me in</span>
                             <h2 class="wow fadeInUp" data-wow-delay=".4s"
                                 style="
                                                                                                                                                                                             visibility: visible;
@@ -283,7 +305,7 @@
                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
                                     required="" type="email" />
                                 <div class="button">
-                                    <button class="btn">Subscribe Now!</button>
+                                    <button class="btn">Count me in</button>
                                 </div>
                             </form>
                         </div>

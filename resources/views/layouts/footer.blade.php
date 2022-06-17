@@ -7,7 +7,8 @@
                     <div class="single-footer sm-custom-border f-link">
                         <div class="f-about single-footer">
                             <div class="logo">
-                                <a href="/"><img src={{ asset('pictures/Logo-Inverted.svg') }} alt="Logo" /></a>
+                                <a href="/"><img src={{ asset('pictures/Logo-Inverted.svg') }}
+                                        alt="Logo" /></a>
                             </div>
                         </div>
                     </div>
@@ -27,9 +28,6 @@
                             </li>
                             <li>
                                 <a href="{{ route('projects') }}"><span>Projects</span></a>
-                            </li>
-                            <li>
-                                <a href="{{ route('past-projects') }}"><span>Past Projects</span></a>
                             </li>
                             <li>
                                 <a href="{{ route('contact') }}"><span>Contact US</span></a>
