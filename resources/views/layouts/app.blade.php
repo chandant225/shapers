@@ -49,7 +49,6 @@
     <script type="text/javascript" src={{ asset('js/tiny-slider.js') }}></script>
     <script type="text/javascript" src={{ asset('js/wow.min.js') }}></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-     @stack('script')
     <script type="text/javascript">
         //========= testimonial
         tns({
@@ -114,8 +113,6 @@
     <script>
         new WOW().init();
     </script>
-    
-
     <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
@@ -139,7 +136,7 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-    {{-- @stack('script') --}}
+     @stack('script')
 </body>
 
 </html>
