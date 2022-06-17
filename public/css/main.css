@@ -984,7 +984,7 @@ ol {
 }
 
 .section {
-    padding-top: 40px;
+    padding-top: 110px;
     padding-bottom: 80px;
     position: relative;
     z-index: 1;
@@ -4613,6 +4613,7 @@ ol {
     border: 1px solid #eee;
     border-radius: 0 0 5px 5px;
     padding: 30px 20px;
+    text-align: justify;
 }
 
 .accordion-body p {
@@ -5611,6 +5612,11 @@ blockquote span {
 
 .footer .footer-social {
     margin-top: 35px;
+    width: 80%;
+}
+
+.footer .footer-social ul {
+    padding: 0;
 }
 
 .footer .footer-social ul li {

@@ -98,4 +98,8 @@ class PageController extends Controller
     public function endowment_fund() {
         return view('endowment_fund');
     }
+
+    public function blog_details() {
+        return view('single_blog');
+    }
 }

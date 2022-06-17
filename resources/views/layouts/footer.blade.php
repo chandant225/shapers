@@ -38,10 +38,13 @@
                 <div class="col-md-3 col-lg-3">
                     <div class="single-footer sm-custom-border f-link">
                         <h3>Join Us</h3>
-                        <a href="#" class="text-white my-3">Become a
-                            Shaper</a>
-                        <a href="#" class="text-white my-3">Become a
-                            Partner</a>
+                        <div class="d-flex flex-column">
+                            <a href="#" class="text-white my-1">Become a
+                                Shaper</a>
+                            <a href="#" class="text-white my-1">Become a
+                                Partner</a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-12">

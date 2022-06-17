@@ -12,7 +12,8 @@
                 <div class="hero-slider">
                     <!-- hero-inner -->
                     @foreach ($sliders as $slider)
-                        <div class="hero-inner style2" style="background-image: url('/storage/{{ $slider->image }}')">
+                        <div class="hero-inner style2 overlay"
+                            style="background-image: url('/storage/{{ $slider->image }}')">
                             <div class="container">
                                 <div class="row">
                                     <!-- Home-slider -->
@@ -87,9 +88,11 @@
                             <div class="about-left">
                                 <div class="section-title align-left">
                                     <span class="wow fadeInDown" data-wow-delay=".2s">{{ $slogan->top_title }}</span>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".4s">
-                                        {{ $slogan->slogan_title }}
-                                    </h2>
+                                    @if ($slogan->slogan_title)
+                                        <h2 class="wow fadeInUp" data-wow-delay=".4s">
+                                            {{ $slogan->slogan_title }}
+                                        </h2>
+                                    @endif
                                     <div style="text-align: justify;">{!! $slogan->descriptions !!}</div>
                                 </div>
                             </div>
@@ -182,7 +185,7 @@
                 <div class="join-us">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h2>How to become a shaper .?</h2>
+                            <h2>How to become a shaper ?</h2>
                         </div>
                         <div class="col-lg-6">
                             <button class="join-us-btn"> <a href="/become_a_shaper">Join us</a></button>
@@ -260,8 +263,7 @@
             </div>
         </section>
         <!-- carousel -->
-        {{-- @include('components.carousel')
-        @include('components.blogs_component') --}}
+        @include('components.blogs_component')
         <!-- End Section Testimonials -->
         <section class="newsletter-area section">
             <div class="container">
