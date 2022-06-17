@@ -90,4 +90,12 @@ class PageController extends Controller
         return view('shaper-team-details')
         ->with(['shaper' => $shaper]);
     }
+
+    public function blogs() {
+        return view('blogs');
+    }
+
+    public function endowment_fund() {
+        return view('endowment_fund');
+    }
 }

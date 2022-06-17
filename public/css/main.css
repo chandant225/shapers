@@ -2231,6 +2231,7 @@ ol {
 
 .navbar-expand-lg .navbar-nav {
     margin-left: auto;
+    width: 100vw;
 }
 
 .hero-area {

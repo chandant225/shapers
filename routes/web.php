@@ -49,6 +49,9 @@ Route::get('/alumuni_details/{name}',[PageController::class,'Alumuni_details'])-
 
 Route::get('/shaper_details/{name}',[PageController::class,'shaper_details'])->name('shaper_details');
 
+Route::get('/blogs', [PageController::class, 'blogs']);
+Route::get('/endowment_fund',[PageController::class, 'endowment_fund']);
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
