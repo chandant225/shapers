@@ -7,13 +7,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <span class="wow fadeInDown" data-wow-delay=".2s"
-                            >What We DO</span
-                        >
+                        
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">
                             About Us
                         </h2>
-                        <h3 class="overlay-text gray-bg">About Us</h3>
+                        
                     </div>
                 </div>
             </div>

@@ -25,50 +25,50 @@
                         @foreach ($shapers as $shaper)
                             <div class="col-lg-3 col-md-6 col-12  rounded-2xl">
                                 <div data-bs-toggle="modal" data-bs-target="#open{{ $loop->iteration }}"
-                                    class="single-team wow fadeInUp" data-wow-delay=".2s">
+                                    class="single-team wow fadeInUp w-100" data-wow-delay=".2s">
                                     <div class="image">
                                         @if (!$shaper->image && $shaper->is_male == '0')
-                                            <img style="width:300px;height:375px" class="w-100"
+                                            <img style="object-fit:cover;object-position: 100% 0;" class="img-fluid"
                                                 src="{{ asset('pictures/female.jpeg') }}" alt="#" />
                                         @endif
                                         @if (!$shaper->image && $shaper->is_male == '1')
-                                            <img style="width:300px;height:375px" class="w-100"
+                                            <img style="object-fit:cover;object-position: 100% 0;" class="img-fluid"
                                                 src="{{ asset('pictures/male.jpeg') }}" alt="#" />
                                         @endif
                                         @if ($shaper->image)
-                                            <img style="width:300px;height:375px" class="w-100"
+                                            <img style="height:300px;object-fit:cover;object-position: 100% 0;" class="img-fluid w-100"
                                                 src="/storage/{{ $shaper->image }}" alt="#" />
                                         @endif
                                     </div>
-                                    <div style="height: 7rem;" class="info-head">
+                                    <div class="info-head">
                                         <div class="info-box">
-                                            <h4 class="name">
+                                            <h4 class="name text-center" style="height: 3.75rem">
                                                 <a data-bs-toggle="modal"
                                                     data-bs-target="#open{{ $loop->iteration }}">{{ $shaper->name }}</a>
                                             </h4>
                                             <ul style="list-style: none;margin-left: -44px;"
-                                                class="social d-flex flex-row mt-2">
+                                                class="social d-flex justify-content-center mt-2">
                                                 @if ($shaper->facebook_link)
                                                     <li class="ms-3">
-                                                        <a href="https://{{ $shaper->facebook_link }}"><i
+                                                        <a href="{{ $shaper->facebook_link }}" target="blanc"><i
                                                                 class="lni lni-facebook-original"></i></a>
                                                     </li>
                                                 @endif
                                                 @if ($shaper->twitter_link)
                                                     <li class="ms-3">
-                                                        <a href="https://{{ $shaper->twitter_link }}"><i
+                                                        <a href="{{ $shaper->twitter_link }}" target="blanc"><i
                                                                 class="lni lni-twitter-original"></i></a>
                                                     </li>
                                                 @endif
                                                 @if ($shaper->linkedin_link)
                                                     <li class="ms-3">
-                                                        <a href="https://{{ $shaper->linkedin_link }}"><i
+                                                        <a href="{{ $shaper->linkedin_link }}" target="blanc"><i
                                                                 class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                                                     </li>
                                                 @endif
                                                 @if ($shaper->instagram_link)
                                                     <li class="ms-3">
-                                                        <a href="https://{{ $shaper->instagram_link }}"><i
+                                                        <a href="{{ $shaper->instagram_link }}" target="blanc"><i
                                                                 class="fab fa-instagram" aria-hidden="true"></i></a>
                                                     </li>
                                                 @endif
@@ -131,25 +131,25 @@
                             <ul style="list-style: none;padding-top: 37px;" class="social d-flex flex-row mt-2">
                                 @if ($shaper->facebook_link)
                                     <li class="ms-3">
-                                        <a href="https://{{ $shaper->facebook_link }}"><i
+                                        <a href="{{ $shaper->facebook_link }}"><i
                                                 class="lni lni-facebook-original"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->twitter_link)
                                     <li class="ms-3">
-                                        <a href="https://{{ $shaper->twitter_link }}"><i
+                                        <a href="{{ $shaper->twitter_link }}"><i
                                                 class="lni lni-twitter-original"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->linkedin_link)
                                     <li class="ms-3">
-                                        <a href="https://{{ $shaper->linkedin_link }}"><i class="fab fa-linkedin-in"
+                                        <a href="{{ $shaper->linkedin_link }}"><i class="fab fa-linkedin-in"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->instagram_link)
                                     <li class="ms-3">
-                                        <a href="https://{{ $shaper->instagram_link }}"><i class="fab fa-instagram"
+                                        <a href="{{ $shaper->instagram_link }}"><i class="fab fa-instagram"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                 @endif
