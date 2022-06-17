@@ -12,7 +12,7 @@
                 <div class="hero-slider">
                     <!-- hero-inner -->
                     @foreach ($sliders as $slider)
-                        <div class="hero-inner style2" style="background-image: url('/storage/{{ $slider->image }}')">
+                        <div class="hero-inner style2 overlay" style="background-image: url('/storage/{{ $slider->image }}')">
                             <div class="container">
                                 <div class="row">
                                     <!-- Home-slider -->

@@ -2298,14 +2298,14 @@ ol {
 .hero-area.style2 .hero-inner.overlay::before {
     background-color: rgb(0, 92, 156);
     z-index: -1;
-    opacity: 0.75;
+    opacity: 0.45;
 }
 
-.hero-area.style2 .hero-inner .hero-text {
+/* .hero-area.style2 .hero-inner .hero-text {
     margin-top: 220px;
     padding-right: 100px;
     text-align: center;
-}
+} */
 
 .hero-area.style2 .hero-inner .hero-text h5 {
     color: #fff;
@@ -2392,8 +2392,16 @@ ol {
 }
 
 .hero-area .hero-text {
-    margin-left: 85px;
-    margin-top: 275px;
+    /* margin-left: 85px;
+    margin-top: 275px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-area .hero-text h5 {
@@ -2719,7 +2727,6 @@ ol {
     margin-top: 20px;
     text-align: justify;
     line-height: 28px;
-                        
 }
 
 .features .single-feature:hover span {
@@ -6641,7 +6648,7 @@ blockquote span {
 
     .hero-area .hero-text {
         float: none;
-        margin-top: 140px;
+        /* margin-top: 140px; */
         margin-left: 0px;
     }
 
@@ -6673,7 +6680,7 @@ blockquote span {
 
     .hero-area.style2 .hero-inner .hero-text {
         float: none;
-        margin-top: 140px;
+        /* margin-top: 140px; */
     }
 
     .hero-area.style2 .hero-inner {
