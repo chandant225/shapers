@@ -12,7 +12,7 @@
                 <div class="hero-slider">
                     <!-- hero-inner -->
                     @foreach ($sliders as $slider)
-                        <div class="hero-inner style2 overlay" style="background-image: url('/storage/{{ $slider->image }}')">
+                        <div class="hero-inner style2" style="background-image: url('/storage/{{ $slider->image }}')">
                             <div class="container">
                                 <div class="row">
                                     <!-- Home-slider -->
@@ -90,7 +90,7 @@
                                     <h2 class="wow fadeInUp" data-wow-delay=".4s">
                                         {{ $slogan->slogan_title }}
                                     </h2>
-                                    <div style="">{!! $slogan->descriptions !!}</div>
+                                    <div style="text-align: justify;">{!! $slogan->descriptions !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -232,25 +232,6 @@
                                     @endforeach
                                 </div>
                             </div>
-                            {{-- @foreach ($testimonials as $testimonial)
-                                <div class="single-testimonial">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <div class="testimonial-content text-center">
-                                                <p>
-                                                    {{ $testimonial->description }}
-                                                </p>
-                                                <div class="bottom">
-                                                    <h4 style="" class="name">
-                                                        {{ $testimonial->name }}
-                                                    </h4>
-                                                    <span>{{ $testimonial->designation }}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach --}}
                         </div>
                     @endif
                 </div>
@@ -258,10 +239,6 @@
         </section>
         <section style="background-color: #f4f7fa;" class="our-achievement section">
             <div class="container">
-                {{-- <div class="section-title">
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Count me in</h2>
-                    <h3 class="overlay-text">Count me in</h3>
-                </div> --}}
                 <div class="row">
                     @if (count($counters) === 0)
                         <center>
@@ -273,7 +250,7 @@
                                 <div class="single-achievement wow fadeInUp" data-wow-delay=".2s"
                                     style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;border-radius: 10px;">
                                     <h3 class="counter"><span id="secondo1" class="countup"
-                                            cup-end="{{ $counter->number }}">{{ $counter->number }}</span>+</h3>
+                                            cup-end="{{ $counter->number }}">{{ $counter->number }}</span></h3>
                                     <p>{{ $counter->title }}</p>
                                 </div>
                             </div>
