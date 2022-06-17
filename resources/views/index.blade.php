@@ -182,10 +182,11 @@
                 <div class="join-us">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h2>How to become a shaper .?</h2>
+                            <img src="https://digitalartifex.net/wp-content/uploads/2019/09/Asset-667.png" alt="" class="img-fluid">
                         </div>
-                        <div class="col-lg-6">
-                            <button class="join-us-btn"> <a href="/become_a_shaper">Join us</a></button>
+                        <div class="col-lg-6 d-flex flex-column justify-content-around align-items-center">
+                            <h2 class="text-center" style="font-family: 'Chonburi', cursive;  text-transform: uppercase">Join Our Team</h2>
+                            <button class="join-us-btn mt-2"> <a href="/become_a_shaper">Join us</a></button>
                         </div>
                     </div>
                 </div>
