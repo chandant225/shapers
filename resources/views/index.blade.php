@@ -90,7 +90,7 @@
                                     <h2 class="wow fadeInUp" data-wow-delay=".4s">
                                         {{ $slogan->slogan_title }}
                                     </h2>
-                                    <div>{!! $slogan->descriptions !!}</div>
+                                    <div style="">{!! $slogan->descriptions !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,20 @@
                 </div>
             </div>
         </section> --}}
-
+        <section style="background-color:rgb(0, 92, 156);">
+            <div class="container">
+                <div class="join-us">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>How to become a shaper .?</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <button class="join-us-btn"> <a href="/become_a_shaper">Join us</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Section Testimonials -->
         <section class="section testimonials">
             <div class="container">
@@ -260,7 +273,7 @@
                                 <div class="single-achievement wow fadeInUp" data-wow-delay=".2s"
                                     style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;border-radius: 10px;">
                                     <h3 class="counter"><span id="secondo1" class="countup"
-                                            cup-end="{{ $counter->number }}">{{ $counter->number }}</span></h3>
+                                            cup-end="{{ $counter->number }}">{{ $counter->number }}</span>+</h3>
                                     <p>{{ $counter->title }}</p>
                                 </div>
                             </div>

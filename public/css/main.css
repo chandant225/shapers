@@ -1148,6 +1148,7 @@ ol {
     background: rgb(0, 92, 156);
     display: -webkit-box;
     display: -ms-flexbox;
+    text-align: center;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -8098,4 +8099,20 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 img.carousel-img {
     width: 100%;
+}
+
+.join-us {
+        padding: 40px 0px;
+}
+
+.join-us h2 {
+    color: white;
+}
+
+button.join-us-btn {
+        padding: 10px 40px;
+        font-size: 20px;
+        border-radius: 7px;
+        float: right;
+      
 }
