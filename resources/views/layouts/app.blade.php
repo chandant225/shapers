@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    @stack('styles')
+     <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
@@ -31,7 +34,7 @@
     <a href="#" id="myBtn" class="scroll-top btn-hover">
         <i class="fas fa-arrow-up"></i>
     </a>
-    @yield('script')
+   
     <script type="text/javascript" src={{ asset('js/app.js') }}></script>
     <script type="text/javascript" src={{ asset('js/bootstrap.min.js') }}></script>
     <script type="text/javascript" src={{ asset('js/count-up.min.js') }}></script>
@@ -41,6 +44,7 @@
     <script type="text/javascript" src={{ asset('js/main.js') }}></script>
     <script type="text/javascript" src={{ asset('js/tiny-slider.js') }}></script>
     <script type="text/javascript" src={{ asset('js/wow.min.js') }}></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript">
         //========= testimonial
         tns({
@@ -106,41 +110,6 @@
         new WOW().init();
     </script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            direction: 'horizontal',
-            loop: true,
-            speed: 400,
-            spaceBetween: 100,
-            slidesPerView: 3,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-
-            spaceBetween: 10,
-            // Responsive breakpoints
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 3,
-                    spaceBetween: 20
-                }
-            }
-        });
-    </script>
-
-    <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
         window.onscroll = function() {
@@ -160,6 +129,7 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+     @stack('script')
 </body>
 
 </html>

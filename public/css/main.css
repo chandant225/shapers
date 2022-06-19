@@ -34,7 +34,7 @@
     font-family: "SourceSansPro";
     font-weight: lighter;
 } */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Baloo+2:wght@700&display=swap");
 
 html {
     scroll-behavior: smooth;
@@ -984,8 +984,8 @@ ol {
 }
 
 .section {
-    padding-top: 110px;
-    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     position: relative;
     z-index: 1;
 }
@@ -4320,17 +4320,11 @@ ol {
     /* .testimonials .single-testimonial {
         box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%) !important;
     } */
-    .testimonials .single-testimonial .testimonial-content {
-        min-height: 20rem;
-    }
     .testimonials .single-testimonial .testimonial-content p {
-        position: absolute;
         max-height: 12rem;
         overflow: hidden;
         z-index: 100;
         padding: 5px;
-        left: 0;
-
         transition: 0.5s ease-in-out;
         -webkit-transition: 0.5s ease-in-out;
         -moz-transition: 0.5s ease-in-out;
@@ -4342,10 +4336,7 @@ ol {
         background: rgba(255, 255, 255, 0.9);
     }
     .testimonial-content .bottom {
-        position: absolute;
-        bottom: 25px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: 1rem;
     }
 }
 
@@ -4360,7 +4351,7 @@ ol {
     color: rgb(112 100 100);
     font-weight: normal;
     font-size: 100%;
-    text-align: justify;
+    text-align: center;
     padding: 22px;
     line-height: 28px;
 }
@@ -5434,7 +5425,6 @@ blockquote span {
 .newsletter-area .section-title {
     padding: 0;
     padding: 0 90px;
-    margin-bottom: 75px;
 }
 
 .newsletter-area .section-title span {
@@ -5456,7 +5446,7 @@ blockquote span {
     text-align: center;
     background: #fff;
     display: inline-block;
-    padding: 30px;
+    padding: 15px;
     border-radius: 5px;
     -webkit-box-shadow: 0 1rem 28px rgba(35, 38, 45, 0.15) !important;
     box-shadow: 0 1rem 28px rgba(35, 38, 45, 0.15) !important;
@@ -5504,7 +5494,11 @@ blockquote span {
     margin-top: -2px;
     -webkit-box-shadow: 0 1rem 28px rgba(35, 38, 45, 0.15) !important;
     box-shadow: 0 1rem 28px rgba(35, 38, 45, 0.15) !important;
-    border-radius: 10px;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
 }
 
 .newsletter-area .subscribe-text .button .btn:hover {
@@ -8108,18 +8102,21 @@ img.carousel-img {
     width: 100%;
 }
 
-.join-us {
-        padding: 40px 0px;
-}
+/* .join-us {
+    padding: 40px 0px;
+} */
 
 .join-us h2 {
     color: white;
 }
 
 button.join-us-btn {
-        padding: 10px 40px;
-        font-size: 20px;
-        border-radius: 7px;
-        float: right;
-      
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 5rem;
+    float: right;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
 }
