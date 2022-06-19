@@ -8,11 +8,9 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="section-title align-center gray-bg">
-                            <span class="wow fadeInDown" data-wow-delay=".2s">Meet our Shapers</span>
                             <h2 class="wow fadeInUp" data-wow-delay=".4s">
                                 Shapers
                             </h2>
-                            <h3 class="gray-bg">Shapers</h3>
                         </div>
                     </div>
                 </div>
@@ -23,7 +21,7 @@
                         </center>
                     @elseif(count($shapers) >= 1)
                         @foreach ($shapers as $shaper)
-                            <div class="col-lg-3 col-md-6 col-12  rounded-2xl">
+                            <div style="cursor:pointer" class="col-lg-3 col-md-6 col-12  rounded-2xl">
                                 <div data-bs-toggle="modal" data-bs-target="#open{{ $loop->iteration }}"
                                     class="single-team wow fadeInUp w-100" data-wow-delay=".2s">
                                     <div class="image">
@@ -36,8 +34,9 @@
                                                 src="{{ asset('pictures/male.jpeg') }}" alt="#" />
                                         @endif
                                         @if ($shaper->image)
-                                            <img style="height:300px;object-fit:cover;object-position: 100% 0;" class="img-fluid w-100"
-                                                src="/storage/{{ $shaper->image }}" alt="#" />
+                                            <img style="height:300px;object-fit:cover;object-position: 100% 0;"
+                                                class="img-fluid w-100" src="/storage/{{ $shaper->image }}"
+                                                alt="#" />
                                         @endif
                                     </div>
                                     <div class="info-head">
@@ -100,13 +99,16 @@
                     <div class="row mt-5 py-5">
                         <div class="col-lg-6 col-sm-12 mt-2">
                             <div class="">
-                                <h2 style="
+                                <h2
+                                    style="
                                                                                   margin-top:-40px;
                                                                                  padding-left: 0px;
-                                                                             ">{{ $shaper->name }}</h2>
+                                                                             ">
+                                    {{ $shaper->name }}</h2>
                                 <p style="
                                                                                   padding: 26px 0px 0px 0px;
-                                                                              " class="mt-1">
+                                                                              "
+                                    class="mt-1">
                                     {!! $shaper->description !!}
                                 </p>
                                 <p class="mt-2"><strong>Joined
@@ -116,12 +118,12 @@
                         <div class="col-lg-6 col-sm-12">
                             <div class="">
                                 @if (!$shaper->image && $shaper->is_male == '0')
-                                    <img style="height:100vh" class="w-100"
-                                        src="{{ asset('pictures/female.jpeg') }}" alt="#" />
+                                    <img style="height:100vh" class="w-100" src="{{ asset('pictures/female.jpeg') }}"
+                                        alt="#" />
                                 @endif
                                 @if (!$shaper->image && $shaper->is_male == '1')
-                                    <img style="height:100vh" class="w-100"
-                                        src="{{ asset('pictures/male.jpeg') }}" alt="#" />
+                                    <img style="height:100vh" class="w-100" src="{{ asset('pictures/male.jpeg') }}"
+                                        alt="#" />
                                 @endif
                                 @if ($shaper->image)
                                     <img style="height:100vh" class="w-100" src="/storage/{{ $shaper->image }}"

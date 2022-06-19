@@ -8,11 +8,11 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="section-title align-center gray-bg">
-                            <span class="wow fadeInDown" data-wow-delay=".2s">Meet our Alumuni</span>
+
                             <h2 class="wow fadeInUp" data-wow-delay=".4s">
                                 Alumuni
                             </h2>
-                            <h3 class="gray-bg">Alumuni</h3>
+
                         </div>
                     </div>
                 </div>
@@ -96,13 +96,16 @@
                     <div class="row mt-5 py-5">
                         <div class="col-lg-6 col-sm-12 mt-2">
                             <div class="">
-                                <h2 style="
+                                <h2
+                                    style="
                          margin-top:-40px;
                          padding-left: 0px;
-                     ">{{ $alumuni->name }}</h2>
+                     ">
+                                    {{ $alumuni->name }}</h2>
                                 <p style="
                           padding: 26px 0px 0px 0px;
-                      " class="mt-1">{!! $alumuni->description !!}</p>
+                      "
+                                    class="mt-1">{!! $alumuni->description !!}</p>
                                 <p class="mt-2"><strong>Joined
                                         at:</strong>{{ ' ' . $alumuni->joined_at }}</p>
                             </div>
@@ -110,12 +113,12 @@
                         <div class="col-lg-6 col-sm-12">
                             <div style="margin-top: -55px;" class="">
                                 @if (!$alumuni->image && $alumuni->is_male == '0')
-                                    <img style="height:100vh" class="w-100"
-                                        src="{{ asset('pictures/female.jpeg') }}" alt="#" />
+                                    <img style="height:100vh" class="w-100" src="{{ asset('pictures/female.jpeg') }}"
+                                        alt="#" />
                                 @endif
                                 @if (!$alumuni->image && $alumuni->is_male == '1')
-                                    <img style="height:100vh" class="w-100"
-                                        src="{{ asset('pictures/male.jpeg') }}" alt="#" />
+                                    <img style="height:100vh" class="w-100" src="{{ asset('pictures/male.jpeg') }}"
+                                        alt="#" />
                                 @endif
                                 @if ($alumuni->image)
                                     <img style="height:100vh" class="w-100" src="/storage/{{ $alumuni->image }}"
