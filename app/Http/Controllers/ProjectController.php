@@ -17,9 +17,10 @@ class ProjectController extends Controller
     public function index()
     {
         $project_description = Project_des::orderBy('updated_at','DESC')->first();
-        $projects = Project::where('past_project','0')->latest()->paginate(8);
+        $projects = Project::where('past_project','0')->get();
+        $past_projects = Project::where('past_project','1')->get();
         return view('project')
-        ->with(['projects' => $projects,'project_description' => $project_description]);
+        ->with(['projects' => $projects,'project_description' => $project_description,'past_projects' => $past_projects]);
     }
 
     /**
