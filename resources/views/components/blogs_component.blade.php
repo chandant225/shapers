@@ -37,7 +37,7 @@
             </div>
         </div>
         <center class="py-4">
-            <a href="/projects" class="blog-btn px-3">View all</a>
+            <a href="/blogs" class="blog-btn px-3">View all</a>
         </center>
     </div>
 </div>
