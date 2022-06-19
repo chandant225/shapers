@@ -30,7 +30,7 @@
                         </div>
                         <div class="portfolio-overlay">
                             <div class="pf-content">
-                                <span class="category">{{$project->sub_title}}</span>
+                                {{-- <span class="category">{{$project->sub_title}}</span> --}}
                                 <h4><a href="{{route('single_project',['slug' => $project->slug])}}">{{$project->title}}</a></h4>
                                 <span class="location">
                                     <i class="lni lni-alarm-clock"></i>{{$project->status}}
