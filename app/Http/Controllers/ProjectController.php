@@ -53,7 +53,7 @@ class ProjectController extends Controller
     public function show($slug)
     {
         $project_details = Project::where('slug', $slug)->first();
-        $impacts = Impact::where('project_slug',$slug)->get();
+        $impacts = Impact::where('project_slug',$slug)->orderBy('project_year','asc')->get();
         return view('single_project')->with(['project_details' => $project_details,'impacts' => $impacts]);
     }
 
