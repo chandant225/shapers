@@ -27,11 +27,11 @@
         }
 
         /* .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-          } */
+                display: block;
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+              } */
 
         .swiper {
             width: 100%;
@@ -85,8 +85,10 @@
                     <h2>
                         {{ $project_details->title }}
                     </h2>
-                    <p style="
+                    <p
+                        style="
                         margin-top: 30px;
+                        text-align: justify;
                     ">
                         {!! $project_details->top_description !!}
                     </p>
