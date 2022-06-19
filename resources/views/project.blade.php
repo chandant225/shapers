@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div>
+    <div class="container">
         <section class="portfolio-section section">
             <div id="container" class="container">
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-md-6">
                         <h2 class="mb-2" style="color: rgb(0, 92, 156);">{{ $project_description->title }}</h2>
                         <p
@@ -18,7 +18,7 @@
                         <img src="/storage/{{ $project_description->image }}" alt="" class="img-fluid"
                             style="width:100%;height:54vh;object-fit:cover">
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -47,8 +47,7 @@
                             <a href="#">
                                 <div class="impact-card">
                                     <div class="impact-icon">
-                                        <img src="{{ asset('assets/impact/1.png') }}"
-                                            alt="" />
+                                        <img src="{{ asset('assets/impact/1.png') }}" alt="" />
                                     </div>
                                     <div class="impact-text">
                                         <h5>I for Iclusion</h5>
@@ -59,8 +58,7 @@
                             <a href="#">
                                 <div class="impact-card">
                                     <div class="impact-icon">
-                                        <img src="{{ asset('assets/impact/2.png') }}"
-                                            alt="" />
+                                        <img src="{{ asset('assets/impact/2.png') }}" alt="" />
                                     </div>
                                     <div class="impact-text">
                                         <h5>I for Iclusion</h5>
@@ -71,8 +69,7 @@
                             <a href="#">
                                 <div class="impact-card">
                                     <div class="impact-icon">
-                                        <img src="{{ asset('assets/impact/3.png') }}"
-                                            alt="" />
+                                        <img src="{{ asset('assets/impact/3.png') }}" alt="" />
                                     </div>
                                     <div class="impact-text">
                                         <h5>I for Iclusion</h5>
@@ -83,8 +80,7 @@
                             <a href="#">
                                 <div class="impact-card">
                                     <div class="impact-icon">
-                                        <img src="{{ asset('assets/impact/4.png') }}"
-                                            alt="" />
+                                        <img src="{{ asset('assets/impact/4.png') }}" alt="" />
                                     </div>
                                     <div class="impact-text">
                                         <h5>I for Iclusion</h5>
@@ -95,8 +91,7 @@
                             <a href="#">
                                 <div class="impact-card">
                                     <div class="impact-icon">
-                                        <img src="{{ asset('assets/impact/5.png') }}"
-                                            alt="" />
+                                        <img src="{{ asset('assets/impact/5.png') }}" alt="" />
                                     </div>
                                     <div class="impact-text">
                                         <h5>I for Iclusion</h5>
@@ -107,8 +102,7 @@
                             <a href="#">
                                 <div class="impact-card">
                                     <div class="impact-icon">
-                                        <img src="{{ asset('assets/impact/6.png') }}"
-                                            alt="" />
+                                        <img src="{{ asset('assets/impact/6.png') }}" alt="" />
                                     </div>
                                     <div class="impact-text">
                                         <h5>I for Iclusion</h5>
@@ -146,8 +140,7 @@
                                                 href="{{ route('single_project', ['slug' => $project->slug]) }}">{{ $project->title }}</a>
                                         </h4>
                                         <span class="location">
-                                            <i
-                                                class="lni lni-alarm-clock"></i>{{ $project->status }}
+                                            <i class="lni lni-alarm-clock"></i>{{ $project->status }}
                                         </span>
                                     </div>
                                 </div>
@@ -165,15 +158,13 @@
                                     </div>
                                     <div class="portfolio-overlay">
                                         <div class="pf-content">
-                                            <span
-                                                class="category">{{ $project->sub_title }}</span>
+                                            <span class="category">{{ $project->sub_title }}</span>
                                             <h4>
                                                 <a
                                                     href="{{ route('single_project', ['slug' => $project->slug]) }}">{{ $project->title }}</a>
                                             </h4>
                                             <span class="location">
-                                                <i
-                                                    class="lni lni-alarm-clock"></i>{{ $project->status }}
+                                                <i class="lni lni-alarm-clock"></i>{{ $project->status }}
                                             </span>
                                         </div>
                                     </div>
