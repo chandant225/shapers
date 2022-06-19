@@ -3621,11 +3621,11 @@ ol {
 }
 
 .portfolio-item-wrapper .portfolio-img img {
-    width: 20rem;
+    width: 100%;
     transition: all 0.8s cubic-bezier(0.78, 0.01, 0.24, 1.02);
     -webkit-transition: all 0.8s cubic-bezier(0.78, 0.01, 0.24, 1.02);
     -moz-transition: all 0.8s cubic-bezier(0.78, 0.01, 0.24, 1.02);
-    height: 15rem;
+    height: 18rem;
     object-fit: cover;
 }
 
@@ -8119,4 +8119,58 @@ button.join-us-btn {
     -moz-border-radius: 5rem;
     -ms-border-radius: 5rem;
     -o-border-radius: 5rem;
+}
+/* June 19 */
+
+.impact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    margin: 2rem 0;
+}
+.impact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.impact-card:hover,
+.impact-card:focus {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+}
+.impact-icon {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+}
+.impact-card .impact-icon img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+}
+.impact-text {
+    padding: 1rem;
+    text-align: center;
+}
+.impact-text h5 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+.impact-text p {
+    font-size: 80%;
+    text-decoration: none;
+    color: #3c3c3c;
 }
