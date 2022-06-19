@@ -71,8 +71,7 @@
                         <div class="col-lg-6 col-12">
                             <div class="about-left">
                                 <div class="section-title align-left">
-                                    <span class="wow fadeInDown"
-                                        data-wow-delay=".2s">{{ $slogan->top_title }}</span>
+                                    <span class="wow fadeInDown" data-wow-delay=".2s">{{ $slogan->top_title }}</span>
                                     @if ($slogan->slogan_title)
                                         <h2 class="wow fadeInUp" data-wow-delay=".4s">
                                             {{ $slogan->slogan_title }}
@@ -132,50 +131,12 @@
                 </div>
             </div>
         </section>
-        <!-- End Features style2 Section -->
-        <!-- Intro-Video-Area -->
-        {{-- <section class="intro-video-area overlay">
-        <div class="container-fluid">
-            <div class="video-inner">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="intro-video-play">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 col-12">
-                                    <div class="play-thumb wow zoomIn"
-                                        data-wow-delay=".2s">
-                                        <a href="assets/images/video/video.mp4"
-                                            class="glightbox video"><i
-                                                class="fas fa-play"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-title white-text">
-                            <span class="wow fadeInDown"
-                                data-wow-delay=".2s">Create your own
-                                experience</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">
-                                How do we help you to grow?
-                            </h2>
-                            <p class="wow fadeInUp" data-wow-delay=".6s">
-                                There are many variations of passages of Lorem
-                                Ipsum available, but the majority <br />
-                                have suffered alteration in some form.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section> --}}
 
         <section style="background-color: rgb(0, 92, 156)">
             <div class="">
                 <div class="join-us">
                     <div class="row">
                         <div class="col-lg-6">
-                            <!-- <img src="https://digitalartifex.net/wp-content/uploads/2019/09/Asset-667.png" alt="" class="img-fluid"> -->
                             <img src="{{ asset('pictures/join.jpeg') }}" alt="" class="img-fluid" />
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-around align-items-center"
@@ -191,7 +152,6 @@
                             <button class="join-us-btn mt-2">
                                 <a href="/become_a_shaper">Join us</a>
                             </button>
-
                         </div>
                     </div>
                 </div>
@@ -271,34 +231,8 @@
                     @endif
                 </div>
         </section>
-        <!-- carousel -->
+
         @include('components.blogs_component')
-        <!-- End Section Testimonials -->
-        <section class="newsletter-area section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2 col-12">
-                        <!-- Section-title -->
-                        <div class="section-title">
-                            <span class="wow fadeInDown" data-wow-delay=".2s"
-                                style="visibility: visible;animation-delay:2s;                                                                                                                   animation-name: fadeInDown;
-                                                                                                                                                                                        ">Count
-                                me in</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s"
-                                style="
-                                                                                                                                                                                            visibility: visible;
-                                                                                                                                                                                            animation-delay: 0.4s;
-                                                                                                                                                                                            animation-name: fadeInUp;
-                                                                                                                                                                                        ">
-                                Subscribe with your email to get news and updates to
-                                join our events.
-                            </h2>
-                            <h3 class="gray-bg">Newsletter</h3>
-                        </div>
-                        <!-- Subscribe- Email Text Box -->
-                        <div class="subscribe-text wow fadeInUp" data-wow-delay=".2s"> </div>
-        </section>
-        <!-- carousel -->
         <!-- End Section Testimonials -->
         <section class="newsletter-area section">
             <div class="container">
