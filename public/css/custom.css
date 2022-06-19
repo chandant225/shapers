@@ -11,3 +11,9 @@ img.alumuni-image {
     border: none;
     padding: 5px 22px;
 }
+
+.blog-btn:hover{
+    background-color:black;
+    transition: all 0.4s ease;
+    color: white;
+}
