@@ -212,7 +212,7 @@
                         </center>
                     @elseif(count($counters) >= 1)
                         @foreach ($counters as $counter)
-                            <div class="col-lg-3 col-md-4 col-12">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="single-achievement wow fadeInUp" data-wow-delay=".2s"
                                     style="
                             visibility: visible;
