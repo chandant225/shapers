@@ -1,28 +1,25 @@
-@extends('layouts.app') @section('content')
-<div>
-    <section class="portfolio-section section">
-        <div id="container" class="container">
-            {{--
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="mb-2" style="color: rgb(0, 92, 156)">
-                        {{
-                        $project_description->title }}
-                    </h2>
-                    <p style="margin-top: 28px">
-                        {!! $project_description->description !!}
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img
-                        src="/storage/{{ $project_description->image }}"
-                        alt=""
-                        class="img-fluid"
-                        style="width: 100%; height: 54vh; object-fit: cover"
-                    />
+@extends('layouts.app')
+
+@section('content')
+    <div>
+        <section class="portfolio-section section">
+            <div id="container" class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="mb-2" style="color: rgb(0, 92, 156);">{{ $project_description->title }}</h2>
+                        <p
+                            style="
+                    margin-top: 28px;
+                    text-align: justify;
+                ">
+                            {!! $project_description->description !!}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/storage/{{ $project_description->image }}" alt="" class="img-fluid"
+                            style="width:100%;height:54vh;object-fit:cover">
+                    </div>
                 </div>
             </div>
-            --}}
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title align-center gray-bg">
