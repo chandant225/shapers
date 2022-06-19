@@ -147,31 +147,32 @@
                             </div>
                         </div>
                     @endforeach
-                    @endif @if ($past_projects)
-                        @foreach ($past_projects as $project)
-                            <div class="col-lg-4 col-md-4 grid-item mental-health-portfolio">
-                                <div class="portfolio-item-wrapper">
-                                    <div class="portfolio-img">
-                                        <a href="{{ route('single_project', ['slug' => $project->slug]) }}"><img
-                                                src="/storage/{{ $project->image }}" alt="#"
-                                                class="projectImage" /></a>
-                                    </div>
-                                    <div class="portfolio-overlay">
-                                        <div class="pf-content">
-                                            <span class="category">{{ $project->sub_title }}</span>
-                                            <h4>
-                                                <a
-                                                    href="{{ route('single_project', ['slug' => $project->slug]) }}">{{ $project->title }}</a>
-                                            </h4>
-                                            <span class="location">
-                                                <i class="lni lni-alarm-clock"></i>{{ $project->status }}
-                                            </span>
-                                        </div>
+                @endif
+                @if ($past_projects)
+                    @foreach ($past_projects as $project)
+                        <div class="col-lg-4 col-md-4 grid-item mental-health-portfolio">
+                            <div class="portfolio-item-wrapper">
+                                <div class="portfolio-img">
+                                    <a href="{{ route('single_project', ['slug' => $project->slug]) }}"><img
+                                            src="/storage/{{ $project->image }}" alt="#"
+                                            class="projectImage" /></a>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="pf-content">
+                                        <span class="category">{{ $project->sub_title }}</span>
+                                        <h4>
+                                            <a
+                                                href="{{ route('single_project', ['slug' => $project->slug]) }}">{{ $project->title }}</a>
+                                        </h4>
+                                        <span class="location">
+                                            <i class="lni lni-alarm-clock"></i>{{ $project->status }}
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                        @endforeach
-                    @endif
+                        </div>
+                    @endforeach
+                @endif
             </div>
             {{-- <center>
                 {{ $projects->links() }}
