@@ -3332,7 +3332,7 @@ ol {
     -o-border-radius: 0.6rem;
 }
 
-.our-achievement .single-achievement p.counter span {
+.our-achievement .single-achievement h3 {
     font-size: 40px;
     font-weight: bold;
     display: block;
@@ -3343,9 +3343,7 @@ ol {
     font-size: 25px;
     font-weight: 500;
     color: rgb(59, 58, 58);
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+ 
 }
 
 .why-choose {
