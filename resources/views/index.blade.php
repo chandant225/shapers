@@ -99,35 +99,35 @@
                     </div>
                 </div>
                 <div class="row">
-                    
+
                     @if (count($counters) === 0)
                         <center>
                             <p>There is no any counter avaliable yet.</p>
                         </center>
                     @elseif(count($counters) >= 1)
-                    <div class="swiper mySwiperBriefImpact">
-                        <div class="swiper-wrapper">
-                            @foreach ($counters as $counter)
-                            <div class="swiper-slide">
-                                <div class="single-achievement wow fadeInUp" data-wow-delay=".2s"
-                                    style="
+                        <div class="swiper mySwiperBriefImpact">
+                            <div class="swiper-wrapper">
+                                @foreach ($counters as $counter)
+                                    <div class="swiper-slide">
+                                        <div class="single-achievement wow fadeInUp" data-wow-delay=".2s"
+                                            style="
                             visibility: visible;
                             animation-delay: 0.2s;
                             animation-name: fadeInUp;
                             border-radius: 10px;
                         ">
-                                    <h3 class="counter">
-                                        <span id="secondo1" class="countup"
-                                            cup-end="{{ $counter->number }}"></span>{{ $counter->sign }}
-                                    </h3>
-                                    <p>{{ $counter->title }}</p>
-                                </div>
+                                            <h3 class="counter">
+                                                <span id="secondo1" class="countup"
+                                                    cup-end="{{ $counter->number }}"></span>{{ $counter->sign }}
+                                            </h3>
+                                            <p>{{ $counter->title }}</p>
+                                        </div>
+                                    </div>
+                                @endforeach
                             </div>
-                        @endforeach
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-                    </div>
                     @endif
                 </div>
         </section>
@@ -159,13 +159,15 @@
                                 @foreach ($features as $feature)
                                     <div class="swiper-slide">
                                         <!-- single-feature -->
-                                        <div class="single-feature wow fadeInUp shadow" data-wow-delay=".2s">
-                                            <img src="/storage/{{ $feature->image }}" alt="" />
-                                            <h3>
-                                                <a href="#">{{ $feature->title }}</a>
-                                            </h3>
-                                            <p>{!! $feature->descriptions !!}</p>
-                                        </div>
+                                        <a href="{{ $feature->link }}">
+                                            <div class="single-feature wow fadeInUp shadow" data-wow-delay=".2s">
+                                                <img src="/storage/{{ $feature->image }}" alt="" />
+                                                <h3>
+                                                    <a href="{{ $feature->link }}">{{ $feature->title }}</a>
+                                                </h3>
+                                                <p>{!! $feature->descriptions !!}</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 @endforeach
                             </div>
@@ -354,27 +356,27 @@
         );
 
         var swiperBriefImpact = new Swiper(".mySwiperBriefImpact", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-         breakpoints: {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
 
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
 
-                    480: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
 
-                    640: {
-                        slidesPerView: 4,
-                        spaceBetween: 20,
-                    },
-         },
-      });
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
     </script>
 @endpush
