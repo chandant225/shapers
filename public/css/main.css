@@ -1202,8 +1202,11 @@ ol {
 .pagination {
     text-align: left;
     margin: 35px 0 0;
-    display: block;
     background-color: transparent;
+}
+
+.pagination li.page-item{
+  margin: 2px;
 }
 
 .pagination.center {
