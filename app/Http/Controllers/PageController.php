@@ -24,7 +24,7 @@ class PageController extends Controller
         $testimonials = Testimonial::orderBy('updated_at','DESC')->get();
         $slogan = Slogan::orderBy('updated_at','DESC')->first();
         $features = Feature::orderBy('updated_at','DESC')->get();
-        $counters = Counter::orderBy('updated_at','DESC')->take(4)->get();
+        $counters = Counter::orderBy('created_at','DESC')->get();
         $news = News::orderBy('updated_at','DESC')->take(3)->get();
         return view('index')
         ->with(['sliders' => $sliders,'testimonials' => $testimonials, 'slogan' =>$slogan,'features' =>$features,'testimonials' =>$testimonials,'counters'=>$counters,'news'=>$news]);
@@ -103,7 +103,8 @@ class PageController extends Controller
         return view('endowment_fund');
     }
 
-    public function blog_details() {
-        return view('single_blog');
+    public function blog_details($slug) {
+        $news_details = News::where('slug',$slug)->first();
+        return view('single_blog')->with(['news_details' => $news_details]);
     }
 }
