@@ -87,7 +87,34 @@
             </div>
         </section>
         <!-- End About-Us Section -->
-
+        <section style="background-color: #f4f7fa" class="our-achievement section">
+            <div class="container">
+                <div class="row">
+                    @if (count($counters) === 0)
+                        <center>
+                            <p>There is no any counter avaliable yet.</p>
+                        </center>
+                    @elseif(count($counters) >= 1)
+                        @foreach ($counters as $counter)
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="single-achievement wow fadeInUp" data-wow-delay=".2s"
+                                    style="
+                            visibility: visible;
+                            animation-delay: 0.2s;
+                            animation-name: fadeInUp;
+                            border-radius: 10px;
+                        ">
+                                    <h3 class="counter">
+                                        <span id="secondo1" class="countup me-2"
+                                            cup-end="{{ $counter->number }}"></span>{{ $counter->sign }}
+                                    </h3>
+                                    <p>{{ $counter->title }}</p>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
+        </section>
         <!-- Features style2 Section -->
         <section class="features style2 section">
             <div class="container">
@@ -203,34 +230,7 @@
                 </div>
             </div>
         </section>
-        <section style="background-color: #f4f7fa" class="our-achievement section">
-            <div class="container">
-                <div class="row">
-                    @if (count($counters) === 0)
-                        <center>
-                            <p>There is no any counter avaliable yet.</p>
-                        </center>
-                    @elseif(count($counters) >= 1)
-                        @foreach ($counters as $counter)
-                            <div class="col-lg-3 col-md-4 col-12">
-                                <div class="single-achievement wow fadeInUp" data-wow-delay=".2s"
-                                    style="
-                            visibility: visible;
-                            animation-delay: 0.2s;
-                            animation-name: fadeInUp;
-                            border-radius: 10px;
-                        ">
-                                    <h3 class="counter">
-                                        <span id="secondo1" class="countup"
-                                            cup-end="{{ $counter->number }}">{{ $counter->number }}</span>
-                                    </h3>
-                                    <p>{{ $counter->title }}</p>
-                                </div>
-                            </div>
-                        @endforeach
-                    @endif
-                </div>
-        </section>
+
 
         @include('components.blogs_component')
         <!-- End Section Testimonials -->

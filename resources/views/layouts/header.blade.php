@@ -35,10 +35,10 @@
                                         <li>
                                             <a class="dropdown-item" href="/alumni">Alumni</a>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <a class="dropdown-item" href="/"> Shapers Learning and </br>Social
                                                 Engagements</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -47,7 +47,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/blogs" role="button" aria-expanded="false">Blogs
+                                    <a class="nav-link" href="/blogs" role="button" aria-expanded="false">News
                                     </a>
                                 </li>
                                 <li class="nav-item">

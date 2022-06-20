@@ -7,8 +7,8 @@
                 <div class="col-12">
                     <!-- Section-title -->
                     <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Blogs</h2>
-                        <h3 class="overlay-text">Blogs</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our News</h2>
+                        <h3 class="overlay-text">News</h3>
                     </div>
                 </div>
             </div>

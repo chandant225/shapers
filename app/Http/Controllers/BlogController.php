@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Project;
-use App\Models\Impact;
-use App\Models\Project_des;
 
-class ProjectController extends Controller
+class BlogController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,11 +13,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $project_description = Project_des::orderBy('updated_at','DESC')->first();
-        $projects = Project::where('past_project','0')->orderBy('position','DESC')->get();
-        $past_projects = Project::where('past_project','1')->orderBy('project_year','asc')->get();
-        return view('project')
-        ->with(['projects' => $projects,'project_description' => $project_description,'past_projects' => $past_projects]);
+        //
     }
 
     /**
@@ -47,14 +40,12 @@ class ProjectController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  string  $slug
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
+    public function show($id)
     {
-        $project_details = Project::where('slug', $slug)->first();
-        $impacts = Impact::where('project_slug',$slug)->orderBy('project_year','asc')->get();
-        return view('single_project')->with(['project_details' => $project_details,'impacts' => $impacts]);
+        //
     }
 
     /**

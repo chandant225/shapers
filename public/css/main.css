@@ -2577,6 +2577,7 @@ ol {
     position: relative;
     overflow: hidden;
     max-height: 26rem;
+    min-height: 26rem;
 }
 
 .features.style2 .single-feature img {
