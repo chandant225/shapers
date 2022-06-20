@@ -25,7 +25,8 @@
                             <img src="/storage/{{ $news_details->image }}" alt="{{ $news_details->title }}">
                         </div>
                         <div class="post-details">
-                            <div style="text-align: justify" class="detail-inner py-4">
+                            <div style="text-align: justify;letter-spacing:1px;word-spacing: 2px;"
+                                class="detail-inner py-4">
                                 {!! $news_details->description !!}
                             </div>
                         </div>

@@ -27,11 +27,11 @@
         }
 
         /* .swiper-slide img {
-                display: block;
-                width: 100%;
-                height: 400px;
-                object-fit: cover;
-              } */
+                        display: block;
+                        width: 100%;
+                        height: 400px;
+                        object-fit: cover;
+                      } */
 
         .swiper {
             width: 100%;
@@ -147,7 +147,8 @@
                             <h3 class="py-4">Projects</h3>
                             @foreach ($impacts as $impact)
                                 <div class="col-md-4 shadow-sm">
-                                    <img src="/storage/{{ $impact->image }}" alt="" class="img-fluid">
+                                    <a href="{{ route('single_impact', ['slug' => $impact->slug]) }}"><img
+                                            src="/storage/{{ $impact->image }}" alt="" class="img-fluid"></a>
                                     <a style="text-decoration:none"
                                         href="{{ route('single_impact', ['slug' => $impact->slug]) }}">
                                         <h3 class="mt-2 py-2">{{ $impact->title }}</h3>

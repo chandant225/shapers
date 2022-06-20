@@ -4738,6 +4738,8 @@ ol {
     background-color: #fff;
     padding: 0;
     margin-bottom: 40px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
 
 .post-details .post-thumbnils {
@@ -4748,6 +4750,7 @@ ol {
     font-weight: 700;
     margin-top: 10px;
     line-height: 32px;
+    margin-left: 2rem;
 }
 
 .post-details .post-title a {
