@@ -39,9 +39,9 @@
                     <div class="single-footer sm-custom-border f-link">
                         <h3>Join Us</h3>
                         <div class="d-flex flex-column">
-                            <a href="#" class="text-white my-1">Become a
+                            <a href="/become_a_shaper" class="text-white my-1">Become a
                                 Shaper</a>
-                            <a href="#" class="text-white my-1">Become a
+                            <a href="/become_a_partner" class="text-white my-1">Become a
                                 Partner</a>
                         </div>
 

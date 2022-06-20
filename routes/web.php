@@ -52,6 +52,9 @@ Route::get('/shaper_details/{name}',[PageController::class,'shaper_details'])->n
 Route::get('/blogs', [PageController::class, 'blogs']);
 Route::get('/blogs/{slug}',[PageController::class,'blog_details']);
 Route::get('/endowment_fund',[PageController::class, 'endowment_fund']);
+Route::get('/become_a_partner', function () {
+    return view('become_a_partner');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
