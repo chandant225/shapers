@@ -119,25 +119,25 @@
                             <ul style="list-style: none;" class="social d-flex flex-row mt-2 p-0">
                                 @if ($shaper->facebook_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->facebook_link }}"><i
+                                        <a href="{{ $shaper->facebook_link }}" target="blanc"><i
                                                 class="lni lni-facebook-original"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->twitter_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->twitter_link }}"><i
+                                        <a href="{{ $shaper->twitter_link }}" target="blanc"><i
                                                 class="lni lni-twitter-original"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->linkedin_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->linkedin_link }}"><i class="fab fa-linkedin-in"
+                                        <a href="{{ $shaper->linkedin_link }}" target="blanc"><i class="fab fa-linkedin-in"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->instagram_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->instagram_link }}"><i class="fab fa-instagram"
+                                        <a href="{{ $shaper->instagram_link }}" target="blanc"><i class="fab fa-instagram"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                 @endif
@@ -169,25 +169,25 @@
                             <ul style="list-style: none;" class="social d-flex flex-row mt-2 p-0">
                                 @if ($shaper->facebook_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->facebook_link }}"><i
+                                        <a href="{{ $shaper->facebook_link }}" target="blanc"><i
                                                 class="lni lni-facebook-original"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->twitter_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->twitter_link }}"><i
+                                        <a href="{{ $shaper->twitter_link }}" target="blanc"><i
                                                 class="lni lni-twitter-original"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->linkedin_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->linkedin_link }}"><i class="fab fa-linkedin-in"
+                                        <a href="{{ $shaper->linkedin_link }}" target="blanc"><i class="fab fa-linkedin-in"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->instagram_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->instagram_link }}"><i class="fab fa-instagram"
+                                        <a href="{{ $shaper->instagram_link }}" target="blanc"><i class="fab fa-instagram"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                 @endif

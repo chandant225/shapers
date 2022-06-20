@@ -7,12 +7,12 @@
         <div class="container">
           <div class="contact-head">
             <div class="inner-content">
-              <div class="row align-items-center">
+              <div class="row">
                 <div class="col-lg-8 col-12">
                   <div class="form-main">
                     <h3 class="inner-title left">Contact Form</h3>
                     <form
-                      class="form"
+                      class="form form-contact-us"
                       method="post"
                       action="{{route('contact_add')}}"
                     >
@@ -30,51 +30,33 @@
                     @endif
                       <div class="row">
                         <div class="col-lg-6 col-12">
-                          <div class="form-group">
-                            <input
-                              name="name"
-                              type="text"
-                              placeholder="Your Name"
-                              required="required"
-                            />
+                          <div class="input">
+                            <input type="text" class="input-field" value="" required/>
+                            <label class="input-label">Full name</label>
                           </div>
                         </div>
                         <div class="col-lg-6 col-12">
-                          <div class="form-group">
-                            <input
-                              name="subject"
-                              type="text"
-                              placeholder="Your Subject"
-                              required="required"
-                            />
+                          <div class="input">
+                            <input type="text" class="input-field" value="" required/>
+                            <label class="input-label">Address</label>
                           </div>
                         </div>
                         <div class="col-lg-6 col-12">
-                          <div class="form-group">
-                            <input
-                              name="email"
-                              type="email"
-                              placeholder="Your Email"
-                              required="required"
-                            />
+                          <div class="input">
+                            <input type="email" class="input-field" value="" required/>
+                            <label class="input-label">Email</label>
                           </div>
                         </div>
                         <div class="col-lg-6 col-12">
-                          <div class="form-group">
-                            <input
-                              name="phone"
-                              type="text"
-                              placeholder="Your Phone"
-                              required="required"
-                            />
+                          <div class="input">
+                            <input type="text" class="input-field" value="" required/>
+                            <label class="input-label">Phone</label>
                           </div>
                         </div>
-                        <div class="col-12">
-                          <div class="form-group message">
-                            <textarea
-                              name="message"
-                              placeholder="Your Message"
-                            ></textarea>
+                        <div class="col-12 mb-4">
+                          <div class="input">
+                            <textarea class="input-field" rows="6" required></textarea>
+                            <label class="input-label">Message</label>
                           </div>
                         </div>
                         <div class="col-12">

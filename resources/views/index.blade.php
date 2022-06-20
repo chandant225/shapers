@@ -90,13 +90,25 @@
         <section style="background-color: #f4f7fa" class="our-achievement section">
             <div class="container">
                 <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">
+                                Impact In Brief
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
                     @if (count($counters) === 0)
                         <center>
                             <p>There is no any counter avaliable yet.</p>
                         </center>
                     @elseif(count($counters) >= 1)
-                        @foreach ($counters as $counter)
-                            <div class="col-lg-3 col-md-4 col-12">
+                    <div class="swiper mySwiperBriefImpact">
+                        <div class="swiper-wrapper">
+                            @foreach ($counters as $counter)
+                            <div class="swiper-slide">
                                 <div class="single-achievement wow fadeInUp" data-wow-delay=".2s"
                                     style="
                             visibility: visible;
@@ -105,13 +117,17 @@
                             border-radius: 10px;
                         ">
                                     <h3 class="counter">
-                                        <span id="secondo1" class="countup me-3"
+                                        <span id="secondo1" class="countup"
                                             cup-end="{{ $counter->number }}"></span>{{ $counter->sign }}
                                     </h3>
                                     <p>{{ $counter->title }}</p>
                                 </div>
                             </div>
                         @endforeach
+                        </div>
+                        <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+                    </div>
                     @endif
                 </div>
         </section>
@@ -159,11 +175,11 @@
             </div>
         </section>
 
-        <section style="background-color: rgb(0, 92, 156)">
-            <div class="">
-                <div class="join-us">
+        <section>
+            <div class="container">
+                <div class="join-us" style="background-color: rgb(0, 92, 156)">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 p-0">
                             <img src="{{ asset('pictures/join.jpeg') }}" alt="" class="img-fluid" />
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-around align-items-center"
@@ -336,5 +352,29 @@
                 },
             }
         );
+
+        var swiperBriefImpact = new Swiper(".mySwiperBriefImpact", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+         breakpoints: {
+
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+
+                    640: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+         },
+      });
     </script>
 @endpush

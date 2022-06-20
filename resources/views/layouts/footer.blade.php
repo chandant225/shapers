@@ -42,6 +42,7 @@
                                 Shaper</a>
                             <a href="/become_a_partner" class="text-white my-1">Become a
                                 Partner</a>
+                            <a href="mailto:globalshapersktm@gmail.com" class="text-white my-1">Become a Contributor </a>
                         </div>
                     </div>
                 </div>
@@ -56,37 +57,37 @@
                                     @if ($social_links->facebook_link)
                                         <li>
                                             <a href="https://{{ $social_links->facebook_link }}"><i
-                                                    class="fab fa-facebook-square"></i></a>
+                                                    class="fab fa-facebook-square" target="blanc"></i></a>
                                         </li>
                                     @endif
                                     @if ($social_links->twitter_link)
                                         <li>
                                             <a href="https://{{ $social_links->twitter_link }}"><i
-                                                    class="fab fa-twitter-square"></i></a>
+                                                    class="fab fa-twitter-square" target="blanc"></i></a>
                                         </li>
                                     @endif
                                     @if ($social_links->linkedin_link)
                                         <li>
                                             <a href="https://{{ $social_links->linkedin_link }}"><i
-                                                    class="fab fa-linkedin"></i></a>
+                                                    class="fab fa-linkedin" target="blanc"></i></a>
                                         </li>
                                     @endif
                                     @if ($social_links->gmail_link)
                                         <li>
                                             <a href="https://{{ $social_links->gmail_link }}"><i
-                                                    class="fab fa-google"></i></a>
+                                                    class="fab fa-google" target="blanc"></i></a>
                                         </li>
                                     @endif
                                     @if ($social_links->youtube_link)
                                         <li>
                                             <a href="https://{{ $social_links->youtube_link }}"><i
-                                                    class="fab fa-youtube"></i></a>
+                                                    class="fab fa-youtube" target="blanc"></i></a>
                                         </li>
                                     @endif
                                     @if ($social_links->insta_link)
                                         <li>
                                             <a href="https://{{ $social_links->insta_link }}"><i
-                                                    class="fab fa-instagram"></i></a>
+                                                    class="fab fa-instagram" target="blanc"></i></a>
                                         </li>
                                     @endif
                                 </ul>

@@ -93,7 +93,7 @@
               <h5 class="mb-3">ADDITIONAL REQUIREMENTS:</h5>
               <hr />
               <p class="mb-2">
-                Should you be selected as Kathmandu Shapers, please note:
+                Should you be selected as <a href=""> Kathmandu Shapers</a>, please note:
               </p>
               <ul class="mb-3 list-disc">
                 <li>All freshmen Shapers will go through a probation period.
@@ -137,24 +137,15 @@
               <ul class="mb-3 list-disc">
                 <li>
                   <p>
-                    <strong>ROUND 1:</strong><br />Online Application (5-17
-                    September 2021) Please complete the application before
-                    17
-                    September, 2021 After reviewing the application, we will
-                    invite finalists to join an interview (We will most
-                    probably
-                    do a virtual meet)
+                    <strong>ROUND 1:</strong><br />
+                    Online Application: complete the online  application form  before the announced deadline on our website.
                   </p>
                 </li>
                 <li>
-                  <p><strong>ROUND 2:</strong><br />Interview - Finalists
-                    from Round
-                    1 will be invited to join a virtual interview where
-                    members from
-                    the leadership team and advisory council will set up a
-                    virtual
-                    interaction with you to know you better.</p>
+                  <p><strong>ROUND 2:</strong><br />Interview -  Shortlisted candidates from Round 1 will be invited for an interview where current Kathmandu hub leadership team and advisory council members. </p>
                 </li>
+                <li><p><strong>NOTIFICATION:</strong><br/>Applicants will be notified of application status via email</p></li>
+                <li><p>Submit redirect to google drive</p></li>
               </ul>
 
             </div>

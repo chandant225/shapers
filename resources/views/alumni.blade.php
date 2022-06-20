@@ -50,25 +50,25 @@
                                                 class="social d-flex flex-row mt-2">
                                                 @if ($alumuni->facebook_link)
                                                     <li class="ms-3">
-                                                        <a href="https://{{ $alumuni->facebook_link }}"><i
+                                                        <a href="https://{{ $alumuni->facebook_link }}" target="blanc"><i
                                                                 class="lni lni-facebook-original"></i></a>
                                                     </li>
                                                 @endif
                                                 @if ($alumuni->twitter_link)
                                                     <li class="ms-3">
-                                                        <a href="https://{{ $alumuni->twitter_link }}"><i
+                                                        <a href="https://{{ $alumuni->twitter_link }}" target="blanc"><i
                                                                 class="lni lni-twitter-original"></i></a>
                                                     </li>
                                                 @endif
                                                 @if ($alumuni->linkedin_link)
                                                     <li class="ms-3">
-                                                        <a href="https://{{ $alumuni->linkedin_link }}"><i
+                                                        <a href="https://{{ $alumuni->linkedin_link }}" target="blanc"><i
                                                                 class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                                                     </li>
                                                 @endif
                                                 @if ($alumuni->instagram_link)
                                                     <li class="ms-3">
-                                                        <a href="https://{{ $alumuni->instagram_link }}"><i
+                                                        <a href="https://{{ $alumuni->instagram_link }}" target="blanc"><i
                                                                 class="fab fa-instagram" aria-hidden="true"></i></a>
                                                     </li>
                                                 @endif
@@ -125,24 +125,24 @@
                                 @if ($alumuni->facebook_link)
                                     <li class="ms-3">
                                         <a href="https://{{ $alumuni->facebook_link }}"><i
-                                                class="lni lni-facebook-original"></i></a>
+                                                class="lni lni-facebook-original" target="blanc"></i></a>
                                     </li>
                                 @endif
                                 @if ($alumuni->twitter_link)
                                     <li class="ms-3">
                                         <a href="https://{{ $alumuni->twitter_link }}"><i
-                                                class="lni lni-twitter-original"></i></a>
+                                                class="lni lni-twitter-original" target="blanc"></i></a>
                                     </li>
                                 @endif
                                 @if ($alumuni->linkedin_link)
                                     <li class="ms-3">
-                                        <a href="https://{{ $alumuni->linkedin_link }}"><i class="fab fa-linkedin-in"
+                                        <a href="https://{{ $alumuni->linkedin_link }}" target="blanc"><i class="fab fa-linkedin-in"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                 @endif
                                 @if ($alumuni->instagram_link)
                                     <li class="ms-3">
-                                        <a href="https://{{ $alumuni->instagram_link }}"><i class="fab fa-instagram"
+                                        <a href="https://{{ $alumuni->instagram_link }}" target="blanc"><i class="fab fa-instagram"
                                                 aria-hidden="true"></i></a>
                                     </li>
                                 @endif
