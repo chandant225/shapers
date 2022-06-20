@@ -22,7 +22,7 @@
                                         <div class="home-slider">
                                             <div class="hero-text">
                                                 <h5 class="wow fadeInUp" data-wow-delay=".2s">
-                                                    {{ $slider->title }}
+                                                    {{ $slider->top_title }}
                                                 </h5>
                                                 <h1 class="wow fadeInUp" data-wow-delay=".4s">
                                                     {{ $slider->mid_title }}
