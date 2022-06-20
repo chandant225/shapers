@@ -16,7 +16,6 @@
                 <div class="col-lg-2 col-12">
                     <div class="single-footer sm-custom-border f-link">
                         <ul>
-
                             <li>
                                 <a href="{{ route('about') }}"><span>About Us</span></a>
                             </li>
@@ -44,7 +43,6 @@
                             <a href="/become_a_partner" class="text-white my-1">Become a
                                 Partner</a>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-3 col-12">

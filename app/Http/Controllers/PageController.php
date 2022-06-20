@@ -25,8 +25,9 @@ class PageController extends Controller
         $slogan = Slogan::orderBy('updated_at','DESC')->first();
         $features = Feature::orderBy('updated_at','DESC')->get();
         $counters = Counter::orderBy('updated_at','DESC')->take(4)->get();
+        $news = News::orderBy('updated_at','DESC')->take(3)->get();
         return view('index')
-        ->with(['sliders' => $sliders,'testimonials' => $testimonials, 'slogan' =>$slogan,'features' =>$features,'testimonials' =>$testimonials,'counters'=>$counters]);
+        ->with(['sliders' => $sliders,'testimonials' => $testimonials, 'slogan' =>$slogan,'features' =>$features,'testimonials' =>$testimonials,'counters'=>$counters,'news'=>$news]);
     }
 
     public function about(){
