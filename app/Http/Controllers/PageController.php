@@ -94,7 +94,7 @@ class PageController extends Controller
     }
 
     public function blogs() {
-        $news = News::paginate(2);
+        $news = News::paginate(8);
         return view('blogs')->with(['news' => $news]);
     }
 
