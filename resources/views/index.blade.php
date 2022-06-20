@@ -117,7 +117,7 @@
                             border-radius: 10px;
                         ">
                                     <h3 class="counter">
-                                        <span id="secondo1" class="countup me-3"
+                                        <span id="secondo1" class="countup"
                                             cup-end="{{ $counter->number }}"></span>{{ $counter->sign }}
                                     </h3>
                                     <p>{{ $counter->title }}</p>
