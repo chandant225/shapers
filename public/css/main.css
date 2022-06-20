@@ -2321,8 +2321,9 @@ ol {
 
 .hero-area.style2 .hero-inner .hero-text h1 {
     color: #fff;
-    font-size: 45px;
+    font-size: 4.4rem;
     font-weight: 700;
+    text-shadow: 2px 2px 0 #bcbcbc, 2px 2px 0 #9c9c9c;
 }
 
 .hero-area.style2 .hero-inner .hero-text p {
