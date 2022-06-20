@@ -3,6 +3,18 @@
 
 @section('content')
     <div>
+        @if (Session::has('message'))
+            <div class="message-wrapper">
+                <div class="success-message">
+                    <div> {{ Session::get('message') }}</div>
+                </div>
+            </div>
+        @endif
+        @if (Session::has('error'))
+            <div>
+                {{ Session::get('error') }}
+            </div>
+        @endif
         <section id="contact-us" class="contact-us section">
             <div class="container">
                 <div class="contact-head">
@@ -14,17 +26,9 @@
                                     <form class="form form-contact-us" method="post" action="{{ route('contact_add') }}">
                                         @csrf
                                         @method('post')
-                                        @if (Session::has('error'))
-                                            <div>
-                                                {{ Session::get('error') }}
-                                            </div>
-                                        @endif
 
-                                        @if (Session::has('success'))
-                                            <div>
-                                                {{ Session::get('success') }}
-                                            </div>
-                                        @endif
+
+
                                         <div class="row">
                                             <div class="col-lg-6 col-12">
                                                 <div class="input">

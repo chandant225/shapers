@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -34,7 +35,14 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $contact = new Contact;
+        $contact->fullname = $request->input('fullname');
+        $contact->address = $request->input('address');
+        $contact->email = $request->input('email');
+        $contact->phone = $request->input('phone');
+        $contact->message = $request->input('message');
+        $contact->save();
+        return redirect()->back()->with('message','Message Sent Successfully');
     }
 
     /**
