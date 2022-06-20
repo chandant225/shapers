@@ -231,7 +231,6 @@
             </div>
         </section>
 
-
         @include('components.blogs_component')
         <!-- End Section Testimonials -->
         <section class="newsletter-area section">
