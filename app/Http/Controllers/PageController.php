@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Models\Slider;
 use App\Models\Slogan;
 use App\Models\Testimonial;
@@ -12,6 +13,7 @@ use App\Models\Shaper;
 use App\Models\Impact;
 use App\Models\Alumuni;
 use App\Models\Counter;
+use App\Models\News;
 
 
 class PageController extends Controller
@@ -92,7 +94,8 @@ class PageController extends Controller
     }
 
     public function blogs() {
-        return view('blogs');
+        $news = News::paginate(2);
+        return view('blogs')->with(['news' => $news]);
     }
 
     public function endowment_fund() {
