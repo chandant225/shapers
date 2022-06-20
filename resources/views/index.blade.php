@@ -104,11 +104,11 @@
                             animation-name: fadeInUp;
                             border-radius: 10px;
                         ">
-                                    <h3 class="counter">
-                                        <span id="secondo1" class="countup me-2"
-                                            cup-end="{{ $counter->number }}"></span>{{ $counter->sign }}
-                                    </h3>
-                                    <p>{{ $counter->title }}</p>
+                        <img src="https://dummyimage.com/120x120/000/fff&text=icon" alt="" class="img-fluid">
+                                    <p class="counter">
+                                        <span id="secondo1" class="countup me-3"
+                                            cup-end="{{ $counter->number }}"></span>{{ $counter->sign }} {{ $counter->title }}
+                                    </p>
                                 </div>
                             </div>
                         @endforeach

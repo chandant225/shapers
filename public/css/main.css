@@ -45,7 +45,7 @@ body {
     font-style: normal;
     color: #888;
     overflow-x: hidden;
-    font-size: 100%;
+    font-size: 110%;
 }
 
 p {
@@ -3311,15 +3311,28 @@ ol {
 .our-achievement .single-achievement {
     margin-top: 30px;
     text-align: center;
-    padding: 20px 50px;
+    padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+.our-achievement .single-achievement img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
 }
 
-.our-achievement .single-achievement h3 {
+.our-achievement .single-achievement p.counter span {
     font-size: 40px;
     font-weight: bold;
     display: block;
-    margin-bottom: 15px;
     color: rgb(0, 92, 156);
 }
 
@@ -3327,6 +3340,9 @@ ol {
     font-size: 25px;
     font-weight: 500;
     color: rgb(59, 58, 58);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .why-choose {
@@ -8179,4 +8195,35 @@ button.join-us-btn {
 }
 .navbar-toggler {
     margin-right: 2rem !important;
+}
+.shaper-modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    grid-auto-rows: 1fr;
+    justify-items: center;
+}
+.shaper-modal img {
+    height: 75vh;
+    width: auto;
+    object-fit: cover;
+    border: 1px solid #07549c;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.shaper-modal ul li a {
+    color: #07549c;
+}
+.team .info-head .info-box ul li a {
+    color: #07549c;
+}
+
+@media screen and (max-width: 768px) {
+    .shaper-modal {
+        grid-template-columns: 1fr;
+        grid-auto-rows: min-content;
+    }
 }

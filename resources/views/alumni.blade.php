@@ -28,15 +28,15 @@
                                     class="single-team wow fadeInUp" data-wow-delay=".2s">
                                     <div class="image">
                                         @if (!$alumuni->image && $alumuni->is_male == '0')
-                                            <img style="width:300px;height:375px" class="w-100"
+                                            <img style="width:300px;height:375px;object-fit:cover" class="w-100"
                                                 src="{{ asset('pictures/female.jpeg') }}" alt="#" />
                                         @endif
                                         @if (!$alumuni->image && $alumuni->is_male == '1')
-                                            <img style="width:300px;height:375px" class="w-100"
+                                            <img style="width:300px;height:375px;object-fit:cover" class="w-100"
                                                 src="{{ asset('pictures/male.jpeg') }}" alt="#" />
                                         @endif
                                         @if ($alumuni->image)
-                                            <img style="width:300px;height:375px" class="w-100"
+                                            <img style="width:300px;height:375px;object-fit:cover" class="w-100"
                                                 src="/storage/{{ $alumuni->image }}" alt="#" />
                                         @endif
                                     </div>
@@ -93,38 +93,34 @@
                     {{-- <div class="modal-header"> --}}
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     {{-- </div> --}}
-                    <div class="row mt-5 py-5">
-                        <div class="col-lg-6 col-sm-12 mt-2">
-                            <div class="">
-                                <h2
-                                    style="
-                         margin-top:-40px;
-                         padding-left: 0px;
-                     ">
+                    <div class="py-md-5 shaper-modal">
+                        <div class="">
+                            <div class="text-center">
+                                <h2>
                                     {{ $alumuni->name }}</h2>
                                 <p style="
                           padding: 26px 0px 0px 0px;
                       "
                                     class="mt-1">{!! $alumuni->description !!}</p>
-                                <p class="mt-2"><strong>Joined
+                                <p class="mt-2 text-center"><strong>Joined
                                         at:</strong>{{ ' ' . $alumuni->joined_at }}</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-sm-12">
-                            <div style="margin-top: -55px;" class="">
+                        <div class="">
+                            
                                 @if (!$alumuni->image && $alumuni->is_male == '0')
-                                    <img style="height:100vh" class="w-100" src="{{ asset('pictures/female.jpeg') }}"
+                                    <img class="img-fluid" src="{{ asset('pictures/female.jpeg') }}"
                                         alt="#" />
                                 @endif
                                 @if (!$alumuni->image && $alumuni->is_male == '1')
-                                    <img style="height:100vh" class="w-100" src="{{ asset('pictures/male.jpeg') }}"
+                                    <img class="img-fluid" src="{{ asset('pictures/male.jpeg') }}"
                                         alt="#" />
                                 @endif
                                 @if ($alumuni->image)
-                                    <img style="height:100vh" class="w-100" src="/storage/{{ $alumuni->image }}"
+                                    <img class="img-fluid" src="/storage/{{ $alumuni->image }}"
                                         alt="#" />
                                 @endif
-                            </div>
+                            
                             <ul style="list-style: none;padding-top: 37px;" class="social d-flex flex-row mt-2">
                                 @if ($alumuni->facebook_link)
                                     <li class="ms-3">
