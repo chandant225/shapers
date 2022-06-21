@@ -1,48 +1,63 @@
-/* @font-face {
-    src: url("../fonts/SourceSansPro-Black.ttf") format("embedded-opentype"),
-        url("../fonts/SourceSansPro-Black.ttf") format("woff2"),
-        url("../fonts/SourceSansPro-Black.ttf") format("woff"),
-        url("../fonts/SourceSansPro-Black.ttf") format("truetype"),
-        url("../fonts/SourceSansPro-Black.ttf") format("svg");
-    font-family: "SourceSansPro";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto&display=swap");
+@font-face {
+    src: url("../fonts/HKGrotesk-ExtraBold.otf") format("embedded-opentype"),
+        url("../fonts/HKGrotesk-ExtraBold.otf") format("woff2"),
+        url("../fonts/HKGrotesk-ExtraBold.otf") format("woff"),
+        url("../fonts/HKGrotesk-ExtraBold.otf") format("truetype"),
+        url("../fonts/HKGrotesk-ExtraBold.otf") format("svg");
+    font-family: "HKGrotesk";
     font-weight: 900;
 }
 @font-face {
-    src: url("../fonts/SourceSansPro-Bold.ttf") format("embedded-opentype"),
-        url("../fonts/SourceSansPro-Bold.ttf") format("woff2"),
-        url("../fonts/SourceSansPro-Bold.ttf") format("woff"),
-        url("../fonts/SourceSansPro-Bold.ttf") format("truetype"),
-        url("../fonts/SourceSansPro-Bold.ttf") format("svg");
-    font-family: "SourceSansPro";
+    src: url("../fonts/HKGrotesk-Bold.otf") format("embedded-opentype"),
+        url("../fonts/HKGrotesk-Bold.otf") format("woff2"),
+        url("../fonts/HKGrotesk-Bold.otf") format("woff"),
+        url("../fonts/HKGrotesk-Bold.otf") format("truetype"),
+        url("../fonts/HKGrotesk-Bold.otf") format("svg");
+    font-family: "HKGrotesk";
     font-weight: bold;
 }
 @font-face {
-    src: url("../fonts/SourceSansPro-Regular.ttf") format("embedded-opentype"),
-        url("../fonts/SourceSansPro-Regular.ttf") format("woff2"),
-        url("../fonts/SourceSansPro-Regular.ttf") format("woff"),
-        url("../fonts/SourceSansPro-Regular.ttf") format("truetype"),
-        url("../fonts/SourceSansPro-Regular.ttf") format("svg");
-    font-family: "SourceSansPro";
+    src: url("../fonts/HKGrotesk-Regular.otf") format("embedded-opentype"),
+        url("../fonts/HKGrotesk-Regular.otf") format("woff2"),
+        url("../fonts/HKGrotesk-Regular.otf") format("woff"),
+        url("../fonts/HKGrotesk-Regular.otf") format("truetype"),
+        url("../fonts/HKGrotesk-Regular.otf") format("svg");
+    font-family: "HKGrotesk";
 }
 
 @font-face {
-    src: url("../fonts/SourceSansPro-Light.ttf") format("embedded-opentype"),
-        url("../fonts/SourceSansPro-Light.ttf") format("woff2"),
-        url("../fonts/SourceSansPro-Light.ttf") format("woff"),
-        url("../fonts/SourceSansPro-Light.ttf") format("truetype"),
-        url("../fonts/SourceSansPro-Light.ttf") format("svg");
-    font-family: "SourceSansPro";
+    src: url("../fonts/HKGrotesk-Light.otf") format("embedded-opentype"),
+        url("../fonts/HKGrotesk-Light.otf") format("woff2"),
+        url("../fonts/HKGrotesk-Light.otf") format("woff"),
+        url("../fonts/HKGrotesk-Light.otf") format("truetype"),
+        url("../fonts/HKGrotesk-Light.otf") format("svg");
+    font-family: "HKGrotesk";
     font-weight: lighter;
-} */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Baloo+2:wght@700&display=swap");
+}
+
+@font-face {
+    src: url("../fonts/Helvetica.ttf") format("embedded-opentype"),
+        url("../fonts/Helvetica.ttf") format("woff2"),
+        url("../fonts/Helvetica.ttf") format("woff"),
+        url("../fonts/Helvetica.ttf") format("truetype"),
+        url("../fonts/Helvetica.ttf") format("svg");
+    font-family: "Helvetica";
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Baloo+2:wght@700&display=swap"); */
 
 html {
     scroll-behavior: smooth;
-    font-size: 106%;
+    font-size: 18px;
 }
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
+    /* font-family: "Source Sans Pro", sans-serif; */
+    /* font-family: "HKGrotesk"; */
+    /* font-family: "Helvetica"; */
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     font-style: normal;
     color: #3e3a47;
     overflow-x: hidden;
@@ -1030,14 +1045,14 @@ ol {
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #eee;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .section-title h3.gray-bg {
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: rgb(0, 92, 156) !important;
-    opacity: 0.2 !important;
+    opacity: 0 !important;
 }
 
 .section-title p {
@@ -1185,7 +1200,7 @@ ol {
     position: relative;
 }
 
-/* .overlay::before {
+.overlay::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -1197,7 +1212,7 @@ ol {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     z-index: 5;
-} */
+}
 
 .pagination {
     text-align: left;
@@ -2030,7 +2045,7 @@ ol {
 
 .contact-us .inner-title {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
     border-bottom: 1px dashed rgb(0, 92, 156);
     margin-bottom: 30px;
     padding-bottom: 20px;
@@ -2075,7 +2090,7 @@ ol {
 
 .contact-us .inner-title {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
     border-bottom: 1px dashed rgb(0, 92, 156);
     margin-bottom: 30px;
     padding-bottom: 20px;
@@ -2303,11 +2318,11 @@ ol {
     background-color: rgb(0, 92, 156) !important;
 }
 
-/* .hero-area.style2 .hero-inner.overlay::before {
-    background-color: rgb(0, 92, 156);
+.hero-area.style2 .hero-inner.overlay::before {
+    background-color: rgb(0, 0, 0);
     z-index: -1;
-    opacity: 0.45;
-} */
+    opacity: 0.3;
+}
 
 /* .hero-area.style2 .hero-inner .hero-text {
     margin-top: 220px;
@@ -7347,7 +7362,7 @@ blockquote span {
 
     .contact-us .inner-title {
         font-size: 20px;
-        font-weight: bold;
+        font-weight: normal;
         border-bottom: 1px dashed rgb(0, 92, 156);
         margin-bottom: 30px;
         padding-bottom: 20px;
@@ -7416,7 +7431,7 @@ blockquote span {
 
 .contact-us .inner-title {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
     border-bottom: 1px solid rgb(0, 92, 156);
     margin-bottom: 30px;
     padding-bottom: 20px;
@@ -8140,12 +8155,15 @@ img.carousel-img {
 button.join-us-btn {
     padding: 10px 40px;
     font-size: 20px;
-    border-radius: 5rem;
+    border-radius: 5px;
     float: right;
-    -webkit-border-radius: 5rem;
-    -moz-border-radius: 5rem;
-    -ms-border-radius: 5rem;
-    -o-border-radius: 5rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    background: #fff;
+    margin-top: 1rem;
 }
 /* June 19 */
 
@@ -8153,20 +8171,24 @@ button.join-us-btn {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: 1fr;
-    grid-gap: 1rem;
     margin: 2rem 0;
 }
+
 .impact-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -ms-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;*/
+    transition: 0.2s;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 .impact-card:hover,
 .impact-card:focus {
@@ -8178,23 +8200,76 @@ button.join-us-btn {
     -moz-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     -o-transform: translateY(-2px);
+    overflow: visible;
+    z-index: 100;
+}
+.impact-card-overlay {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out; */
+    display: none;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.impact-overlay-text {
+    background: rgba(255, 255, 255, 0.85);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.impact-card-overlay p {
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+.impact-card:hover .impact-card-overlay {
+    display: block;
+    transform: translateX(-50%) scale(1.1);
+    -webkit-transform: translateX(-50%) scale(1.1);
+    -moz-transform: translateX(-50%) scale(1.1);
+    -ms-transform: translateX(-50%) scale(1.1);
+    -o-transform: translateX(-50%) scale(1.1);
 }
 .impact-icon {
     border-bottom: 1px solid #ddd;
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 .impact-card .impact-icon img {
     height: 8rem;
     width: 8rem;
     object-fit: contain;
+    z-index: -1;
 }
 .impact-text {
-    padding: 1rem;
+    margin-top: 1rem;
     text-align: center;
 }
 .impact-text h5 {
     font-size: 18px;
     margin-bottom: 0.5rem;
+    white-space: nowrap;
 }
 .impact-text p {
     font-size: 80%;

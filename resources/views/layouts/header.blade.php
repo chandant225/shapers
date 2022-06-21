@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand d-flex align-items-center col-4" href="/">
+                        <a class="navbar-brand d-flex align-items-center col-3" href="/">
                             <img class="" src={{ asset('pictures/Logo.svg') }} alt="Logo" />
                             <h6 style="font-size:20px;margin-left: 10px;">Global Shapers <br />Kathmandu Hub</h6>
                         </a>

@@ -7,10 +7,13 @@
         <div class="container">
           <div class="contact-head">
             <div class="inner-content">
-              <div class="row">
-                <div class="col-lg-8 col-12">
+              <div class="row justify-content-center">
+                <div class="col-lg-10 col-12">
                   <div class="form-main">
-                    <h3 class="inner-title left">Contact Form</h3>
+                    <div class="inner-title">
+                      <h3 class="left">LET'S CONNECT!</h3>
+                      <p class="mt-3">Drop us an email and one of our shapers will get in touch with you shortly.</p>
+                    </div>
                     <form
                       class="form form-contact-us"
                       method="post"
@@ -70,7 +73,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-lg-4 col-12">
+                {{-- <div class="col-lg-4 col-12">
                   <div class="contact-info">
                     <div class="single-head">
                       <h3 class="inner-title">Contact Info</h3>
@@ -119,15 +122,15 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End Contact-Us -->
-      <div class="responsive-map">
+      {{-- <div class="responsive-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14133.9747660901!2d85.34460184999999!3d27.67113235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1645353460998!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+      </div> --}}
   </div>
 @endsection

@@ -141,7 +141,6 @@
                             <h2 class="wow fadeInUp" data-wow-delay=".4s">
                                 Hub Verticals
                             </h2>
-                            <h3 class="overlay-text">Hub Verticals</h3>
                         </div>
                     </div>
                 </div>
@@ -182,17 +181,16 @@
                         <div class="col-lg-6 p-0">
                             <img src="{{ asset('pictures/join.jpeg') }}" alt="" class="img-fluid" />
                         </div>
-                        <div class="col-lg-6 d-flex flex-column justify-content-around align-items-center"
-                            style="padding: 5rem">
+                        <div class="col-lg-6 d-flex flex-column text-center justify-content-around align-items-center"
+                            style="padding:0 1rem">
                             <h2 class="text-center text-underline" style="text-transform: uppercase; font-size: 50px">
                                 Be One Of Us
                             </h2>
-                            <p class="text-white">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Corporis fugiat nobis alias! Quia, eveniet
-                                beatae?
-                            </p>
-                            <button class="join-us-btn mt-2">
+                            <small class="text-white">
+                                When you ask Kathmandu Shapers about the benefits of membership, the first answer is invariably community. Shapers is not about superficial networking; real friendship is the foundation of what we do and why it works.
+                            </small>
+                            <small class="text-white">As Shapers, we have the unique opportunity to launch and participate in projects with support from the community and WEF.</small>
+                            <button class="join-us-btn">
                                 <a href="/become_a_shaper">Join us</a>
                             </button>
                         </div>

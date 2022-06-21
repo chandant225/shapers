@@ -3,7 +3,7 @@
     <div class="footer-middle">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-3 col-12">
                     <div class="single-footer sm-custom-border f-link">
                         <div class="f-about single-footer">
                             <div class="logo">
@@ -13,7 +13,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-12">
+                <div class="col-lg-3 col-12">
                     <div class="single-footer sm-custom-border f-link">
                         <ul>
                             <li>
