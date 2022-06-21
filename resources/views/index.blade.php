@@ -24,7 +24,7 @@
                                                 <h5 class="wow fadeInUp" data-wow-delay=".2s">
                                                     {{ $slider->top_title }}
                                                 </h5>
-                                                <h1 style="font-size:70px;" class="wow fadeInUp" data-wow-delay=".4s">
+                                                <h1 style="font-size:50px;" class="wow fadeInUp" data-wow-delay=".4s">
                                                     {{ $slider->mid_title }}
                                                 </h1>
                                                 <p class="wow fadeInUp" data-wow-delay=".6s">

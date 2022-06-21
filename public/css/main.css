@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Roboto&display=swap");
 @font-face {
     src: url("../fonts/HKGrotesk-ExtraBold.otf") format("embedded-opentype"),
         url("../fonts/HKGrotesk-ExtraBold.otf") format("woff2"),
@@ -44,7 +44,6 @@
         url("../fonts/Helvetica.ttf") format("svg");
     font-family: "Helvetica";
 }
-/* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Baloo+2:wght@700&display=swap"); */
 
 html {
     scroll-behavior: smooth;
@@ -52,7 +51,6 @@ html {
 }
 
 body {
-    /* font-family: "Source Sans Pro", sans-serif; */
     /* font-family: "HKGrotesk"; */
     /* font-family: "Helvetica"; */
     /* font-family: "Roboto", sans-serif; */
@@ -1281,7 +1279,6 @@ ol {
     display: inline-block;
     text-transform: capitalize;
     font-size: 1rem;
-    font-weight: bold;
     padding: 15px 30px;
     background-color: rgb(0, 92, 156);
     color: #fff;
@@ -2041,14 +2038,6 @@ ol {
 
 .contact-us .form-main {
     margin-right: 50px;
-}
-
-.contact-us .inner-title {
-    font-size: 20px;
-    font-weight: normal;
-    border-bottom: 1px dashed rgb(0, 92, 156);
-    margin-bottom: 30px;
-    padding-bottom: 20px;
 }
 
 .contact-us .form .form-group {
@@ -3339,7 +3328,6 @@ ol {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
 }
 .our-achievement .single-achievement img {
     width: 120px;
@@ -4670,7 +4658,7 @@ ol {
 .latest-news-area .single-news .image {
     position: relative;
     overflow: hidden;
-    border-radius: 5px 40px 0 0;
+    border-radius: 0;
 }
 
 .latest-news-area .single-news .image img {
@@ -4678,6 +4666,7 @@ ol {
     width: 100%;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+    object-fit: cover;
 }
 
 .latest-news-area .single-news .content-body {
@@ -4742,7 +4731,6 @@ ol {
 
 .blog-single .post-thumbnils {
     position: relative;
-    border-radius: 60px;
     overflow: hidden;
 }
 
@@ -7436,6 +7424,9 @@ blockquote span {
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
+.contact-us .inner-title h3 {
+    font-weight: 800;
+}
 
 .contact-us .inner-content {
     padding: 50px;
@@ -7541,15 +7532,19 @@ blockquote span {
 }
 
 .contact-us .form .form-group input {
-    height: 55px;
-    line-height: 55px;
+    height: 50px;
+    line-height: 50px;
     width: 100%;
     border: 1px solid #e6e2f5;
     padding: 0 20px;
     color: #333;
-    border-radius: 0;
+    border-radius: 0 !important;
     font-weight: 400;
-    border-radius: 5px;
+    background: #fafafa;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
 }
 
 .contact-us .form .form-group textarea {
@@ -7559,8 +7554,8 @@ blockquote span {
     color: #333;
     border-radius: 0;
     font-weight: 300;
-    border-radius: 5px;
     font-size: 100%;
+    background: #fafafa;
 }
 
 .contact-us .form .button {
@@ -7571,6 +7566,8 @@ blockquote span {
 .contact-us .form .button .btn {
     height: 50px;
     border: none;
+    padding: 0.375rem 0.75rem;
+    line-height: 1;
 }
 
 .map-section {
@@ -7924,9 +7921,9 @@ span.total-projects {
 }
 .shaper-conditions {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr;
     gap: 5px;
-    grid-auto-rows: max-content;
+    grid-auto-rows: auto;
 }
 .shaper-condition {
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
@@ -8041,7 +8038,7 @@ span.total-projects {
     font-weight: 300;
     margin: 0;
     position: absolute;
-    color: #8f8f8f;
+    color: #333;
     font-size: 20px;
     top: -50px;
     left: 0px;
@@ -8101,7 +8098,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 .become-shaper .form-group label span,
 .become-shaper .form-group label {
     font-weight: 300;
-    color: #8f8f8f;
+    color: #333;
 }
 /* apr 22 */
 @media (min-width: 1024px) {
@@ -8366,4 +8363,10 @@ button.join-us-btn {
 }
 .action-button:focus {
     outline: 0;
+}
+section.blog-section{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

@@ -12,15 +12,16 @@ img.alumuni-image {
     padding: 5px 22px;
 }
 
-.blog-btn:hover{
-    background-color:black;
+.blog-btn:hover {
+    background-color: black;
     transition: all 0.4s ease;
     color: white;
 }
 
-img.blog-image{
+img.blog-image {
     width: 100%;
     height: 20rem;
+    object-fit: cover;
 }
 
 .blog-container {
@@ -28,26 +29,26 @@ img.blog-image{
     height: 25rem;
 }
 .message-wrapper {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: 100;
-            text-align: center;
-            background-color: #00000054;
-            justify-content: center;
-            align-items: center;
-            top: 0px;
-            display: flex;
-            animation: gayab 3s linear normal 1 forwards;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    text-align: center;
+    background-color: #00000054;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    display: flex;
+    animation: gayab 3s linear normal 1 forwards;
 }
 @keyframes gayab {
     from {
-          display:flex;
+        display: flex;
     }
     to {
-       display:none;
-       opacity: 0;
-       z-index: -1;
+        display: none;
+        opacity: 0;
+        z-index: -1;
     }
 }
 .success-message {
