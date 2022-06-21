@@ -3911,10 +3911,10 @@ ol {
     box-shadow: 0 0 50px rgba(87, 87, 87, 0.23);
 }
 
-.portfolio-details .related-project .single-related-project .image {
+/* .portfolio-details .related-project .single-related-project .image {
     /* overflow: hidden; */
-    /* border-radius: 5px 40px 0 0 */
-}
+/* border-radius: 5px 40px 0 0 
+} */
 
 .portfolio-details .related-project .single-related-project .image img {
     width: 100%;
@@ -5557,8 +5557,8 @@ blockquote span {
     justify-content: center;
 }
 
-.brand-area .clients-logos .single-image {
-}
+/* .brand-area .clients-logos .single-image {
+} */
 
 .brand-area .clients-logos img {
     opacity: 0.5;
