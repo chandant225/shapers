@@ -19,10 +19,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     @stack('styles')
-     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -37,7 +34,7 @@
     <a href="#" id="myBtn" class="scroll-top btn-hover">
         <i class="fas fa-arrow-up"></i>
     </a>
-   
+
     <script type="text/javascript" src={{ asset('js/app.js') }}></script>
     <script type="text/javascript" src={{ asset('js/bootstrap.min.js') }}></script>
     <script type="text/javascript" src={{ asset('js/count-up.min.js') }}></script>
@@ -132,7 +129,7 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-     @stack('script')
+    @stack('script')
 </body>
 
 </html>
