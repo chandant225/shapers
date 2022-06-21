@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Project;
 use App\Models\Impact;
 use App\Models\Project_des;
+use App\Models\Ishape;
 
 class ProjectController extends Controller
 {
@@ -19,8 +20,9 @@ class ProjectController extends Controller
         $project_description = Project_des::orderBy('updated_at','DESC')->first();
         $projects = Project::where('past_project','0')->orderBy('position','asc')->get();
         $past_projects = Project::where('past_project','1')->orderBy('project_year','asc')->get();
+        $ishapes = Ishape::all();
         return view('project')
-        ->with(['projects' => $projects,'project_description' => $project_description,'past_projects' => $past_projects]);
+        ->with(['projects' => $projects,'project_description' => $project_description,'past_projects' => $past_projects,'ishapes' => $ishapes]);
     }
 
     /**
