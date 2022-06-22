@@ -11,7 +11,7 @@
          
           <div class="shaper-conditions my-5">
             <div class="shaper-condition">
-              <h5 class="mb-3">ELIGIBILITY:</h5>
+              <h5 class="mb-2">ELIGIBILITY:</h5>
               <hr />
               <p class="mb-2">
                 You are eligible to apply to Kathmandu Shapers if:
@@ -37,7 +37,7 @@
 
 
             <div class="shaper-condition">
-              <h5 class="mb-3">ADDITIONAL REQUIREMENTS:</h5>
+              <h5 class="mb-2">ADDITIONAL REQUIREMENTS:</h5>
               <hr />
               <p class="mb-2">
                 Should you be selected as  Kathmandu Shapers, please note:
@@ -79,7 +79,7 @@
 
 
             <div class="shaper-condition">
-              <h5 class="mb-3">APPLICATION PROCESS AND TIMELINE:</h5>
+              <h5 class="mb-2">APPLICATION PROCESS AND TIMELINE:</h5>
               <hr />
               <ul class="mb-3 list-disc">
                 <li>

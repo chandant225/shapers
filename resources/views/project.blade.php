@@ -72,12 +72,12 @@
                                 OUR PARTNERS
                             </h2>
                         </div>
-                        <p class="my-2 text-center">
+                        {{-- <p class="my-2 text-center">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Vero numquam error mollitia minima. Dolore
                             cumque excepturi perspiciatis porro consectetur vel
                             ipsam fugit consequuntur impedit at!
-                        </p>
+                        </p> --}}
                         <div class="impact-partners-cards">
                             <a href="#" class="impact-partner">
                                 <img

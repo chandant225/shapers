@@ -7936,7 +7936,6 @@ span.total-projects {
     min-height: 15rem;
 }
 .shaper-condition h5 {
-    height: 48px;
     color: rgb(0, 92, 156);
 }
 /* form css */
@@ -8175,7 +8174,7 @@ button.join-us-btn {
 }
 .impact-partners-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
     grid-auto-rows: 1fr;
     margin: 2rem 0;
     gap: 1.5rem;
@@ -8184,6 +8183,7 @@ button.join-us-btn {
 .impact-partner {
     display: flex;
     align-items: center;
+    padding: 2rem;
 }
 .impact-partner img {
     width: 100%;
@@ -8326,6 +8326,13 @@ button.join-us-btn {
     .shaper-modal {
         grid-template-columns: 1fr;
         grid-auto-rows: min-content;
+    }
+    .impact-partners-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .impact-partner {
+        padding: 1rem;
     }
 }
 .endowment_buttons .btn {
