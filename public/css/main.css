@@ -4028,12 +4028,14 @@ ol {
     text-align: center;
 }
 
-/* .single-team .image img {
-    height: 20rem;
-    width: 22rem;
-} */
+.single-team .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
 
-.single-team .image .social {
+/* .single-team .image .social {
     position: absolute;
     left: 42px;
     bottom: -30px;
@@ -4043,7 +4045,7 @@ ol {
     visibility: hidden;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-}
+} 
 
 .single-team .image .social li {
     display: inline-block;
@@ -4062,7 +4064,7 @@ ol {
 
 .single-team .image .social li a:hover {
     opacity: 0.7;
-}
+} */
 
 .single-team:hover .image::before {
     opacity: 1;
