@@ -3,7 +3,7 @@
 
 @section('content')
     <!-- Section Blog-Single -->
-    <section class="section blog-single" style="background-image: url('/storage/{{ $news_details->image }}') ">
+    <section class="section blog-single">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12 col-12">

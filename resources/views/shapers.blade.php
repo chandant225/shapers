@@ -21,9 +21,9 @@
                         </center>
                     @elseif(count($shapers) >= 1)
                         @foreach ($shapers as $shaper)
-                            <div style="cursor:pointer" class="col-lg-3 col-md-6 col-12  rounded-2xl">
+                            <div class="col-lg-3 col-md-6 col-12  rounded-2xl">
                                 <div data-bs-toggle="modal" data-bs-target="#open{{ $loop->iteration }}"
-                                    class="single-team wow fadeInUp w-100" data-wow-delay=".2s">
+                                    class="single-team wow fadeInUp w-100" data-wow-delay=".2s" style="cursor:pointer">
                                     <div class="image">
                                         @if (!$shaper->image && $shaper->is_male == '0')
                                             <img style="object-fit:cover;object-position: 100% 0;" class="img-fluid"

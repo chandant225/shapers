@@ -11,7 +11,7 @@
                 Endowment fund
               </h2>
              
-              <p class="wow fadeInUp" data-wow-delay=".6s">
+              <p class="wow fadeInUp" data-wow-delay=".6s" style="font-size: 1.1rem">
                 Global Shapers Kathmandu Hub Endowment Fund was launched to empower Nepali youth to successfully scale up projects that deliver change in our community. The grant based fund is utilized based on Hub Charter Financial procedures and we maintain full transparency by providing funding partners with quarterly and annual action reports.
               </p>
             </div>
