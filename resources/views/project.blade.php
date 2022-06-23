@@ -12,9 +12,12 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="/storage/{{ $project_description->image }}" alt=""
+                    <img
+                        src="/storage/{{ $project_description->image }}"
+                        alt=""
                         class="img-fluid"
-                        style="width: 100%; height: 54vh; object-fit: cover" />
+                        style="width: 100%; height: 54vh; object-fit: cover"
+                    />
                 </div>
             </div> --}}
                 <div class="row">
@@ -24,9 +27,8 @@
                                 HUB PROJECTS
                             </h2>
                         </div>
-                        <div class="col-md-12">
-                            <h5 class="wow fadeInUp"><u>KTM HUB PROJECTS</u></h5>
-                            <p class="my-2">
+                        <div class="ktm-hub-projects">
+                            <p class="my-2" style="font-size:1.1rem">
                                 At the Global Shapers Community’s 10 Year
                                 Anniversary in 2021, our global community determined
                                 six impact areas to focus on for our various
@@ -64,9 +66,98 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="partners my-5">
+                        <div class="section-title align-center gray-bg">
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">
+                                OUR PARTNERS
+                            </h2>
+                        </div>
+                        {{-- <p class="my-2 text-center">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Vero numquam error mollitia minima. Dolore
+                            cumque excepturi perspiciatis porro consectetur vel
+                            ipsam fugit consequuntur impedit at!
+                        </p> --}}
+                        <div class="impact-partners-cards">
+                            <a href="#" class="impact-partner">
+                                <img
+                                    src="{{ asset('assets/shapersPartners/index.jpeg') }}"
+                                    alt=""
+                                />
+                                {{--
+                                <h5>John Doe</h5>
+                                --}}
+                            </a>
+                            <a href="#" class="impact-partner">
+                                <img
+                                    src="{{ asset('assets/shapersPartners/2.jpeg') }}"
+                                    alt=""
+                                />
+                                {{--
+                                <h5>John Doe</h5>
+                                --}}
+                            </a>
+                            <a href="#" class="impact-partner">
+                                <img
+                                    src="{{ asset('assets/shapersPartners/3.jpeg') }}"
+                                    alt=""
+                                />
+                                {{--
+                                <h5>John Doe</h5>
+                                --}}
+                            </a>
+                            <a href="#" class="impact-partner">
+                                <img
+                                    src="{{ asset('assets/shapersPartners/4.jpeg') }}"
+                                    alt=""
+                                />
+                                {{--
+                                <h5>John Doe</h5>
+                                --}}
+                            </a>
+                            <a href="#" class="impact-partner">
+                                <img
+                                    src="{{ asset('assets/shapersPartners/5.jpeg') }}"
+                                    alt=""
+                                />
+                                {{--
+                                <h5>John Doe</h5>
+                                --}}
+                            </a>
+                            <a href="#" class="impact-partner">
+                                <img
+                                    src="{{ asset('assets/shapersPartners/6.jpeg') }}"
+                                    alt=""
+                                />
+                                {{--
+                                <h5>John Doe</h5>
+                                --}}
+                            </a>
+                            <a href="#" class="impact-partner">
+                                <img
+                                    src="{{ asset('assets/shapersPartners/7.jpeg') }}"
+                                    alt=""
+                                />
+                                {{--
+                                <h5>John Doe</h5>
+                                --}}
+                            </a>
+                            <a href="#" class="impact-partner">
+                                <img
+                                    src="{{ asset('assets/shapersPartners/8.jpeg') }}"
+                                    alt=""
+                                />
+                                {{--
+                                <h5>John Doe</h5>
+                                --}}
+                            </a>
+                        </div>
+                    </div>
                     </div>
                 </div>
-                <span class="total-projects">Impacts</span>
+               <div class="section-title align-center gray-bg my-5">
+                <h2 class="wow fadeInUp" data-wow-delay=".4s">IMPACTS</h2>
+            </div>
                 <div class="row grid">
                     @if (count($projects) === 0)
                         <center>
@@ -102,7 +193,7 @@
                         @endif @if ($past_projects)
                             @foreach ($past_projects as $project)
                                 <div class="col-lg-4 col-md-4 grid-item mental-health-portfolio">
-                                    <div class="portfolio-item-wrapper">
+                                    <div class="portfolio-item-wrapper"> 
                                         <div class="portfolio-img">
                                             <a href="{{ route('single_project', ['slug' => $project->slug]) }}"><img
                                                     src="/storage/{{ $project->image }}" alt="#"

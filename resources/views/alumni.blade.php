@@ -25,29 +25,29 @@
                         @foreach ($alumunis as $alumuni)
                             <div class="col-lg-3 col-md-6 col-12 rounded-2xl">
                                 <div data-bs-toggle="modal" data-bs-target="#open{{ $loop->iteration }}"
-                                    class="single-team wow fadeInUp" data-wow-delay=".2s">
+                                    class="single-team wow fadeInUp" data-wow-delay=".2s" style="cursor:pointer">
                                     <div class="image">
                                         @if (!$alumuni->image && $alumuni->is_male == '0')
-                                            <img style="width:300px;height:375px;object-fit:cover" class="w-100"
+                                            <img style="" class="img-fluid"
                                                 src="{{ asset('pictures/female.jpeg') }}" alt="#" />
                                         @endif
                                         @if (!$alumuni->image && $alumuni->is_male == '1')
-                                            <img style="width:300px;height:375px;object-fit:cover" class="w-100"
+                                            <img style="" class="img-fluid"
                                                 src="{{ asset('pictures/male.jpeg') }}" alt="#" />
                                         @endif
                                         @if ($alumuni->image)
-                                            <img style="width:300px;height:375px;object-fit:cover" class="w-100"
+                                            <img style="" class="img-fluid"
                                                 src="/storage/{{ $alumuni->image }}" alt="#" />
                                         @endif
                                     </div>
-                                    <div style="height: 7rem;" class="info-head">
+                                    <div class="info-head">
                                         <div class="info-box">
                                             <h4 class="name">
                                                 <a data-bs-toggle="modal"
                                                     data-bs-target="#open{{ $loop->iteration }}">{{ $alumuni->name }}</a>
                                             </h4>
-                                            <ul style="list-style: none;margin-left: -44px;"
-                                                class="social d-flex flex-row mt-2">
+                                            <ul style="list-style: none;margin-bottom:0;padding:0"
+                                                class="social d-flex justify-content-center mt-2">
                                                 @if ($alumuni->facebook_link)
                                                     <li class="ms-3">
                                                         <a href="https://{{ $alumuni->facebook_link }}" target="blanc"><i

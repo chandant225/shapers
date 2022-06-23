@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('css/LineIcons.2.0.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.02') }}">
     @stack('styles')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>

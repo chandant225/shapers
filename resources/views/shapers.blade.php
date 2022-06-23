@@ -21,31 +21,31 @@
                         </center>
                     @elseif(count($shapers) >= 1)
                         @foreach ($shapers as $shaper)
-                            <div style="cursor:pointer" class="col-lg-3 col-md-6 col-12  rounded-2xl">
+                            <div class="col-lg-3 col-md-6 col-12  rounded-2xl">
                                 <div data-bs-toggle="modal" data-bs-target="#open{{ $loop->iteration }}"
-                                    class="single-team wow fadeInUp w-100" data-wow-delay=".2s">
+                                    class="single-team wow fadeInUp w-100" data-wow-delay=".2s" style="cursor:pointer">
                                     <div class="image">
                                         @if (!$shaper->image && $shaper->is_male == '0')
-                                            <img style="object-fit:cover;object-position: 100% 0;" class="img-fluid"
+                                            <img style="" class="img-fluid"
                                                 src="{{ asset('pictures/female.jpeg') }}" alt="#" />
                                         @endif
                                         @if (!$shaper->image && $shaper->is_male == '1')
-                                            <img style="object-fit:cover;object-position: 100% 0;" class="img-fluid"
+                                            <img style="" class="img-fluid"
                                                 src="{{ asset('pictures/male.jpeg') }}" alt="#" />
                                         @endif
                                         @if ($shaper->image)
-                                            <img style="height:300px;object-fit:cover;object-position: 100% 0;"
-                                                class="img-fluid w-100" src="/storage/{{ $shaper->image }}"
+                                            <img style=""
+                                                class="img-fluid" src="/storage/{{ $shaper->image }}"
                                                 alt="#" />
                                         @endif
                                     </div>
                                     <div class="info-head">
                                         <div class="info-box">
-                                            <h4 class="name text-center" style="height: 3.75rem">
+                                            <h4 class="name text-center">
                                                 <a data-bs-toggle="modal"
                                                     data-bs-target="#open{{ $loop->iteration }}">{{ $shaper->name }}</a>
                                             </h4>
-                                            <ul style="list-style: none;margin-left: -44px;"
+                                            <ul style="list-style: none;margin-bottom: 0;padding:0"
                                                 class="social d-flex justify-content-center mt-2">
                                                 @if ($shaper->facebook_link)
                                                     <li class="ms-3">

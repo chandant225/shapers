@@ -25,7 +25,7 @@
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <div class="single-news custom-shadow-hover wow fadeInUp" data-wow-delay=".2s">
                                         <div class="image">
-                                            <a href="/blogs/{{ $new->slug }}"> <img style="height:15rem" class="thumb"
+                                            <a href="/blogs/{{ $new->slug }}"> <img class="thumb"
                                                     src="/storage/{{ $new->image }}" alt="#"></a>
                                         </div>
                                         <div class="content-body">
