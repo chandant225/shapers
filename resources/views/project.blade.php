@@ -49,7 +49,7 @@
                                                 <img src="/storage/{{ $ishape->image }}" alt="" />
                                             </div>
                                             <div class="impact-text">
-                                                <h5>I for Iclusion</h5>
+                                                <h5>{{ $ishape->title }}</h5>
                                                 {{-- <p>Create inclusive communities</p> --}}
                                             </div>
                                             <div class="impact-card-overlay"
@@ -67,97 +67,57 @@
                             </div>
                         </div>
                         <div class="partners my-5">
-                        <div class="section-title align-center gray-bg">
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">
-                                OUR PARTNERS
-                            </h2>
-                        </div>
-                        {{-- <p class="my-2 text-center">
+                            <div class="section-title align-center gray-bg">
+                                <h2 class="wow fadeInUp" data-wow-delay=".4s">
+                                    OUR PARTNERS
+                                </h2>
+                            </div>
+                            {{-- <p class="my-2 text-center">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Vero numquam error mollitia minima. Dolore
                             cumque excepturi perspiciatis porro consectetur vel
                             ipsam fugit consequuntur impedit at!
                         </p> --}}
-                        <div class="impact-partners-cards">
-                            <a href="#" class="impact-partner">
-                                <img
-                                    src="{{ asset('assets/shapersPartners/index.jpeg') }}"
-                                    alt=""
-                                />
-                                {{--
-                                <h5>John Doe</h5>
-                                --}}
-                            </a>
-                            <a href="#" class="impact-partner">
-                                <img
-                                    src="{{ asset('assets/shapersPartners/2.jpeg') }}"
-                                    alt=""
-                                />
-                                {{--
-                                <h5>John Doe</h5>
-                                --}}
-                            </a>
-                            <a href="#" class="impact-partner">
-                                <img
-                                    src="{{ asset('assets/shapersPartners/3.jpeg') }}"
-                                    alt=""
-                                />
-                                {{--
-                                <h5>John Doe</h5>
-                                --}}
-                            </a>
-                            <a href="#" class="impact-partner">
-                                <img
-                                    src="{{ asset('assets/shapersPartners/4.jpeg') }}"
-                                    alt=""
-                                />
-                                {{--
-                                <h5>John Doe</h5>
-                                --}}
-                            </a>
-                            <a href="#" class="impact-partner">
-                                <img
-                                    src="{{ asset('assets/shapersPartners/5.jpeg') }}"
-                                    alt=""
-                                />
-                                {{--
-                                <h5>John Doe</h5>
-                                --}}
-                            </a>
-                            <a href="#" class="impact-partner">
-                                <img
-                                    src="{{ asset('assets/shapersPartners/6.jpeg') }}"
-                                    alt=""
-                                />
-                                {{--
-                                <h5>John Doe</h5>
-                                --}}
-                            </a>
-                            <a href="#" class="impact-partner">
-                                <img
-                                    src="{{ asset('assets/shapersPartners/7.jpeg') }}"
-                                    alt=""
-                                />
-                                {{--
-                                <h5>John Doe</h5>
-                                --}}
-                            </a>
-                            <a href="#" class="impact-partner">
-                                <img
-                                    src="{{ asset('assets/shapersPartners/8.jpeg') }}"
-                                    alt=""
-                                />
-                                {{--
-                                <h5>John Doe</h5>
-                                --}}
-                            </a>
+                            <div class="impact-partners-cards">
+                                <a href="#" class="impact-partner">
+                                    <img src="{{ asset('assets/shapersPartners/index.jpeg') }}" alt="" />
+                                    {{-- <h5>John Doe</h5> --}}
+                                </a>
+                                <a href="#" class="impact-partner">
+                                    <img src="{{ asset('assets/shapersPartners/2.jpeg') }}" alt="" />
+                                    {{-- <h5>John Doe</h5> --}}
+                                </a>
+                                <a href="#" class="impact-partner">
+                                    <img src="{{ asset('assets/shapersPartners/3.jpeg') }}" alt="" />
+                                    {{-- <h5>John Doe</h5> --}}
+                                </a>
+                                <a href="#" class="impact-partner">
+                                    <img src="{{ asset('assets/shapersPartners/4.jpeg') }}" alt="" />
+                                    {{-- <h5>John Doe</h5> --}}
+                                </a>
+                                <a href="#" class="impact-partner">
+                                    <img src="{{ asset('assets/shapersPartners/5.jpeg') }}" alt="" />
+                                    {{-- <h5>John Doe</h5> --}}
+                                </a>
+                                <a href="#" class="impact-partner">
+                                    <img src="{{ asset('assets/shapersPartners/6.jpeg') }}" alt="" />
+                                    {{-- <h5>John Doe</h5> --}}
+                                </a>
+                                <a href="#" class="impact-partner">
+                                    <img src="{{ asset('assets/shapersPartners/7.jpeg') }}" alt="" />
+                                    {{-- <h5>John Doe</h5> --}}
+                                </a>
+                                <a href="#" class="impact-partner">
+                                    <img src="{{ asset('assets/shapersPartners/8.jpeg') }}" alt="" />
+                                    {{-- <h5>John Doe</h5> --}}
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    </div>
                 </div>
-               <div class="section-title align-center gray-bg my-5">
-                <h2 class="wow fadeInUp" data-wow-delay=".4s">IMPACTS</h2>
-            </div>
+                <div class="section-title align-center gray-bg my-5">
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">IMPACTS</h2>
+                </div>
                 <div class="row grid">
                     @if (count($projects) === 0)
                         <center>
@@ -193,7 +153,7 @@
                         @endif @if ($past_projects)
                             @foreach ($past_projects as $project)
                                 <div class="col-lg-4 col-md-4 grid-item mental-health-portfolio">
-                                    <div class="portfolio-item-wrapper"> 
+                                    <div class="portfolio-item-wrapper">
                                         <div class="portfolio-img">
                                             <a href="{{ route('single_project', ['slug' => $project->slug]) }}"><img
                                                     src="/storage/{{ $project->image }}" alt="#"
