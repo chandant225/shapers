@@ -147,8 +147,8 @@
                                     class="mt-1 text-center">
                                     {!! $shaper->description !!}
                                 </p>
-                                <p class="mt-2"><strong>Joined
-                                        at:</strong>{{ ' ' . $shaper->joined_at }}</p>
+                                {{-- <p class="mt-2"><strong>Joined
+                                        at:</strong>{{ ' ' . $shaper->joined_at }}</p> --}}
                             </div>
                         </div>
                         <div class=" d-none d-md-flex flex-column align-items-center">

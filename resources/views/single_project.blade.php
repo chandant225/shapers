@@ -27,11 +27,11 @@
         }
 
         /* .swiper-slide img {
-                        display: block;
-                        width: 100%;
-                        height: 400px;
-                        object-fit: cover;
-                      } */
+                                                                                                    display: block;
+                                                                                                    width: 100%;
+                                                                                                    height: 400px;
+                                                                                                    object-fit: cover;
+                                                                                                  } */
 
         .swiper {
             width: 100%;
@@ -93,48 +93,33 @@
                         {!! $project_details->top_description !!}
                     </p>
                 </div>
+
                 <div class="col-lg-6 col-md-12 col-12">
                     {{-- <div class="thumb">
                             <img style="height:54vh" src="/storage/{{$project_details->image}}" alt=" {{$project_details->title}}" class="img-fluid">
                             </div> --}}
                     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                            </div>
+                            @if ($project_galleries)
+                                @foreach ($project_galleries as $pic)
+                                    <div class="swiper-slide">
+                                        <img src="/project_gallery/{{ $pic->filename }}" />
+                                    </div>
+                                @endforeach
+                            @endif
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
                     <div thumbsSlider="" class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                            </div>
+                            @if ($project_galleries)
+                                @foreach ($project_galleries as $pic)
+                                    <div class="swiper-slide">
+                                        <img src="/project_gallery/{{ $pic->filename }}" />
+                                    </div>
+                                @endforeach
+                            @endif
                         </div>
                     </div>
 

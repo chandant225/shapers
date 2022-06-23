@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddLinkToFeaturesTable extends Migration
+class AddProjectSlugToProjectGalleriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class AddLinkToFeaturesTable extends Migration
      */
     public function up()
     {
-        Schema::table('features', function (Blueprint $table) {
-
-            $table->longText('link');
-
+        Schema::table('project_galleries', function (Blueprint $table) {
+            $table->string('project_slug');
         });
-        
     }
 
     /**
@@ -28,7 +25,7 @@ class AddLinkToFeaturesTable extends Migration
      */
     public function down()
     {
-        Schema::table('features', function (Blueprint $table) {
+        Schema::table('project_galleries', function (Blueprint $table) {
             //
         });
     }

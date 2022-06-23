@@ -7,6 +7,7 @@ use App\Models\Project;
 use App\Models\Impact;
 use App\Models\Project_des;
 use App\Models\Ishape;
+use App\Models\Project_gallery;
 
 class ProjectController extends Controller
 {
@@ -55,8 +56,10 @@ class ProjectController extends Controller
     public function show($slug)
     {
         $project_details = Project::where('slug', $slug)->first();
+        $project_galleries = Project_gallery::where('project_slug',$slug)->get();
+       
         $impacts = Impact::where('project_slug',$slug)->orderBy('project_year','asc')->get();
-        return view('single_project')->with(['project_details' => $project_details,'impacts' => $impacts]);
+        return view('single_project')->with(['project_details' => $project_details,'impacts' => $impacts,'project_galleries'=>$project_galleries]);
     }
 
     /**

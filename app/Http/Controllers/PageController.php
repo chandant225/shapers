@@ -14,6 +14,7 @@ use App\Models\Impact;
 use App\Models\Alumuni;
 use App\Models\Counter;
 use App\Models\News;
+use App\Models\Impact_gallery;
 
 
 class PageController extends Controller
@@ -57,7 +58,8 @@ class PageController extends Controller
     
     public function impact_details($slug) {
         $impact_details = Impact::where('slug', $slug)->first();
-        return view('single_impact')->with(['impact_details' => $impact_details]);
+        $impact_galleries = Impact_gallery::where('impacts_slug',$slug)->get();
+        return view('single_impact')->with(['impact_details' => $impact_details,'impact_galleries' => $impact_galleries]);
     }
      
     public function become_a_shaper() {
