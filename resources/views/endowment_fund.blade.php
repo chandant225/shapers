@@ -34,7 +34,7 @@
             <div class="row">
                 @if (count($endowment_funds) === 0)
                     <center>
-                        <p>There are no any shapers available.</p>
+                        <p>There are no any data available.</p>
                     </center>
                 @elseif(count($endowment_funds) >= 1)
                     @foreach ($endowment_funds as $shaper)
