@@ -10,6 +10,7 @@ use App\Models\Testimonial;
 use App\Models\Feature;
 use App\Models\Aboutus;
 use App\Models\Shaper;
+use App\Models\Endowment_fund;
 use App\Models\Impact;
 use App\Models\Alumuni;
 use App\Models\Counter;
@@ -102,7 +103,8 @@ class PageController extends Controller
     }
 
     public function endowment_fund() {
-        return view('endowment_fund');
+        $endowment_funds = Endowment_fund::orderBy('updated_at','desc')->get();
+        return view('endowment_fund')->with(['endowment_funds' => $endowment_funds]);
     }
 
     public function blog_details($slug) {

@@ -30,12 +30,11 @@
                                                 src="{{ asset('pictures/female.jpeg') }}" alt="#" />
                                         @endif
                                         @if (!$shaper->image && $shaper->is_male == '1')
-                                            <img style="" class="img-fluid"
-                                                src="{{ asset('pictures/male.jpeg') }}" alt="#" />
+                                            <img style="" class="img-fluid" src="{{ asset('pictures/male.jpeg') }}"
+                                                alt="#" />
                                         @endif
                                         @if ($shaper->image)
-                                            <img style=""
-                                                class="img-fluid" src="/storage/{{ $shaper->image }}"
+                                            <img style="" class="img-fluid" src="/storage/{{ $shaper->image }}"
                                                 alt="#" />
                                         @endif
                                     </div>
@@ -101,69 +100,63 @@
                             <div class="text-center">
                                 <h2>
                                     {{ $shaper->name }}</h2>
-                                    <div class="d-flex flex-column align-items-center d-md-none">
-                            <div class="">
-                                @if (!$shaper->image && $shaper->is_male == '0')
-                                    <img class="img-fluid" src="{{ asset('pictures/female.jpeg') }}"
-                                        alt="#" />
-                                @endif
-                                @if (!$shaper->image && $shaper->is_male == '1')
-                                    <img class="img-fluid" src="{{ asset('pictures/male.jpeg') }}"
-                                        alt="#" />
-                                @endif
-                                @if ($shaper->image)
-                                    <img class="img-fluid" src="/storage/{{ $shaper->image }}"
-                                        alt="#" />
-                                @endif
-                            </div>
-                            <ul style="list-style: none;" class="social d-flex flex-row mt-2 p-0">
-                                @if ($shaper->facebook_link)
-                                    <li class="ms-3">
-                                        <a href="{{ $shaper->facebook_link }}" target="blanc"><i
-                                                class="lni lni-facebook-original"></i></a>
-                                    </li>
-                                @endif
-                                @if ($shaper->twitter_link)
-                                    <li class="ms-3">
-                                        <a href="{{ $shaper->twitter_link }}" target="blanc"><i
-                                                class="lni lni-twitter-original"></i></a>
-                                    </li>
-                                @endif
-                                @if ($shaper->linkedin_link)
-                                    <li class="ms-3">
-                                        <a href="{{ $shaper->linkedin_link }}" target="blanc"><i class="fab fa-linkedin-in"
-                                                aria-hidden="true"></i></a>
-                                    </li>
-                                @endif
-                                @if ($shaper->instagram_link)
-                                    <li class="ms-3">
-                                        <a href="{{ $shaper->instagram_link }}" target="blanc"><i class="fab fa-instagram"
-                                                aria-hidden="true"></i></a>
-                                    </li>
-                                @endif
-                            </ul>
-                        </div>
-                                <p style="padding: 26px 0px 0px 0px;"
-                                    class="mt-1 text-center">
+                                <div class="d-flex flex-column align-items-center d-md-none">
+                                    <div class="">
+                                        @if (!$shaper->image && $shaper->is_male == '0')
+                                            <img class="img-fluid" src="{{ asset('pictures/female.jpeg') }}"
+                                                alt="#" />
+                                        @endif
+                                        @if (!$shaper->image && $shaper->is_male == '1')
+                                            <img class="img-fluid" src="{{ asset('pictures/male.jpeg') }}"
+                                                alt="#" />
+                                        @endif
+                                        @if ($shaper->image)
+                                            <img class="img-fluid" src="/storage/{{ $shaper->image }}" alt="#" />
+                                        @endif
+                                    </div>
+                                    <ul style="list-style: none;" class="social d-flex flex-row mt-2 p-0">
+                                        @if ($shaper->facebook_link)
+                                            <li class="ms-3">
+                                                <a href="{{ $shaper->facebook_link }}" target="blanc"><i
+                                                        class="lni lni-facebook-original"></i></a>
+                                            </li>
+                                        @endif
+                                        @if ($shaper->twitter_link)
+                                            <li class="ms-3">
+                                                <a href="{{ $shaper->twitter_link }}" target="blanc"><i
+                                                        class="lni lni-twitter-original"></i></a>
+                                            </li>
+                                        @endif
+                                        @if ($shaper->linkedin_link)
+                                            <li class="ms-3">
+                                                <a href="{{ $shaper->linkedin_link }}" target="blanc"><i
+                                                        class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                                            </li>
+                                        @endif
+                                        @if ($shaper->instagram_link)
+                                            <li class="ms-3">
+                                                <a href="{{ $shaper->instagram_link }}" target="blanc"><i
+                                                        class="fab fa-instagram" aria-hidden="true"></i></a>
+                                            </li>
+                                        @endif
+                                    </ul>
+                                </div>
+                                <p style="padding: 26px 0px 0px 0px;" class="mt-1 text-center">
                                     {!! $shaper->description !!}
                                 </p>
-                                {{-- <p class="mt-2"><strong>Joined
-                                        at:</strong>{{ ' ' . $shaper->joined_at }}</p> --}}
+
                             </div>
                         </div>
                         <div class=" d-none d-md-flex flex-column align-items-center">
                             <div class="">
                                 @if (!$shaper->image && $shaper->is_male == '0')
-                                    <img class="img-fluid" src="{{ asset('pictures/female.jpeg') }}"
-                                        alt="#" />
+                                    <img class="img-fluid" src="{{ asset('pictures/female.jpeg') }}" alt="#" />
                                 @endif
                                 @if (!$shaper->image && $shaper->is_male == '1')
-                                    <img class="img-fluid" src="{{ asset('pictures/male.jpeg') }}"
-                                        alt="#" />
+                                    <img class="img-fluid" src="{{ asset('pictures/male.jpeg') }}" alt="#" />
                                 @endif
                                 @if ($shaper->image)
-                                    <img class="img-fluid" src="/storage/{{ $shaper->image }}"
-                                        alt="#" />
+                                    <img class="img-fluid" src="/storage/{{ $shaper->image }}" alt="#" />
                                 @endif
                             </div>
                             <ul style="list-style: none;" class="social d-flex flex-row mt-2 p-0">
@@ -181,14 +174,14 @@
                                 @endif
                                 @if ($shaper->linkedin_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->linkedin_link }}" target="blanc"><i class="fab fa-linkedin-in"
-                                                aria-hidden="true"></i></a>
+                                        <a href="{{ $shaper->linkedin_link }}" target="blanc"><i
+                                                class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                                     </li>
                                 @endif
                                 @if ($shaper->instagram_link)
                                     <li class="ms-3">
-                                        <a href="{{ $shaper->instagram_link }}" target="blanc"><i class="fab fa-instagram"
-                                                aria-hidden="true"></i></a>
+                                        <a href="{{ $shaper->instagram_link }}" target="blanc"><i
+                                                class="fab fa-instagram" aria-hidden="true"></i></a>
                                     </li>
                                 @endif
                             </ul>

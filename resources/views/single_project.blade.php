@@ -27,11 +27,11 @@
         }
 
         /* .swiper-slide img {
-                                                                                                    display: block;
-                                                                                                    width: 100%;
-                                                                                                    height: 400px;
-                                                                                                    object-fit: cover;
-                                                                                                  } */
+                                                                                                            display: block;
+                                                                                                            width: 100%;
+                                                                                                            height: 400px;
+                                                                                                            object-fit: cover;
+                                                                                                          } */
 
         .swiper {
             width: 100%;
@@ -94,10 +94,13 @@
                     </p>
                 </div>
 
+                @if (!$project_galleries)
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <img src="/storage/{{ $project_details->image }}" alt="{{ $project_details->title }}"
+                            class="w-100" />
+                    </div>
+                @endif
                 <div class="col-lg-6 col-md-12 col-12">
-                    {{-- <div class="thumb">
-                            <img style="height:54vh" src="/storage/{{$project_details->image}}" alt=" {{$project_details->title}}" class="img-fluid">
-                            </div> --}}
                     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             @if ($project_galleries)
@@ -122,7 +125,6 @@
                             @endif
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="col-md-12 mt-5">

@@ -36,10 +36,10 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $contact = new Contact;
-        $contact->fullname = $request->input('fullname');
-        $contact->address = $request->input('address');
+        $contact->fullname = $request->input('firstname') . " " . $request->input('lastname');
         $contact->email = $request->input('email');
         $contact->phone = $request->input('phone');
+        $contact->subject = $request->input('subject');
         $contact->message = $request->input('message');
         $contact->save();
         return redirect()->back()->with('message','Message Sent Successfully');

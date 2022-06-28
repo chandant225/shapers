@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PastProjectController;
+use App\Http\Controllers\JoinController;
 
 
 /*
@@ -44,6 +45,8 @@ Route::get('/past-projects', [PastProjectController::class, 'index'])->name('pas
 Route::get('/impact_details/{slug}', [PageController::class,'impact_details'])->name('single_impact');
 
 Route::post('/contact/add', [ContactController::class,'store'])->name('contact_add');
+
+Route::post('/join_us/add', [JoinController::class,'store'])->name('joinus.store');
 
 Route::get('/alumuni_details/{name}',[PageController::class,'Alumuni_details'])->name('alumuni_details');
 

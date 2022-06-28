@@ -378,9 +378,10 @@ class ProjectController extends VoyagerBaseController
         }
             
         Project_gallery::where('project_slug',$data->slug)->delete();
-             if($request->hasfile('images'))
-         {
 
+         if($request->hasfile('images'))
+
+          {
             foreach($request->file('images') as $image)
             {
                 $name=$image->getClientOriginalName();
