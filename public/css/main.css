@@ -2240,7 +2240,7 @@ ol {
 
 .navbar-expand-lg .navbar-nav {
     margin-left: auto;
-    width: 100vw;
+    width: 100%;
 }
 
 .hero-area {
@@ -6711,7 +6711,7 @@ blockquote span {
 
     .hero-area.style2 .hero-inner .hero-text h1 {
         font-size: 25px;
-        line-height: 32px;
+        line-height: normal;
     }
 
     .hero-area.style2 .hero-inner .hero-text {
@@ -8164,7 +8164,7 @@ button.join-us-btn {
     -o-border-radius: 5px;
     border: none;
     background: #fff;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 /* June 19 */
 
@@ -8172,7 +8172,7 @@ button.join-us-btn {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: 1fr;
-    margin: 2rem 0;
+    margin: 4rem 0 2rem 0;
 }
 .impact-partners-cards {
     display: grid;
@@ -8246,6 +8246,8 @@ button.join-us-btn {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+    min-width: 13rem;
+    max-width: 100%;
 }
 .impact-overlay-text {
     background: rgba(255, 255, 255, 0.85);
@@ -8348,4 +8350,10 @@ section.blog-section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (min-width: 991px) {
+    .padding-lg-y {
+        padding: 0px 105px;
+    }
 }

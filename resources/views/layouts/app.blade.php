@@ -17,12 +17,19 @@
     <link rel="stylesheet" href="{{ asset('css/LineIcons.2.0.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.02') }}">
-    @stack('styles')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{{ asset('css/mmenu.css')  }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.02') }}">
+    <style>
+        body.modal-open .mm-slideout{
+                z-index:inherit !important;
+}
+        </style>
+    @stack('styles')
 </head>
 
 <body>
+    
     <div style="padding: 0px 0px 24px 0px">
         @include('layouts.header')
     </div>
@@ -34,7 +41,8 @@
     <a href="#" id="myBtn" class="scroll-top btn-hover">
         <i class="fas fa-arrow-up"></i>
     </a>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src={{ asset('js/app.js') }}></script>
     <script type="text/javascript" src={{ asset('js/bootstrap.min.js') }}></script>
     <script type="text/javascript" src={{ asset('js/count-up.min.js') }}></script>
@@ -45,6 +53,23 @@
     <script type="text/javascript" src={{ asset('js/tiny-slider.js') }}></script>
     <script type="text/javascript" src={{ asset('js/wow.min.js') }}></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ asset('css/mmenu.js') }}"></script>
+    <script>
+
+            // new Mmenu(document.querySelector("#mmenu"));
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    new Mmenu( "#mmenu", {
+                       "slidingSubmenus": false,
+                       "offCanvas": {
+                          "position": "right-front"
+                       },
+                       "theme": "white"
+                    });
+                }
+            );
+
+    </script>
     <script type="text/javascript">
         //========= testimonial
         tns({

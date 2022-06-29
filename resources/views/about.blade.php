@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                    <div style="padding: 0px 105px;" class="row align-items-center mt-5">
+                    <div class="row align-items-center mt-5 padding-lg-y">
                         <div class="col-lg-6">
                             <div class="left wow fadeInLeft" data-wow-delay=".3s">
                                 <h3>About Global Shapers Kathmandu Hub</h3>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
 
-                    <div style="padding: 0px 105px;" class="row align-items-center mt-5">
+                    <div class="row align-items-center mt-5 padding-lg-y">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">

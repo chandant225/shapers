@@ -55,7 +55,7 @@
                                             <div class="impact-card-overlay"
                                                 style="background-image: url('/storage/{{ $ishape->image }}')">
                                                 <div class="impact-overlay-text">
-                                                    <h5>{{ $ishape->title }}</h5>
+                                                    <h5 style="text-align: center">{{ $ishape->title }}</h5>
                                                     <p><strong>{{ $ishape->header }}</strong>
                                                         {{ $ishape->description }}
                                                     <p>

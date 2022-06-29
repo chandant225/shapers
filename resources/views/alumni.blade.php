@@ -24,9 +24,9 @@
                     @elseif(count($alumunis) >= 1)
                         @foreach ($alumunis as $alumuni)
                             <div class="col-lg-3 col-md-6 col-12 rounded-2xl">
-                                <div data-bs-toggle="modal" data-bs-target="#open{{ $loop->iteration }}"
+                                <div
                                     class="single-team wow fadeInUp" data-wow-delay=".2s" style="cursor:pointer">
-                                    <div class="image">
+                                    <div class="image" data-bs-toggle="modal" data-bs-target="#open{{ $loop->iteration }}">
                                         @if (!$alumuni->image && $alumuni->is_male == '0')
                                             <img style="" class="img-fluid"
                                                 src="{{ asset('pictures/female.jpeg') }}" alt="#" />
@@ -49,7 +49,7 @@
                                             <ul style="list-style: none;margin-bottom:0;padding:0"
                                                 class="social d-flex justify-content-center mt-2">
                                                 @if ($alumuni->facebook_link)
-                                                    <li class="ms-3">
+                                                    <li class="ms-3" onclick="event.cancelBubble = true;">
                                                         <a href="https://{{ $alumuni->facebook_link }}" target="blanc"><i
                                                                 class="lni lni-facebook-original"></i></a>
                                                     </li>
@@ -107,7 +107,6 @@
                             </div>
                         </div>
                         <div class="">
-
                             @if (!$alumuni->image && $alumuni->is_male == '0')
                                 <img class="img-fluid" src="{{ asset('pictures/female.jpeg') }}" alt="#" />
                             @endif
@@ -152,8 +151,5 @@
         </div>
     @endforeach
 
-
-
-
-
 @endsection
+
