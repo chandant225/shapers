@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
     <div>
         <!-- Why-Choose Section -->
@@ -21,7 +22,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-12">
                             <div class="left wow fadeInLeft" data-wow-delay=".3s">
-                                <img src="/storage/{{ $aboutus->global_shaperss_community_image }}" alt="" />
+                                <img src="/storage/{{ $aboutus->global_shaperss_community_image }}" alt=""  class="img-fluid"/>
                                 <a href="{{ $aboutus->video_link }}" class="glightbox video"><i
                                         class="fas fa-play"></i></a>
                             </div>
@@ -52,7 +53,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="right_pane_img wow fadeInRight" data-wow-delay=".5s">
-                                <img src="/storage/{{ $aboutus->global_shapers_kathmandu_image }}" alt="" />
+                                <img src="/storage/{{ $aboutus->global_shapers_kathmandu_image }}" alt=""  class="img-fluid"/>
                             </div>
                         </div>
                     </div>
