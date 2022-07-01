@@ -8282,11 +8282,11 @@ button.join-us-btn {
 .impact-text {
     margin-top: 1rem;
     text-align: center;
+    height:2.4rem
 }
 .impact-text h5 {
     font-size: 18px;
     margin-bottom: 0.5rem;
-    white-space: nowrap;
 }
 .impact-text p {
     font-size: 80%;
