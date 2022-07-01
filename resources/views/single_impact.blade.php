@@ -20,10 +20,10 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
                         <div class="thumb">
-                            <img style="height:54vh" src="/storage/{{ $impact_details->image }}" alt="#"
+                            <img src="/storage/{{ $impact_details->image }}" alt="#"
                                 class="img-fluid">
                         </div>
-                        <div class="pf-details-sidebar" style="margin-top: -2.6rem;">
+                        <div class="pf-details-sidebar">
                             <h4>Project Info</h4>
                             <ul>
                                 <li><span>Project By : </span><a href="#">{{ $impact_details->project_by }}</a></li>
@@ -65,7 +65,7 @@
                     <div class="row mt-3">
                         @if ($impact_galleries)
                             @foreach ($impact_galleries as $pic)
-                                <div class="col-lg-3">
+                                <div class="col-lg-3 mt-3">
                                     <img class="w-100" src="/impact_gallery/{{ $pic->filename }}" />
                                 </div>
                             @endforeach
