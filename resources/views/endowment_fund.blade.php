@@ -22,7 +22,7 @@
             </div>
             <div class="title_buttons d-flex flex-column flex-md-row justify-content-between">
                 <h4 class="mt-5 mt-md-2 mb-2 order-2 order-md-1">Fund Contributors:</h4>
-                <div class="endowment_buttons button d-flex gap-2 mt-3 mt-md-0 order-md-1">
+                <div class="endowment_buttons button d-flex flex-column flex-lg-row flex- gap-2 mt-3 mt-md-0 order-md-1">
                     <a href="mailto:globalshapersktm@gmail.com" class="btn">
                         Become a Partner
                     </a>

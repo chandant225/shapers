@@ -8227,10 +8227,9 @@ button.join-us-btn {
     position: absolute;
     left: 50%;
     bottom: 0;
-    top: 0;
+    top: -1rem;
     width: 130%;
-    height: 100%;
-    transform: translateX(-50%);
+    height: 110%;
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
@@ -8242,10 +8241,6 @@ button.join-us-btn {
     -ms-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out; */
     display: none;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     min-width: 13rem;
     max-width: 100%;
 }
@@ -8287,11 +8282,11 @@ button.join-us-btn {
 .impact-text {
     margin-top: 1rem;
     text-align: center;
+    height:2.4rem
 }
 .impact-text h5 {
     font-size: 18px;
     margin-bottom: 0.5rem;
-    white-space: nowrap;
 }
 .impact-text p {
     font-size: 80%;

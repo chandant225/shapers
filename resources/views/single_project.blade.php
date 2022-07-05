@@ -70,8 +70,8 @@
         .swiper-slide img {
             display: block;
             width: 100%;
-            height: 400px;
-            object-fit: cover;
+            height: 100%;
+            object-fit: contain;
         }
     </style>
 @endpush

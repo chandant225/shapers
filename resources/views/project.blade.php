@@ -103,10 +103,10 @@
                                     <img src="{{ asset('assets/shapersPartners/6.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
                                 </a>
-                                <a href="#" class="impact-partner">
+                               {{-- <a href="#" class="impact-partner">
                                     <img src="{{ asset('assets/shapersPartners/7.jpeg') }}" alt="" />
-                                    {{-- <h5>John Doe</h5> --}}
-                                </a>
+                                     <h5>John Doe</h5> 
+                                </a> --}}
                                 <a href="#" class="impact-partner">
                                     <img src="{{ asset('assets/shapersPartners/8.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}

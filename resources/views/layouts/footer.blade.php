@@ -7,7 +7,7 @@
                     <div class="single-footer sm-custom-border f-link">
                         <div class="f-about single-footer">
                             <div class="logo">
-                                <a href="/"
+                                <a href="/" style="width:100%"
                                     ><img src={{
                                         asset("pictures/Logo-Inverted.svg")
                                     }}
