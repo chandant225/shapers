@@ -55,20 +55,20 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="{{ asset('css/mmenu.js') }}"></script>
     <script>
-
-            // new Mmenu(document.querySelector("#mmenu"));
-            document.addEventListener(
-                "DOMContentLoaded", () => {
-                    new Mmenu( "#mmenu", {
-                       "slidingSubmenus": false,
-                       "offCanvas": {
-                          "position": "right-front"
-                       },
-                       "theme": "white"
-                    });
-                }
-            );
-
+            if ($(window).width() <= 820) {
+                // new Mmenu(document.querySelector("#mmenu"));
+                    document.addEventListener(
+                        "DOMContentLoaded", () => {
+                            new Mmenu( "#mmenu", {
+                            "slidingSubmenus": false,
+                            "offCanvas": {
+                                "position": "right-front"
+                            },
+                            "theme": "white"
+                            });
+                        }
+                    );
+            }
     </script>
     <script type="text/javascript">
         //========= testimonial
