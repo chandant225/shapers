@@ -34,9 +34,9 @@
         @include('layouts.header')
     </div>
     @yield('content')
-    <div>
+  
         @include('layouts.footer')
-    </div>
+    
     <!-- Scroll-Top-btn -->
     <a href="#" id="myBtn" class="scroll-top btn-hover">
         <i class="fas fa-arrow-up"></i>
