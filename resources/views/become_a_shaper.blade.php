@@ -293,7 +293,7 @@
                                                         <label for="phone"><span>Phone
                                                                 Number<sup>*</sup></span></label>
                                                     </div>
-                                                    <div class="col-lg-12 col-12">
+                                                    <div class="col-lg-12 col-12 mb-4rem mb-lg-0">
                                                         <input type="text" name="social_media" class="question"
                                                             id="social_url" required autocomplete="off" />
                                                         <label for="social_url"><span>Link to your social
@@ -302,14 +302,14 @@
                                                     </div>
                                                     <div class="col-lg-12 col-12">
                                                         <input type="text" name="name_of_organization"
-                                                            class="question" id="curr_company" required
+                                                            class="question full-width-m" id="curr_company" required
                                                             autocomplete="off" />
                                                         <label for="curr_company"><span>If you are currently
                                                                 employed, please state
                                                                 the name of your org<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-12 col-12">
-                                                        <input type="text" name="expertise" class="question"
+                                                        <input type="text" name="expertise" class="question full-width-m"
                                                             id="expertise" required autocomplete="off" />
                                                         <label for="expertise"><span>What is your subject area
                                                                 of expertise? (Eg:
@@ -317,14 +317,14 @@
                                                                 etc.)<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-12 col-12">
-                                                        <input type="text" name="best_skills" class="question"
+                                                        <input type="text" name="best_skills" class="question full-width-m"
                                                             id="skills" required autocomplete="off" />
                                                         <label for="skills"><span>List out your three best
                                                                 skills (seperated by
                                                                 , )<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-12 col-12">
-                                                        <input type="text" name="get_to_know_about" class="question"
+                                                        <input type="text" name="get_to_know_about" class="question full-width-m"
                                                             id="know_from" required autocomplete="off" list="options" />
                                                         <label for="know_from"><span>How did you get to know
                                                                 about Global Shapers
