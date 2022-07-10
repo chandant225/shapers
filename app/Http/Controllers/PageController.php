@@ -16,6 +16,8 @@ use App\Models\Alumuni;
 use App\Models\Counter;
 use App\Models\News;
 use App\Models\Impact_gallery;
+use App\Models\Joinus;
+use PDF;
 
 
 class PageController extends Controller
@@ -110,5 +112,11 @@ class PageController extends Controller
     public function blog_details($slug) {
         $news_details = News::where('slug',$slug)->first();
         return view('single_blog')->with(['news_details' => $news_details]);
+    }
+
+    public function downloadJoinusPdf($id) {
+           $details = Joinus::where('id',$id)->first();
+           $pdf = PDF::loadView('vendor.voyager.join_us.read',compact('details'));
+           return $pdf->download($details->fullname . ".pdf");
     }
 }

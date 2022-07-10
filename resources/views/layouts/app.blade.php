@@ -18,13 +18,8 @@
     <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<<<<<<< HEAD
     <link rel="stylesheet" href="{{ asset('css/mmenu.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.05') }}">
-=======
-    <link rel="stylesheet" href="{{ asset('css/mmenu.css')  }}">
     <link rel="stylesheet" href="{{ asset('css/main.css?v=1.06') }}">
->>>>>>> afe6f2115a00b4bb4e8a088a1b16728cbf85d0d8
     <style>
         body.modal-open .mm-slideout {
             z-index: inherit !important;

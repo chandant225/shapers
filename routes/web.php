@@ -52,6 +52,8 @@ Route::get('/alumuni_details/{name}',[PageController::class,'Alumuni_details'])-
 
 Route::get('/shaper_details/{name}',[PageController::class,'shaper_details'])->name('shaper_details');
 
+Route::get('/download-pdf/{id}',[PageController::class,'downloadJoinusPdf'])->name('download_pdf');
+
 Route::get('/blogs', [PageController::class, 'blogs']);
 Route::get('/blogs/{slug}',[PageController::class,'blog_details']);
 Route::get('/endowment_fund',[PageController::class, 'endowment_fund']);

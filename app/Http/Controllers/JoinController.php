@@ -41,7 +41,7 @@ class JoinController extends Controller
           
         if($request->hasFile('file')){
             $fileName = time().'.'.$request->file->extension();  
-            $request->file->move(public_path('storage'), $fileName);
+            $request->file->move(public_path('storage/pdf_storage'), $fileName);
             $joinus_details = new Joinus;
             $joinus_details->fullname = $request->input('fullname');
             $joinus_details->date_of_birth = $request->input('date_of_birth');
