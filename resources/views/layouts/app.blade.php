@@ -19,7 +19,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="{{ asset('css/mmenu.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.04') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.05') }}">
     <style>
         body.modal-open .mm-slideout {
             z-index: inherit !important;
@@ -56,18 +56,20 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="{{ asset('css/mmenu.js') }}"></script>
     <script>
-        // new Mmenu(document.querySelector("#mmenu"));
-        document.addEventListener(
-            "DOMContentLoaded", () => {
-                new Mmenu("#mmenu", {
-                    "slidingSubmenus": false,
-                    "offCanvas": {
-                        "position": "right-front"
-                    },
-                    "theme": "white"
-                });
-            }
-        );
+        if ($(window).width() <= 820) {
+            // new Mmenu(document.querySelector("#mmenu"));
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    new Mmenu("#mmenu", {
+                        "slidingSubmenus": false,
+                        "offCanvas": {
+                            "position": "right-front"
+                        },
+                        "theme": "white"
+                    });
+                }
+            );
+        }
     </script>
     <script type="text/javascript">
         //========= testimonial
