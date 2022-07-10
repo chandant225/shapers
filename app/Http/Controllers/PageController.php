@@ -98,7 +98,7 @@ class PageController extends Controller
     }
 
     public function blogs() {
-        $news = News::paginate(8);
+        $news = News::orderBy('updated_at','desc')->paginate(9);
         return view('blogs')->with(['news' => $news]);
     }
 

@@ -126,145 +126,145 @@
                                                 reject application at any point without an
                                                 explanation.</small>
                                             <!-- <form class="form become-shaper mt-3" method="post" action="">
-                                                                              <div class="row">
-                                                                                <div class="col-lg-6 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>Full Name<sup>*</sup></label>
-                                                                                    <input name="name" type="text"
-                                                                                      placeholder="Full Name" required="required" />
+                                                                                  <div class="row">
+                                                                                    <div class="col-lg-6 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>Full Name<sup>*</sup></label>
+                                                                                        <input name="name" type="text"
+                                                                                          placeholder="Full Name" required="required" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>Date of Birth<sup>*</sup></label>
+                                                                                        <input name="dob" type="date"
+                                                                                          placeholder="Date of Birth" required="required" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>Email<sup>*</sup></label>
+                                                                                        <input name="email" type="email"
+                                                                                          placeholder="Your Email" required="required" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>Phone Number<sup>*</sup></label>
+                                                                                        <input name="phone" type="text"
+                                                                                          placeholder="Your Phone" required="required" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>Link to your social media
+                                                                                          profile<sup>*</sup></label>
+                                                                                        <input name="social_url" type="url"
+                                                                                          placeholder="Your Socials" required="required" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>If you are currently employed, please state
+                                                                                          the name of your org<sup>*</sup></label>
+                                                                                        <input name="curr_company" type="text"
+                                                                                          placeholder="Your current employer"
+                                                                                          required="required" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>What is your subject area of expertise? (Eg:
+                                                                                          Media, Education, Health, Finance, Business
+                                                                                          etc.)<sup>*</sup></label>
+                                                                                        <input name="expertise" type="text"
+                                                                                          placeholder="Your current employer"
+                                                                                          required="required" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>List out your three best skills (seperated by
+                                                                                          , )<sup>*</sup></label>
+                                                                                        <input name="curr_company" type="text"
+                                                                                          placeholder="Your current employer"
+                                                                                          required="required" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-12">
+                                                                                      <div class="form-group message">
+                                                                                        <label for="">Have you been involved in other
+                                                                                          group/communities? Have you led or have been a
+                                                                                          part of any initiative through the group? Share
+                                                                                          your experience (150 words or
+                                                                                          less)<sup>*</sup></label>
+                                                                                        <textarea name="experience" placeholder="Your Experience" maxlength="650"></textarea>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>How did you get to know about Global Shapers
+                                                                                          Kathmandu Hub? (Mention the name of the person, if
+                                                                                          any)<sup>*</sup></label>
+                                                                                        <input name="know_from" type="text"
+                                                                                          placeholder="Reference" required="required"
+                                                                                          list="options" />
+                                                                                        <datalist id="options">
+                                                                                          <option value="Social Media">
+                                                                                          <option value="Kathmandu Hub Website">
+                                                                                          <option value="Friend">
+                                                                                          <option value="GSKH Event">
+                                                                                          <option value="GSKH Member">
+                                                                                          <option value="GSKH Alumni">
+                                                                                          <option value="Other">
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-12">
+                                                                                      <div class="form-group message">
+                                                                                        <label for="">Why do you want to join our community?
+                                                                                          (100 words or less)<sup>*</sup></label>
+                                                                                        <textarea name="experience" placeholder="Your Cause" maxlength="350"></textarea>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-12">
+                                                                                      <div class="form-group message">
+                                                                                        <label for="">Global Shapers are supposed to run
+                                                                                          social impact projects in their respective cities.
+                                                                                          If you had had the chance to lead a project what
+                                                                                          would it be and why?<sup>*</sup></label>
+                                                                                        <textarea name="experience" placeholder="Your Thoughts" rows="8"></textarea>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>If selected, how many hours per week will you
+                                                                                          be able to commit to hub
+                                                                                          activities?<sup>*</sup></label>
+                                                                                        <select class="form-select">
+                                                                                          <option value="1-5">1-5</option>
+                                                                                          <option value="6-100">6-10</option>
+                                                                                          <option value="11-15">11-15</option>
+                                                                                          <option value="15plus">15+</option>
+                                                                                        </select>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-12">
+                                                                                      <div class="form-group">
+                                                                                        <label>Please upload your updated CV
+                                                                                          here<sup>*</sup><br />&nbsp;</label>
+                                                                                        <input type="file" name="cv" required="required"
+                                                                                          class="form-control" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="col-12">
+                                                                                      <div class="form-group button">
+                                                                                        <button type="submit" class="btn">
+                                                                                          Submit Form
+                                                                                        </button>
+                                                                                      </div>
+                                                                                    </div>
                                                                                   </div>
-                                                                                </div>
-                                                                                <div class="col-lg-6 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>Date of Birth<sup>*</sup></label>
-                                                                                    <input name="dob" type="date"
-                                                                                      placeholder="Date of Birth" required="required" />
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-6 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>Email<sup>*</sup></label>
-                                                                                    <input name="email" type="email"
-                                                                                      placeholder="Your Email" required="required" />
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-6 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>Phone Number<sup>*</sup></label>
-                                                                                    <input name="phone" type="text"
-                                                                                      placeholder="Your Phone" required="required" />
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-6 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>Link to your social media
-                                                                                      profile<sup>*</sup></label>
-                                                                                    <input name="social_url" type="url"
-                                                                                      placeholder="Your Socials" required="required" />
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-6 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>If you are currently employed, please state
-                                                                                      the name of your org<sup>*</sup></label>
-                                                                                    <input name="curr_company" type="text"
-                                                                                      placeholder="Your current employer"
-                                                                                      required="required" />
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-12 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>What is your subject area of expertise? (Eg:
-                                                                                      Media, Education, Health, Finance, Business
-                                                                                      etc.)<sup>*</sup></label>
-                                                                                    <input name="expertise" type="text"
-                                                                                      placeholder="Your current employer"
-                                                                                      required="required" />
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-12 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>List out your three best skills (seperated by
-                                                                                      , )<sup>*</sup></label>
-                                                                                    <input name="curr_company" type="text"
-                                                                                      placeholder="Your current employer"
-                                                                                      required="required" />
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                  <div class="form-group message">
-                                                                                    <label for="">Have you been involved in other
-                                                                                      group/communities? Have you led or have been a
-                                                                                      part of any initiative through the group? Share
-                                                                                      your experience (150 words or
-                                                                                      less)<sup>*</sup></label>
-                                                                                    <textarea name="experience" placeholder="Your Experience" maxlength="650"></textarea>
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-12 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>How did you get to know about Global Shapers
-                                                                                      Kathmandu Hub? (Mention the name of the person, if
-                                                                                      any)<sup>*</sup></label>
-                                                                                    <input name="know_from" type="text"
-                                                                                      placeholder="Reference" required="required"
-                                                                                      list="options" />
-                                                                                    <datalist id="options">
-                                                                                      <option value="Social Media">
-                                                                                      <option value="Kathmandu Hub Website">
-                                                                                      <option value="Friend">
-                                                                                      <option value="GSKH Event">
-                                                                                      <option value="GSKH Member">
-                                                                                      <option value="GSKH Alumni">
-                                                                                      <option value="Other">
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                  <div class="form-group message">
-                                                                                    <label for="">Why do you want to join our community?
-                                                                                      (100 words or less)<sup>*</sup></label>
-                                                                                    <textarea name="experience" placeholder="Your Cause" maxlength="350"></textarea>
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                  <div class="form-group message">
-                                                                                    <label for="">Global Shapers are supposed to run
-                                                                                      social impact projects in their respective cities.
-                                                                                      If you had had the chance to lead a project what
-                                                                                      would it be and why?<sup>*</sup></label>
-                                                                                    <textarea name="experience" placeholder="Your Thoughts" rows="8"></textarea>
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-6 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>If selected, how many hours per week will you
-                                                                                      be able to commit to hub
-                                                                                      activities?<sup>*</sup></label>
-                                                                                    <select class="form-select">
-                                                                                      <option value="1-5">1-5</option>
-                                                                                      <option value="6-100">6-10</option>
-                                                                                      <option value="11-15">11-15</option>
-                                                                                      <option value="15plus">15+</option>
-                                                                                    </select>
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-lg-6 col-12">
-                                                                                  <div class="form-group">
-                                                                                    <label>Please upload your updated CV
-                                                                                      here<sup>*</sup><br />&nbsp;</label>
-                                                                                    <input type="file" name="cv" required="required"
-                                                                                      class="form-control" />
-                                                                                  </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                  <div class="form-group button">
-                                                                                    <button type="submit" class="btn">
-                                                                                      Submit Form
-                                                                                    </button>
-                                                                                  </div>
-                                                                                </div>
-                                                                              </div>
-                                                                            </form> -->
+                                                                                </form> -->
                                             <form class="form become-shaper" method="post"
                                                 action="{{ route('joinus.store') }} " enctype="multipart/form-data">
                                                 @csrf
@@ -309,23 +309,26 @@
                                                                 the name of your org<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-12 col-12">
-                                                        <input type="text" name="expertise" class="question full-width-m"
-                                                            id="expertise" required autocomplete="off" />
+                                                        <input type="text" name="expertise"
+                                                            class="question full-width-m" id="expertise" required
+                                                            autocomplete="off" />
                                                         <label for="expertise"><span>What is your subject area
                                                                 of expertise? (Eg:
                                                                 Media, Education, Health, Finance, Business
                                                                 etc.)<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-12 col-12">
-                                                        <input type="text" name="best_skills" class="question full-width-m"
-                                                            id="skills" required autocomplete="off" />
+                                                        <input type="text" name="best_skills"
+                                                            class="question full-width-m" id="skills" required
+                                                            autocomplete="off" />
                                                         <label for="skills"><span>List out your three best
                                                                 skills (seperated by
                                                                 , )<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-12 col-12">
-                                                        <input type="text" name="get_to_know_about" class="question full-width-m"
-                                                            id="know_from" required autocomplete="off" list="options" />
+                                                        <input type="text" name="get_to_know_about"
+                                                            class="question full-width-m" id="know_from" required
+                                                            autocomplete="off" list="options" />
                                                         <label for="know_from"><span>How did you get to know
                                                                 about Global Shapers
                                                                 Kathmandu Hub? (Mention the name of the person, if
@@ -349,7 +352,6 @@
                                                                     less)<sup>*</sup></span></label>
                                                             <textarea name="involved_in_other_group" placeholder="Your Experience" maxlength="650" class="form-control"></textarea>
                                                         </div>
-
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-group message">

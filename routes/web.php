@@ -32,7 +32,7 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
 Route::get('/single_impact', [PageController::class, 'single_impact']);
 
-Route::get('/become_a_shaper', [PageController::class, 'become_a_shaper']);
+Route::get('/application', [PageController::class, 'become_a_shaper']);
 
 Route::get('/become_a_sponser', [PageController::class, 'become_a_sponser']);
 

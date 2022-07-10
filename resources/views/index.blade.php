@@ -189,11 +189,14 @@
                                 Be One Of Us
                             </h2>
                             <small class="text-white">
-                                When you ask Kathmandu Shapers about the benefits of membership, the first answer is invariably community. Shapers is not about superficial networking; real friendship is the foundation of what we do and why it works.
+                                When you ask Kathmandu Shapers about the benefits of membership, the first answer is
+                                invariably community. Shapers is not about superficial networking; real friendship is the
+                                foundation of what we do and why it works.
                             </small>
-                            <small class="text-white">As Shapers, we have the unique opportunity to launch and participate in projects with support from the community and WEF.</small>
+                            <small class="text-white">As Shapers, we have the unique opportunity to launch and participate
+                                in projects with support from the community and WEF.</small>
                             <button class="join-us-btn">
-                                <a href="/become_a_shaper">Join us</a>
+                                <a href="/application">Join us</a>
                             </button>
                         </div>
                     </div>
