@@ -433,7 +433,7 @@
                                                                     style="height: 55px;">
                                                                     <option value="1-5">
                                                                         1-5</option>
-                                                                    <option value="6-100">
+                                                                    <option value="6-10">
                                                                         6-10</option>
                                                                     <option value="11-15">
                                                                         11-15</option>
