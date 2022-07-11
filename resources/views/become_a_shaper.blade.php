@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1 class="section-title">Global Shapers Kathmandu Hub 2021</h1>
+                        <h1 class="section-title">Global Shapers Kathmandu Hub</h1>
 
                         <div class="shaper-conditions my-5">
                             <div class="shaper-condition">
@@ -57,9 +57,8 @@
                                     <li>All freshmen Shapers will go through a probation period.
                                     </li>
                                     <li>
-                                        You significantly contribute to a project to completion in
-                                        their
-                                        freshman year in order to remain a Shaper in 2021-2022.
+                                        You significantly contribute to a project to completion in your freshman year in
+                                        order to remain a Shaper
                                     </li>
                                     <li>
                                         You will be required to complete a new member survey after
