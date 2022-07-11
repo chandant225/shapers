@@ -21,7 +21,7 @@
             <div class="login-main-container">
                   <div class="thankyou-wrapper">
                       <h1>Thank you</h1>
-                        <p>for taking the time to fill up the form, you will hear from us soon... </p>
+                        <p>for submitting your application for the Global Shapers Kathmandu Hub</p>
                         <a href="/">Back to home</a>
                         <div class="clr"></div>
                     </div>
