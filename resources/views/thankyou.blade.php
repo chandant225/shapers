@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div>
+{{-- <div>
     <div class="bg-slate-800 bg-opacity-50 flex justify-center items-center py-28">
         <div class="bg-white px-16 py-14 rounded-md text-center shadow-lg">
             @if(session()->has('message'))
@@ -14,6 +14,22 @@
          </center>
         </div>
       </div>
-</div>
+</div> --}}
+<section class="login-main-wrapper">
+      <div class="main-container">
+          <div class="login-process">
+            <div class="login-main-container">
+                  <div class="thankyou-wrapper">
+                      <h1>Thank you</h1>
+                        <p>for submitting your application for the Global Shapers Kathmandu Hub</p>
+                        <a href="/">Back to home</a>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </section>
 
 @endsection

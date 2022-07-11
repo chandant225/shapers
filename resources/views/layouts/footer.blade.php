@@ -149,7 +149,7 @@
             <a href="{{ route('contact') }}">Contact Us</a>
         </li>
         <li>
-            <a href="/become_a_shaper">
+            <a href="/application">     
                 <span> Join Us </span>
             </a>
         </li>

@@ -63,7 +63,7 @@
                                     <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a style="color: white; padding: 8px 26px" class="nav-link" href="/application"
+                                    <a style="color: white; padding: 8px 1rem" class="nav-link" href="/application"
                                         role="button" aria-expanded="false">
                                         <span> Join Us </span>
                                     </a>

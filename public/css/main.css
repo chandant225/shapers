@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Roboto&family=Black+Ops+One&display=swap");
 @font-face {
     src: url("../fonts/HKGrotesk-ExtraBold.otf") format("embedded-opentype"),
         url("../fonts/HKGrotesk-ExtraBold.otf") format("woff2"),
@@ -1841,7 +1841,7 @@ ol {
 
 .navbar-nav .nav-item {
     position: relative;
-    margin-left: 28px;
+    margin-left: 1rem;
 }
 
 .navbar-nav .nav-item a {
@@ -8413,4 +8413,43 @@ section.blog-section {
     .padding-lg-y {
         padding: 0px 105px;
     }
+}
+
+
+/* jul 11 */
+.thankyou-wrapper{
+  width:100%;
+  height:auto;
+  margin:auto;
+  background:#ffffff; 
+  padding:10px 0px 50px;
+  margin-top:25vh;
+}
+.thankyou-wrapper h1{
+  font:10rem 'Black Ops One', cursive;
+  text-align:center;
+  color:#333333;
+  padding:0px 10px 10px;
+}
+.thankyou-wrapper p{
+  font-size: 1.5rem;
+  text-align:center;
+  color:#333333;
+  padding:5px 10px 10px;
+}
+.thankyou-wrapper a{
+  text-align:center;
+  color:#ffffff;
+  display:block;
+  text-decoration:none;
+  width:250px;
+  background:rgb(0, 92, 156);
+  margin:10px auto 0px;
+  padding:15px 20px 15px;
+  border-bottom:5px solid rgb(0, 92, 156);
+}
+.thankyou-wrapper a:hover{
+  color:#ffffff;
+  text-decoration:none;
+  opacity:0.8;
 }
