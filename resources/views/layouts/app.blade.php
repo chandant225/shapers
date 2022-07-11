@@ -71,67 +71,7 @@
             );
       //  }
     </script>
-    <script type="text/javascript">
-        //========= testimonial
-        tns({
-            container: '.hero-slider',
-            items: 1,
-            slideBy: 'page',
-            autoplay: false,
-            mouseDrag: true,
-            gutter: 0,
-            nav: false,
-            controls: true,
-            controlsText: [
-                '<i class="fas fa-angle-left"></i>',
-                '<i class="fas fa-angle-right"></i>',
-            ],
-        });
-        //========= testimonial
-        tns({
-            container: '.testimonial-slider',
-            slideBy: 'page',
-            autoplay: true,
-            mouseDrag: true,
-            gutter: 10,
-            nav: false,
-            controls: true,
-            controlsText: [
-                '<i class="fas fa-angle-left"></i>',
-                '<i class="fas fa-angle-right"></i>',
-            ],
-            responsive: {
-                640: {
-                    items: 1,
-                },
-                700: {
-                    items: 2
-                },
-                1200: {
-                    items: 3,
-                }
-            }
-        });
-
-        //========= glightbox
-        GLightbox({
-            href: 'assets/images/video/video.mp4',
-            type: 'video',
-            source: 'youtube', //vimeo, youtube or local
-            width: 900,
-            autoplayVideos: true,
-        });
-    </script>
-    <script>
-        //========= glightbox
-        GLightbox({
-            href: 'assets/images/video/video.mp4',
-            type: 'video',
-            source: 'youtube', //vimeo, youtube or local
-            width: 900,
-            autoplayVideos: true,
-        });
-    </script>
+    
     <script>
         new WOW().init();
     </script>
