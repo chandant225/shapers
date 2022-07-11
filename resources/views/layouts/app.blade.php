@@ -56,7 +56,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="{{ asset('css/mmenu.js') }}"></script>
     <script>
-        if ($(window).width() <= 820) {
+        // if ($(window).width() <= 820) {
             // new Mmenu(document.querySelector("#mmenu"));
             document.addEventListener(
                 "DOMContentLoaded", () => {
@@ -69,7 +69,7 @@
                     });
                 }
             );
-        }
+      //  }
     </script>
     <script type="text/javascript">
         //========= testimonial
