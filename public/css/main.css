@@ -8431,6 +8431,11 @@ section.blog-section {
   color:#333333;
   padding:0px 10px 10px;
 }
+@media(max-width:600px){
+    .thankyou-wrapper h1{
+  font:6rem 'Black Ops One', cursive;
+}
+}
 .thankyou-wrapper p{
   font-size: 1.5rem;
   text-align:center;
