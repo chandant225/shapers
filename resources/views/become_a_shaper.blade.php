@@ -177,40 +177,12 @@
                                                             Birth<sup>*</sup></span></label>
                                                 </div>
                                                 <div class="col-lg-6 col-12">
-                                                    <label for="gender"><span
-                                                            style="margin-left:-0.35rem">Gender<sup>*</sup></span></label>
-                                                    <div
-                                                        class="radio_gender d-flex ms-2">
-                                                        <label for="male_option"
-                                                            class="d-flex align-items-center gap-1">
-                                                            <input type="radio"
-                                                                id="male_option"
-                                                                name="gender"
-                                                                tabindex="1"
-                                                                required>
-                                                            <span>Male</span>
-                                                        </label>
-                                                        <label
-                                                            for="female_option"
-                                                            class="d-flex align-items-center gap-1">
-                                                            <input type="radio"
-                                                                id="female_option"
-                                                                name="gender"
-                                                                tabindex="2"
-                                                                required>
-                                                            <span>Female</span>
-                                                        </label>
-                                                        <label
-                                                            for="others_option"
-                                                            class="d-flex align-items-center gap-1">
-                                                            <input type="radio"
-                                                                id="others_option"
-                                                                name="gender"
-                                                                tabindex="3"
-                                                                required>
-                                                            <span>Others</span>
-                                                        </label>
-                                                    </div>
+                                                    <input type="text"
+                                                        name="gender"
+                                                        class="question"
+                                                        id="gender" required
+                                                        autocomplete="off" />
+                                                    <label for="gender"><span>Gender<sup>*</sup></span></label>
                                                 </div>
                                                 <div class="col-lg-6 col-12">
                                                     <input type="text"
@@ -223,13 +195,9 @@
                                                 </div>
                                                 <div class="col-lg-12 col-12">
                                                     <div class="form-group">
-                                                        <label>Do you identify
-                                                            as a person
-                                                            belonging to any of
-                                                            these
-                                                            groups?<sup>*</sup></label>
+                                                        <label>Do you identify as a person belonging to one or more of these groups?<sup>*</sup></label>
                                                         <div
-                                                            class="d-flex flex-wrap ms-2 group_checkboxes">
+                                                            class="d-flex flex-column ms-2 group_checkboxes">
                                                             <label for="dalit"
                                                                 class="d-flex align-items-center gap-1">
                                                                 <input

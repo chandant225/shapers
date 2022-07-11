@@ -8458,3 +8458,7 @@ section.blog-section {
   text-decoration:none;
   opacity:0.8;
 }
+.group_checkboxes label > input{
+    width: 1rem !important
+
+}
