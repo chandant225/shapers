@@ -60,18 +60,18 @@ class JoinController extends Controller
             $joinus_details->save();
 
 
-            $mail_data = [
-                'recipient' => 'Globalshapersktm@gmail.com',
-                'fromEmail' => $request->email,
-                'fromName'=> $request->fullname,
-                'subject'=> 'A join us form has been submitted,Please check it.'
-            ];
+            // $mail_data = [
+            //     'recipient' => 'Globalshapersktm@gmail.com',
+            //     'fromEmail' => $request->email,
+            //     'fromName'=> $request->fullname,
+            //     'subject'=> 'A join us form has been submitted,Please check it.'
+            // ];
 
-            \Mail::send('email-template',$mail_data,function($message) use($mail_data){
-                $message->to($mail_data['recipient'])
-                ->from($mail_data['fromEmail'],$mail_data['fromName'])
-                ->subject($mail_data['subject']);
-            });
+            // \Mail::send('email_template',$mail_data,function($message) use($mail_data){
+            //     $message->to($mail_data['recipient'])
+            //     ->from($mail_data['fromEmail'],$mail_data['fromName'])
+            //     ->subject($mail_data['subject']);
+            // });
            return redirect('/thankyou');
         }
     }
