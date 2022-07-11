@@ -36,7 +36,7 @@ class JoinController extends Controller
     public function store(Request $request)
     {
            $request->validate([
-            'file' => 'required|mimes:pdf,csv',
+            'file' => 'required|mimes:pdf,docx',
            ]);
           
         if($request->hasFile('file')){

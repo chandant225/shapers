@@ -240,7 +240,7 @@
                                                             <label for="dob"><span>Preferred
                                                                     Pronouns<sup>*</sup></span></label>
                                                         </div>
-                                                        <div class="col-lg-12 col-12">
+                                                        {{-- <div class="col-lg-12 col-12">
                                                             <div class="form-group">
                                                                 <label>Do you identify
                                                                     as a person
@@ -302,7 +302,7 @@
                                                                     </label>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> --}}
                                                         <div class="col-lg-6 col-12">
                                                             <input type="email" name="email" class="question"
                                                                 id="email" required autocomplete="off" />
