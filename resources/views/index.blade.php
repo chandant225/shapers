@@ -35,7 +35,7 @@
                                                         data-bs-target="#exampleModal">Discover
                                                         More</a>
                                                     <a href="{{ $slider->video_link }}" target="_blank"
-                                                        class="video btn"><i class="fas fa-play"></i> Play
+                                                        class="glightbox video btn"><i class="fas fa-play"></i> Play
                                                         Video</a>
                                                 </div>
                                             </div>
@@ -321,6 +321,32 @@
     </div>
 @endsection
 @push('script')
+<script>
+    //========= testimonial
+        tns({
+            container: '.hero-slider',
+            items: 1,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: false,
+            controls: true,
+            controlsText: [
+                '<i class="fas fa-angle-left"></i>',
+                '<i class="fas fa-angle-right"></i>',
+            ],
+        });
+
+        //========= glightbox
+        GLightbox({
+            href: 'assets/images/video/video.mp4',
+            type: 'video',
+            source: 'youtube', //vimeo, youtube or local
+            width: 900,
+            autoplayVideos: true,
+        });
+    </script>
     <script>
         const swiperIndex = new Swiper(
             ".testimonial-swiper,.hub-verticals-swiper", {

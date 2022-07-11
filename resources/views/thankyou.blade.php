@@ -15,7 +15,8 @@
         </div>
       </div>
 </div> --}}
-<section class="login-main-wrapper">
+
+<div class="login-main-wrapper">
       <div class="main-container">
           <div class="login-process">
             <div class="login-main-container">
@@ -30,6 +31,7 @@
             </div>
             <div class="clr"></div>
         </div>
-    </section>
+    </div>
+   
 
 @endsection

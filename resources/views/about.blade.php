@@ -116,3 +116,17 @@
         <!-- End Scroll-Top-btn -->
     </div>
 @endsection
+
+@push('script')
+<script>
+        //========= glightbox
+        GLightbox({
+            href: 'assets/images/video/video.mp4',
+            type: 'video',
+            source: 'youtube', //vimeo, youtube or local
+            width: 900,
+            autoplayVideos: true,
+        });
+    </script>
+    
+@endpush

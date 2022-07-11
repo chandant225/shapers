@@ -169,28 +169,9 @@
                                                                 Birth<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-6 col-12">
-                                                        <label for="gender"><span
-                                                                style="margin-left:-0.35rem">Gender<sup>*</sup></span></label>
-                                                        <div class="radio_gender d-flex ms-2">
-                                                            <label for="male_option"
-                                                                class="d-flex align-items-center gap-1">
-                                                                <input type="radio" id="male_option" name="gender"
-                                                                    tabindex="1" required>
-                                                                <span>Male</span>
-                                                            </label>
-                                                            <label for="female_option"
-                                                                class="d-flex align-items-center gap-1">
-                                                                <input type="radio" id="female_option" name="gender"
-                                                                    tabindex="2" required>
-                                                                <span>Female</span>
-                                                            </label>
-                                                            <label for="others_option"
-                                                                class="d-flex align-items-center gap-1">
-                                                                <input type="radio" id="others_option" name="gender"
-                                                                    tabindex="3" required>
-                                                                <span>Others</span>
-                                                            </label>
-                                                        </div>
+                                                        <input type="text" name="gender" class="question" id="gender"
+                                                            required autocomplete="off" />
+                                                        <label for="gender"><span>Gender<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-6 col-12">
                                                         <input type="text" name="preferred_pronouns" class="question"
@@ -200,29 +181,25 @@
                                                     </div>
                                                     <div class="col-lg-12 col-12">
                                                         <div class="form-group">
-                                                            <label>Do you identify
-                                                                as a person
-                                                                belonging to any of
-                                                                these
-                                                                groups?<sup>*</sup></label>
-                                                            <div class="d-flex flex-wrap ms-2">
+                                                            <label>Do you identify as a person belonging to one or more of
+                                                                these groups?<sup>*</sup></label>
+                                                            <div class="d-flex flex-column ms-2 group_checkboxes">
                                                                 <label for="dalit"
                                                                     class="d-flex align-items-center gap-1">
-                                                                    <input type="checkbox" id="dalit" name="dalit"
+                                                                    <input type="checkbox" id="dalit" name="group[]"
                                                                         tabindex="1" required>
                                                                     <span style="font-size:16px">Dalit</span>
                                                                 </label>
                                                                 <label for="madhesi"
                                                                     class="d-flex align-items-center gap-1">
-                                                                    <input type="checkbox" id="madhesi" name="madhesi"
+                                                                    <input type="checkbox" id="madhesi" name="group[]"
                                                                         tabindex="1" required>
                                                                     <span style="font-size:16px">Madhesi</span>
                                                                 </label>
                                                                 <label for="indigenous_ethnic_group"
                                                                     class="d-flex align-items-center gap-1">
                                                                     <input type="checkbox" id="indigenous_ethnic_group"
-                                                                        name="indigenous_ethnic_group" tabindex="1"
-                                                                        required>
+                                                                        name="group[]" tabindex="1" required>
                                                                     <span style="font-size:16px"
                                                                         class="text-nowrap">Indigenous
                                                                         ethnic
@@ -230,28 +207,25 @@
                                                                 </label>
                                                                 <label for="physical_mental_disabilities"
                                                                     class="d-flex align-items-center gap-1">
-                                                                    <input type="checkbox"
-                                                                        id="physical_mental_disabilities"
-                                                                        name="physical_mental_disabilities" tabindex="1"
-                                                                        required>
+                                                                    <input type="checkbox" id="physical_mental_disabilities"
+                                                                        name="group[]" tabindex="1" required>
                                                                     <span style="font-size:16px"
                                                                         class="text-nowrap">Physical
                                                                         or Mental
                                                                         disabilities</span>
                                                                 </label>
-                                                                <label for="religious_minorities"
+                                                                <label for="female_option"
                                                                     class="d-flex align-items-center gap-1">
                                                                     <input type="checkbox" id="religious_minorities"
-                                                                        name="religious_minorities" tabindex="1"
-                                                                        required>
+                                                                        name="group[]" tabindex="1" required>
                                                                     <span style="font-size:16px"
                                                                         class="text-nowrap">Religious
                                                                         minorities</span>
                                                                 </label>
-                                                                <label for="diverse_gender"
+                                                                <label for="others_option"
                                                                     class="d-flex align-items-center gap-1">
                                                                     <input type="checkbox" id="diverse_gender"
-                                                                        name="diverse_gender" tabindex="1" required>
+                                                                        name="group[]" tabindex="1" required>
                                                                     <span style="font-size:16px"
                                                                         class="text-nowrap">and/or
                                                                         Diverse
@@ -259,165 +233,235 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-12">
-                                                        <input type="email" name="email" class="question"
-                                                            id="email" required autocomplete="off" />
-                                                        <label for="email"><span>Email<sup>*</sup></span></label>
-                                                    </div>
-                                                    <div class="col-lg-6 col-12">
-                                                        <input type="text" name="phone" class="question"
-                                                            id="phone" required autocomplete="off" />
-                                                        <label for="phone"><span>Phone
-                                                                Number<sup>*</sup></span></label>
-                                                    </div>
-                                                    <div class="col-lg-12 col-12 mb-4rem mb-lg-0">
-                                                        <input type="text" name="social_media" class="question"
-                                                            id="social_url" required autocomplete="off" />
-                                                        <label for="social_url"><span>Link
-                                                                to your social
-                                                                media
-                                                                profile<sup>*</sup></span></label>
-                                                    </div>
-                                                    <div class="col-lg-12 col-12">
-                                                        <input type="text" name="name_of_organization"
-                                                            class="question full-width-m" id="curr_company" required
-                                                            autocomplete="off" />
-                                                        <label for="curr_company"><span>If
-                                                                you are currently
-                                                                employed, please
-                                                                state
-                                                                the name of your
-                                                                org<sup>*</sup></span></label>
-                                                    </div>
-                                                    <div class="col-lg-12 col-12">
-                                                        <input type="text" name="expertise"
-                                                            class="question full-width-m" id="expertise" required
-                                                            autocomplete="off" />
-                                                        <label for="expertise"><span>What
-                                                                is your subject area
-                                                                of expertise? (Eg:
-                                                                Media, Education,
-                                                                Health, Finance,
-                                                                Business
-                                                                etc.)<sup>*</sup></span></label>
-                                                    </div>
-                                                    <div class="col-lg-12 col-12">
-                                                        <input type="text" name="best_skills"
-                                                            class="question full-width-m" id="skills" required
-                                                            autocomplete="off" />
-                                                        <label for="skills"><span>List
-                                                                out your three best
-                                                                skills (seperated by
-                                                                ,
-                                                                )<sup>*</sup></span></label>
-                                                    </div>
-                                                    <div class="col-lg-12 col-12">
-                                                        <input type="text" name="get_to_know_about"
-                                                            class="question full-width-m" id="know_from" required
-                                                            autocomplete="off" list="options" />
-                                                        <label for="know_from"><span>How
-                                                                did you get to know
-                                                                about Global Shapers
-                                                                Kathmandu Hub?
-                                                                (Mention the name of
-                                                                the person, if
-                                                                any)<sup>*</sup></span></label>
-                                                        <datalist id="options">
-                                                            <option value="Social Media">
-                                                            <option value="Kathmandu Hub Website">
-                                                            <option value="Friend">
-                                                            <option value="GSKH Event">
-                                                            <option value="GSKH Member">
-                                                            <option value="GSKH Alumni">
-                                                            <option value="Other">
-                                                        </datalist>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-group">
-                                                            <label for=""><span>Have
-                                                                    you been
-                                                                    involved in
-                                                                    other
-                                                                    group/communities?
-                                                                    Have you led or
-                                                                    have been a
-                                                                    part of any
-                                                                    initiative
-                                                                    through the
-                                                                    group? Share
-                                                                    your experience
-                                                                    (150 words or
-                                                                    less)<sup>*</sup></span></label>
-                                                            <textarea name="involved_in_other_group" placeholder="Your Experience" class="form-control"></textarea>
+                                                        <div class="col-lg-6 col-12">
+                                                            <input type="text" name="preferred_pronouns"
+                                                                class="question" id="dob" required
+                                                                autocomplete="off" />
+                                                            <label for="dob"><span>Preferred
+                                                                    Pronouns<sup>*</sup></span></label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-12">
+                                                            <div class="form-group">
+                                                                <label>Do you identify
+                                                                    as a person
+                                                                    belonging to any of
+                                                                    these
+                                                                    groups?<sup>*</sup></label>
+                                                                <div class="d-flex flex-wrap ms-2">
+                                                                    <label for="dalit"
+                                                                        class="d-flex align-items-center gap-1">
+                                                                        <input type="checkbox" id="dalit"
+                                                                            name="dalit" tabindex="1" required>
+                                                                        <span style="font-size:16px">Dalit</span>
+                                                                    </label>
+                                                                    <label for="madhesi"
+                                                                        class="d-flex align-items-center gap-1">
+                                                                        <input type="checkbox" id="madhesi"
+                                                                            name="madhesi" tabindex="1" required>
+                                                                        <span style="font-size:16px">Madhesi</span>
+                                                                    </label>
+                                                                    <label for="indigenous_ethnic_group"
+                                                                        class="d-flex align-items-center gap-1">
+                                                                        <input type="checkbox"
+                                                                            id="indigenous_ethnic_group"
+                                                                            name="indigenous_ethnic_group" tabindex="1"
+                                                                            required>
+                                                                        <span style="font-size:16px"
+                                                                            class="text-nowrap">Indigenous
+                                                                            ethnic
+                                                                            group</span>
+                                                                    </label>
+                                                                    <label for="physical_mental_disabilities"
+                                                                        class="d-flex align-items-center gap-1">
+                                                                        <input type="checkbox"
+                                                                            id="physical_mental_disabilities"
+                                                                            name="physical_mental_disabilities"
+                                                                            tabindex="1" required>
+                                                                        <span style="font-size:16px"
+                                                                            class="text-nowrap">Physical
+                                                                            or Mental
+                                                                            disabilities</span>
+                                                                    </label>
+                                                                    <label for="religious_minorities"
+                                                                        class="d-flex align-items-center gap-1">
+                                                                        <input type="checkbox" id="religious_minorities"
+                                                                            name="religious_minorities" tabindex="1"
+                                                                            required>
+                                                                        <span style="font-size:16px"
+                                                                            class="text-nowrap">Religious
+                                                                            minorities</span>
+                                                                    </label>
+                                                                    <label for="diverse_gender"
+                                                                        class="d-flex align-items-center gap-1">
+                                                                        <input type="checkbox" id="diverse_gender"
+                                                                            name="diverse_gender" tabindex="1" required>
+                                                                        <span style="font-size:16px"
+                                                                            class="text-nowrap">and/or
+                                                                            Diverse
+                                                                            gender</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-12">
+                                                            <input type="email" name="email" class="question"
+                                                                id="email" required autocomplete="off" />
+                                                            <label for="email"><span>Email<sup>*</sup></span></label>
+                                                        </div>
+                                                        <div class="col-lg-6 col-12">
+                                                            <input type="text" name="phone" class="question"
+                                                                id="phone" required autocomplete="off" />
+                                                            <label for="phone"><span>Phone
+                                                                    Number<sup>*</sup></span></label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-12 mb-4rem mb-lg-0">
+                                                            <input type="text" name="social_media" class="question"
+                                                                id="social_url" required autocomplete="off" />
+                                                            <label for="social_url"><span>Link
+                                                                    to your social
+                                                                    media
+                                                                    profile<sup>*</sup></span></label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-12">
+                                                            <input type="text" name="name_of_organization"
+                                                                class="question full-width-m" id="curr_company" required
+                                                                autocomplete="off" />
+                                                            <label for="curr_company"><span>If
+                                                                    you are currently
+                                                                    employed, please
+                                                                    state
+                                                                    the name of your
+                                                                    org<sup>*</sup></span></label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-12">
+                                                            <input type="text" name="expertise"
+                                                                class="question full-width-m" id="expertise" required
+                                                                autocomplete="off" />
+                                                            <label for="expertise"><span>What
+                                                                    is your subject area
+                                                                    of expertise? (Eg:
+                                                                    Media, Education,
+                                                                    Health, Finance,
+                                                                    Business
+                                                                    etc.)<sup>*</sup></span></label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-12">
+                                                            <input type="text" name="best_skills"
+                                                                class="question full-width-m" id="skills" required
+                                                                autocomplete="off" />
+                                                            <label for="skills"><span>List
+                                                                    out your three best
+                                                                    skills (seperated by
+                                                                    ,
+                                                                    )<sup>*</sup></span></label>
+                                                        </div>
+                                                        <div class="col-lg-12 col-12">
+                                                            <input type="text" name="get_to_know_about"
+                                                                class="question full-width-m" id="know_from" required
+                                                                autocomplete="off" list="options" />
+                                                            <label for="know_from"><span>How
+                                                                    did you get to know
+                                                                    about Global Shapers
+                                                                    Kathmandu Hub?
+                                                                    (Mention the name of
+                                                                    the person, if
+                                                                    any)<sup>*</sup></span></label>
+                                                            <datalist id="options">
+                                                                <option value="Social Media">
+                                                                <option value="Kathmandu Hub Website">
+                                                                <option value="Friend">
+                                                                <option value="GSKH Event">
+                                                                <option value="GSKH Member">
+                                                                <option value="GSKH Alumni">
+                                                                <option value="Other">
+                                                            </datalist>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label for=""><span>Have
+                                                                        you been
+                                                                        involved in
+                                                                        other
+                                                                        group/communities?
+                                                                        Have you led or
+                                                                        have been a
+                                                                        part of any
+                                                                        initiative
+                                                                        through the
+                                                                        group? Share
+                                                                        your experience
+                                                                        (150 words or
+                                                                        less)<sup>*</sup></span></label>
+                                                                <textarea name="involved_in_other_group" placeholder="Your Experience" class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-group message">
+                                                                <label for="">Why do you
+                                                                    want to join our
+                                                                    community?
+                                                                    (100 words or
+                                                                    less)<sup>*</sup></label>
+                                                                <textarea name="join_our_community" placeholder="Your Cause" class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-group message">
+                                                                <label for="">Global
+                                                                    Shapers are supposed
+                                                                    to run
+                                                                    social impact
+                                                                    projects in their
+                                                                    respective cities.
+                                                                    If you had had the
+                                                                    chance to lead a
+                                                                    project what
+                                                                    would it be and
+                                                                    why?<sup>*</sup></label>
+                                                                <textarea name="chance_to_lead_a_project" placeholder="Your Thoughts" rows="8" class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                <label>If selected, how
+                                                                    many hours per week
+                                                                    will you
+                                                                    be able to commit to
+                                                                    hub
+                                                                    activities?<sup>*</sup></label>
+                                                                <select name="hours_per_week" class="form-select"
+                                                                    style="height: 55px;">
+                                                                    <option value="1-5">
+                                                                        1-5</option>
+                                                                    <option value="6-100">
+                                                                        6-10</option>
+                                                                    <option value="11-15">
+                                                                        11-15</option>
+                                                                    <option value="15plus">
+                                                                        15+</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                <label>Please upload
+                                                                    your updated CV
+                                                                    here<sup>*</sup><br /><small
+                                                                        style="color:#808080">(.docx
+                                                                        or .pdf
+                                                                        only)</small></label>
+                                                                <input type="file" name="file" required="required"
+                                                                    class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-group button">
+                                                                <button type="submit" class="btn">
+                                                                    Submit Form
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12">
-                                                        <div class="form-group message">
-                                                            <label for="">Why do you
-                                                                want to join our
-                                                                community?
-                                                                (100 words or
-                                                                less)<sup>*</sup></label>
-                                                            <textarea name="join_our_community" placeholder="Your Cause" class="form-control"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-group message">
-                                                            <label for="">Global
-                                                                Shapers are supposed
-                                                                to run
-                                                                social impact
-                                                                projects in their
-                                                                respective cities.
-                                                                If you had had the
-                                                                chance to lead a
-                                                                project what
-                                                                would it be and
-                                                                why?<sup>*</sup></label>
-                                                            <textarea name="chance_to_lead_a_project" placeholder="Your Thoughts" rows="8" class="form-control"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-12">
-                                                        <div class="form-group">
-                                                            <label>If selected, how
-                                                                many hours per week
-                                                                will you
-                                                                be able to commit to
-                                                                hub
-                                                                activities?<sup>*</sup></label>
-                                                            <select name="hours_per_week" class="form-select"
-                                                                style="height: 55px;">
-                                                                <option value="1-5">
-                                                                    1-5</option>
-                                                                <option value="6-100">
-                                                                    6-10</option>
-                                                                <option value="11-15">
-                                                                    11-15</option>
-                                                                <option value="15plus">
-                                                                    15+</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-12">
-                                                        <div class="form-group">
-                                                            <label>Please upload
-                                                                your updated CV
-                                                                here<sup>*</sup><br /><small style="color:#808080">(.docx
-                                                                    or .pdf
-                                                                    only)</small></label>
-                                                            <input type="file" name="file" required="required"
-                                                                class="form-control" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-group button">
-                                                            <button type="submit" class="btn">
-                                                                Submit Form
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </form>
                                         </div>
                                     </div>
@@ -431,3 +475,17 @@
 
     </div>
 @endsection
+@push('script')
+    <script>
+        $(function() {
+            var requiredCheckboxes = $('.group_checkboxes :checkbox[required]');
+            requiredCheckboxes.change(function() {
+                if (requiredCheckboxes.is(':checked')) {
+                    requiredCheckboxes.removeAttr('required');
+                } else {
+                    requiredCheckboxes.attr('required', 'required');
+                }
+            });
+        });
+    </script>
+@endpush

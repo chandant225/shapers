@@ -19,7 +19,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="{{ asset('css/mmenu.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.07') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.072') }}">
     <style>
         body.modal-open .mm-slideout {
             z-index: inherit !important;
@@ -56,7 +56,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="{{ asset('css/mmenu.js') }}"></script>
     <script>
-        if ($(window).width() <= 820) {
+        // if ($(window).width() <= 820) {
             // new Mmenu(document.querySelector("#mmenu"));
             document.addEventListener(
                 "DOMContentLoaded", () => {
@@ -69,69 +69,9 @@
                     });
                 }
             );
-        }
+      //  }
     </script>
-    <script type="text/javascript">
-        //========= testimonial
-        tns({
-            container: '.hero-slider',
-            items: 1,
-            slideBy: 'page',
-            autoplay: false,
-            mouseDrag: true,
-            gutter: 0,
-            nav: false,
-            controls: true,
-            controlsText: [
-                '<i class="fas fa-angle-left"></i>',
-                '<i class="fas fa-angle-right"></i>',
-            ],
-        });
-        //========= testimonial
-        tns({
-            container: '.testimonial-slider',
-            slideBy: 'page',
-            autoplay: true,
-            mouseDrag: true,
-            gutter: 10,
-            nav: false,
-            controls: true,
-            controlsText: [
-                '<i class="fas fa-angle-left"></i>',
-                '<i class="fas fa-angle-right"></i>',
-            ],
-            responsive: {
-                640: {
-                    items: 1,
-                },
-                700: {
-                    items: 2
-                },
-                1200: {
-                    items: 3,
-                }
-            }
-        });
-
-        //========= glightbox
-        GLightbox({
-            href: 'assets/images/video/video.mp4',
-            type: 'video',
-            source: 'youtube', //vimeo, youtube or local
-            width: 900,
-            autoplayVideos: true,
-        });
-    </script>
-    <script>
-        //========= glightbox
-        GLightbox({
-            href: 'assets/images/video/video.mp4',
-            type: 'video',
-            source: 'youtube', //vimeo, youtube or local
-            width: 900,
-            autoplayVideos: true,
-        });
-    </script>
+    
     <script>
         new WOW().init();
     </script>

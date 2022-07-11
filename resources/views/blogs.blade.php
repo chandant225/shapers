@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<div>
     <!-- Section Latest-News-Area-Blog-list  -->
     <section class="section latest-news-area blog-list">
         <div class="container">
@@ -51,4 +52,5 @@
         </div>
     </section>
     <!-- End Section Latest-News-Area-Blog-list  -->
+</div>
 @endsection

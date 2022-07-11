@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<div>
     <!-- Endowment section -->
     <section id="team" class="team section">
         <div class="container">
@@ -204,4 +205,5 @@
             </div>
         </div>
     @endforeach
+    </div>
 @endsection
