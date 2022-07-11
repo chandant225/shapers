@@ -18,7 +18,7 @@
 <section class="login-main-wrapper">
       <div class="main-container">
           <div class="login-process">
-              <div class="login-main-container">
+            <div class="login-main-container">
                   <div class="thankyou-wrapper">
                       <h1>Thank you</h1>
                         <p>for taking the time to fill up the form, you will hear from us soon... </p>
