@@ -36,7 +36,7 @@ class JoinController extends Controller
     public function store(Request $request)
     {
            $request->validate([
-            'file' => 'required|mimes:pdf,xlx,csv|max:2048',
+            'file' => 'required|mimes:pdf,csv',
            ]);
           
         if($request->hasFile('file')){
@@ -58,9 +58,21 @@ class JoinController extends Controller
             $joinus_details->hours_per_week = $request->input('hours_per_week');
             $joinus_details->cv_file = $fileName;
             $joinus_details->save();
-           return redirect()->back()->with('message','Message Sent Successfully');
-            
 
+
+            $mail_data = [
+                'recipient' => 'Globalshapersktm@gmail.com',
+                'fromEmail' => $request->email,
+                'fromName'=> $request->fullname,
+                'subject'=> 'A join us form has been submitted,Please check it.'
+            ];
+
+            \Mail::send('email-template',$mail_data,function($message) use($mail_data){
+                $message->to($mail_data['recipient'])
+                ->from($mail_data['fromEmail'],$mail_data['fromName'])
+                ->subject($mail_data['subject']);
+            });
+           return redirect('/thankyou');
         }
     }
 
