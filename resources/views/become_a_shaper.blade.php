@@ -229,13 +229,13 @@
                                                             these
                                                             groups?<sup>*</sup></label>
                                                         <div
-                                                            class="d-flex flex-wrap ms-2">
+                                                            class="d-flex flex-wrap ms-2 group_checkboxes">
                                                             <label for="dalit"
                                                                 class="d-flex align-items-center gap-1">
                                                                 <input
                                                                     type="checkbox"
                                                                     id="dalit"
-                                                                    name="dalit"
+                                                                    name="group[]"
                                                                     tabindex="1"
                                                                     required>
                                                                 <span
@@ -246,7 +246,7 @@
                                                                 <input
                                                                     type="checkbox"
                                                                     id="madhesi"
-                                                                    name="madhesi"
+                                                                    name="group[]"
                                                                     tabindex="1"
                                                                     required>
                                                                 <span
@@ -258,7 +258,7 @@
                                                                 <input
                                                                     type="checkbox"
                                                                     id="indigenous_ethnic_group"
-                                                                    name="indigenous_ethnic_group"
+                                                                    name="group[]"
                                                                     tabindex="1"
                                                                     required>
                                                                 <span
@@ -273,7 +273,7 @@
                                                                 <input
                                                                     type="checkbox"
                                                                     id="physical_mental_disabilities"
-                                                                    name="physical_mental_disabilities"
+                                                                    name="group[]"
                                                                     tabindex="1"
                                                                     required>
                                                                 <span
@@ -288,7 +288,7 @@
                                                                 <input
                                                                     type="checkbox"
                                                                     id="religious_minorities"
-                                                                    name="religious_minorities"
+                                                                    name="group[]"
                                                                     tabindex="1"
                                                                     required>
                                                                 <span
@@ -302,7 +302,7 @@
                                                                 <input
                                                                     type="checkbox"
                                                                     id="diverse_gender"
-                                                                    name="diverse_gender"
+                                                                    name="group[]"
                                                                     tabindex="1"
                                                                     required>
                                                                 <span
@@ -537,3 +537,18 @@
 
 </div>
 @endsection
+@push('script')
+<script>
+$(function(){
+    var requiredCheckboxes = $('.group_checkboxes :checkbox[required]');
+    requiredCheckboxes.change(function(){
+        if(requiredCheckboxes.is(':checked')) {
+            requiredCheckboxes.removeAttr('required');
+        } else {
+            requiredCheckboxes.attr('required', 'required');
+        }
+    });
+});
+    
+</script>
+@endpush
