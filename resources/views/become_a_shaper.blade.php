@@ -30,10 +30,7 @@
                                 </p>
                                 <ul class="mb-3 list-disc">
                                     <li>
-                                        You are between 18-27 years old; align with
-                                        the missions
-                                        of the
-                                        larger Global Shapers Community.
+                                        You are between 18-27 years old.
                                     </li>
                                     <li>Residents of or live close to the hub city,
                                         Kathmandu
@@ -63,24 +60,22 @@
                                 </p>
                                 <ul class="mb-3 list-disc">
                                     <li>All freshmen Shapers will go through a
-                                        probation period.
+                                        probation period of 3 months.
                                     </li>
                                     <li>
-                                        You significantly contribute to a project to
-                                        completion in your freshman year in
-                                        order to remain a Shaper
+                                        You must significantly contribute to a project in your freshman year in
+                                        order to remain a Shaper.
                                     </li>
                                     <li>
                                         You will be required to complete a new
                                         member survey after
-                                        their
-                                        selection to confirm their acceptance.
+                                        your
+                                        selection to confirm your acceptance.
                                     </li>
                                     <li>
-                                        All Kathmandu Shapers are required to attend
+                                        All Shapers are required to attend
                                         an annual
-                                        retreat
-                                        every year.
+                                        retreat.
                                     </li>
                                     <li>
                                         Shapers are invited and highly encouraged to
@@ -90,15 +85,12 @@
                                         based).
                                     </li>
                                     <li>
-                                        Review and accept our <a href="https://drive.google.com/file/d/1YrRQ4trNrIY8VkbeZw46Tbw2cAp2f7D_/view?usp=sharing" target="blanc">Hub
-                                            Charter</a> and pledge right after
-                                        probation period is over
+                                        You must review and accept our <a href="https://drive.google.com/file/d/1YrRQ4trNrIY8VkbeZw46Tbw2cAp2f7D_/view?usp=sharing" target="blanc">Hub
+                                            Charter</a> and pledge right after the
+                                        probation period is over.
                                     </li>
                                     <li>
-                                        Submit annual membership fee before joining
-                                        & annually in
-                                        every
-                                        year.
+                                        You must submit an annual membership fee.
                                     </li>
                                 </ul>
                             </div>
@@ -113,22 +105,21 @@
                                         <p>
                                             <strong>ROUND 1:</strong><br />
                                             Online Application: complete the online
-                                            application form before the announced
-                                            deadline on our website.
+                                            application form on our website before the announced
+                                            deadline.
                                         </p>
                                     </li>
                                     <li>
-                                        <p><strong>ROUND 2:</strong><br />Interview
-                                            - Shortlisted candidates from Round 1
-                                            will be invited for an interview where
-                                            current Kathmandu hub leadership team
+                                        <p><strong>ROUND 2:</strong><br />Interview, Shortlisted candidates from Round 1
+                                            will be invited for an interview with the
+                                            current hub leadership team
                                             and
-                                            advisory council members. </p>
+                                            advisory council. </p>
                                     </li>
                                     <li>
                                         <p><strong>NOTIFICATION:</strong><br />Applicants
                                             will be notified of application
-                                            status via email</p>
+                                            status via email.</p>
                                     </li>
                                 </ul>
 
