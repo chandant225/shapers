@@ -56,6 +56,22 @@
                 <td>{{ $details->date_of_birth }}</td>
             </tr>
             <tr>
+                <th>Gender</th>
+                <td>{{ $details->gender }}</td>
+            </tr>
+            <tr>
+                <th>Preffered Pronouns</th>
+                <td>{{ $details->preffered_pronouns }}</td>
+            </tr>
+            <tr>
+                <th>Identify as a person</th>
+                <td>
+                    @foreach ($details->identify_as_a_person as $group)
+                        <p>{{ $group }}</p>
+                    @endforeach
+                </td>
+            </tr>
+            <tr>
                 <th>Phone</th>
                 <td>{{ $details->phone }}</td>
             </tr>

@@ -45,6 +45,9 @@ class JoinController extends Controller
             $joinus_details = new Joinus;
             $joinus_details->fullname = $request->input('fullname');
             $joinus_details->date_of_birth = $request->input('date_of_birth');
+            $joinus_details->gender = $request->input('gender');
+            $joinus_details->preffered_pronouns = $request->input('preffered_pronouns');
+            $joinus_details->identify_as_a_person = $request->group;
             $joinus_details->email = $request->input('email');
             $joinus_details->phone = $request->input('phone');
             $joinus_details->social_media = $request->input('social_media');
@@ -60,18 +63,19 @@ class JoinController extends Controller
             $joinus_details->save();
 
 
-            // $mail_data = [
-            //     'recipient' => 'Globalshapersktm@gmail.com',
-            //     'fromEmail' => $request->email,
-            //     'fromName'=> $request->fullname,
-            //     'subject'=> 'A join us form has been submitted,Please check it.'
-            // ];
+            $mail_data = [
+                // 'recipient' => 'Globalshapersktm@gmail.com',
+                'recipient' => 'chandant225@gmail.com',
+                'fromEmail' => $request->email,
+                'fromName'=> $request->fullname,
+                'subject'=> 'A join us form has been submitted,Please check it.'
+            ];
 
-            // \Mail::send('email_template',$mail_data,function($message) use($mail_data){
-            //     $message->to($mail_data['recipient'])
-            //     ->from($mail_data['fromEmail'],$mail_data['fromName'])
-            //     ->subject($mail_data['subject']);
-            // });
+            \Mail::send('email_template',$mail_data,function($message) use($mail_data){
+                $message->to($mail_data['recipient'])
+                ->from($mail_data['fromEmail'],$mail_data['fromName'])
+                ->subject($mail_data['subject']);
+            });
            return redirect('/thankyou');
         }
     }

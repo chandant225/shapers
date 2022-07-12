@@ -65,3 +65,7 @@ img.blog-image {
     font-size: 69px;
     margin: 0px 0px 14rem 39px;
 }
+
+#alert1 , #alert2 {
+    color: red;
+}

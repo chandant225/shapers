@@ -151,7 +151,8 @@
                                                 explanation.</small>
 
                                             <form class="form become-shaper" method="post"
-                                                action="{{ route('joinus.store') }} " enctype="multipart/form-data">
+                                                action="{{ route('joinus.store') }} " enctype="multipart/form-data"
+                                                onsubmit="return validateWords()">
                                                 @csrf
                                                 @method('POST')
                                                 <div class="row">
@@ -174,7 +175,7 @@
                                                         <label for="gender"><span>Gender<sup>*</sup></span></label>
                                                     </div>
                                                     <div class="col-lg-6 col-12">
-                                                        <input type="text" name="preferred_pronouns" class="question"
+                                                        <input type="text" name="preffered_pronouns" class="question"
                                                             id="dob" required autocomplete="off" />
                                                         <label for="dob"><span>Preferred
                                                                 Pronouns<sup>*</sup></span></label>
@@ -187,19 +188,20 @@
                                                                 <label for="dalit"
                                                                     class="d-flex align-items-center gap-1">
                                                                     <input type="checkbox" id="dalit" name="group[]"
-                                                                        tabindex="1" required>
+                                                                        value="dalit" tabindex="1" required>
                                                                     <span style="font-size:16px">Dalit</span>
                                                                 </label>
                                                                 <label for="madhesi"
                                                                     class="d-flex align-items-center gap-1">
-                                                                    <input type="checkbox" id="madhesi" name="group[]"
-                                                                        tabindex="1" required>
+                                                                    <input type="checkbox" id="madhesi" value="madhesi"
+                                                                        name="group[]" tabindex="1" required>
                                                                     <span style="font-size:16px">Madhesi</span>
                                                                 </label>
                                                                 <label for="indigenous_ethnic_group"
                                                                     class="d-flex align-items-center gap-1">
                                                                     <input type="checkbox" id="indigenous_ethnic_group"
-                                                                        name="group[]" tabindex="1" required>
+                                                                        value="indigenous_ethnic_group" name="group[]"
+                                                                        tabindex="1" required>
                                                                     <span style="font-size:16px"
                                                                         class="text-nowrap">Indigenous
                                                                         ethnic
@@ -207,8 +209,10 @@
                                                                 </label>
                                                                 <label for="physical_mental_disabilities"
                                                                     class="d-flex align-items-center gap-1">
-                                                                    <input type="checkbox" id="physical_mental_disabilities"
-                                                                        name="group[]" tabindex="1" required>
+                                                                    <input type="checkbox"
+                                                                        value="physical_mental_disabilities"
+                                                                        id="physical_mental_disabilities" name="group[]"
+                                                                        tabindex="1" required>
                                                                     <span style="font-size:16px"
                                                                         class="text-nowrap">Physical
                                                                         or Mental
@@ -217,7 +221,8 @@
                                                                 <label for="female_option"
                                                                     class="d-flex align-items-center gap-1">
                                                                     <input type="checkbox" id="religious_minorities"
-                                                                        name="group[]" tabindex="1" required>
+                                                                        name="group[]" tabindex="1"
+                                                                        value="religious_minorities" required>
                                                                     <span style="font-size:16px"
                                                                         class="text-nowrap">Religious
                                                                         minorities</span>
@@ -225,7 +230,8 @@
                                                                 <label for="others_option"
                                                                     class="d-flex align-items-center gap-1">
                                                                     <input type="checkbox" id="diverse_gender"
-                                                                        name="group[]" tabindex="1" required>
+                                                                        value="diverse_gender" name="group[]"
+                                                                        tabindex="1" required>
                                                                     <span style="font-size:16px"
                                                                         class="text-nowrap">and/or
                                                                         Diverse
@@ -392,8 +398,10 @@
                                                                         your experience
                                                                         (150 words or
                                                                         less)<sup>*</sup></span></label>
-                                                                <textarea name="involved_in_other_group" placeholder="Your Experience" class="form-control"></textarea>
+                                                                <textarea name="involved_in_other_group" placeholder="Your Experience" id="experience" class="form-control"></textarea>
                                                             </div>
+                                                            <p id="alert1"></p>
+
                                                         </div>
                                                         <div class="col-12">
                                                             <div class="form-group message">
@@ -402,8 +410,9 @@
                                                                     community?
                                                                     (100 words or
                                                                     less)<sup>*</sup></label>
-                                                                <textarea name="join_our_community" placeholder="Your Cause" class="form-control"></textarea>
+                                                                <textarea name="join_our_community" placeholder="Your Cause" id="join" class="form-control"></textarea>
                                                             </div>
+                                                            <p id="alert2"></p>
                                                         </div>
                                                         <div class="col-12">
                                                             <div class="form-group message">
@@ -476,6 +485,38 @@
     </div>
 @endsection
 @push('script')
+    <script>
+        function validateWords() {
+            var expText = document.getElementById("experience").value;
+            var joinText = document.getElementById("join").value;
+            submitOk = "true";
+
+            let expWords = expText.split(/\s/);
+            let joinWords = joinText.split(/\s/);
+
+            if (expWords.length > 150) {
+                alert(
+                    `There are ${expWords.length} words, it must be less than or equal to 150. Please check the form again.`
+                );
+                document.getElementById("alert1").innerHTML =
+                    `There are ${expWords.length} words, it must be less than or equal to 150. Please remove ${expWords.length - 150} words`;
+                submitOk = "false";
+            }
+
+            if (joinWords.length > 100) {
+                alert(
+                    `There are ${joinWords.length} words, it must be less than or equal to 100. Please check the form again`
+                );
+                document.getElementById("alert2").innerHTML =
+                    `There are ${joinWords.length} words, it must be less than or equal to 100. Please remove ${joinWords.length - 100} words`;
+                submitOk = "false";
+            }
+
+            if (submitOk == "false") {
+                return false;
+            }
+        }
+    </script>
     <script>
         $(function() {
             var requiredCheckboxes = $('.group_checkboxes :checkbox[required]');
