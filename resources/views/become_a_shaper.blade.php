@@ -33,7 +33,7 @@
                                         You are between 18-27 years old.
                                     </li>
                                     <li>Residents of or live close to the hub city,
-                                        Kathmandu
+                                        Kathmandu.
                                     </li>
                                     <li>Committed to working to improve our
                                         community.</li>
@@ -110,7 +110,7 @@
                                         </p>
                                     </li>
                                     <li>
-                                        <p><strong>ROUND 2:</strong><br />Interview, Shortlisted candidates from Round 1
+                                        <p><strong>ROUND 2:</strong><br />Interview: Shortlisted candidates from Round 1
                                             will be invited for an interview with the
                                             current hub leadership team
                                             and
