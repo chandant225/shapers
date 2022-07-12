@@ -90,7 +90,7 @@
                                         based).
                                     </li>
                                     <li>
-                                        Review and accept our <a href="https://drive.google.com/drive/u/2/folders/1EYwHq7Btc9hMEolFLiLtcVUtN4jo0ZQ-" target="blanc">Hub
+                                        Review and accept our <a href="https://drive.google.com/file/d/1YrRQ4trNrIY8VkbeZw46Tbw2cAp2f7D_/view?usp=sharing" target="blanc">Hub
                                             Charter</a> and pledge right after
                                         probation period is over
                                     </li>
