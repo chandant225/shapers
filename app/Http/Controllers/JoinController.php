@@ -64,8 +64,7 @@ class JoinController extends Controller
 
 
             $mail_data = [
-                // 'recipient' => 'Globalshapersktm@gmail.com',
-                'recipient' => 'chandant225@gmail.com',
+                'recipient' => 'Globalshapersktm@gmail.com',
                 'fromEmail' => $request->email,
                 'fromName'=> $request->fullname,
                 'subject'=> 'A join us form has been submitted,Please check it.'
