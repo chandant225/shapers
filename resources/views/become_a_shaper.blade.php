@@ -90,7 +90,7 @@
                                         based).
                                     </li>
                                     <li>
-                                        Review and accept our <a href="">Hub
+                                        Review and accept our <a href="https://drive.google.com/drive/u/2/folders/1EYwHq7Btc9hMEolFLiLtcVUtN4jo0ZQ-" target="blanc">Hub
                                             Charter</a> and pledge right after
                                         probation period is over
                                     </li>
@@ -227,19 +227,29 @@
                                                                     <input type="checkbox" id="diverse_gender"
                                                                         name="group[]" tabindex="1" required>
                                                                     <span style="font-size:16px"
-                                                                        class="text-nowrap">and/or
+                                                                        class="text-nowrap">
                                                                         Diverse
                                                                         gender</span>
                                                                 </label>
+                                                                 <label for="others_option"
+                                                                    class="d-flex align-items-center gap-1">
+                                                                    <input type="checkbox" id="others"
+                                                                        name="group[]" tabindex="1" required>
+                                                                    <span style="font-size:16px"
+                                                                        class="text-nowrap">
+                                                                        Others</span>
+                                                                </label>
+                                                                <label for="others_option"
+                                                                    class="d-flex align-items-center gap-1">
+                                                                    <input type="checkbox" id="none"
+                                                                        name="group[]" tabindex="1" required>
+                                                                    <span style="font-size:16px"
+                                                                        class="text-nowrap">
+                                                                        None</span>
+                                                                </label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-6 col-12">
-                                                            <input type="text" name="preferred_pronouns"
-                                                                class="question" id="dob" required
-                                                                autocomplete="off" />
-                                                            <label for="dob"><span>Preferred
-                                                                    Pronouns<sup>*</sup></span></label>
-                                                        </div>
+                                                        
                                                         {{-- <div class="col-lg-12 col-12">
                                                             <div class="form-group">
                                                                 <label>Do you identify
