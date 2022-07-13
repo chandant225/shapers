@@ -71,6 +71,7 @@
                                 <h2 class="wow fadeInUp" data-wow-delay=".4s">
                                     OUR PARTNERS
                                 </h2>
+                                <p>past and present</p>
                             </div>
                             {{-- <p class="my-2 text-center">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -103,10 +104,9 @@
                                     <img src="{{ asset('assets/shapersPartners/6.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
                                 </a>
-                               {{-- <a href="#" class="impact-partner">
+                                <a href="#" class="impact-partner">
                                     <img src="{{ asset('assets/shapersPartners/7.jpeg') }}" alt="" />
-                                     <h5>John Doe</h5> 
-                                </a> --}}
+                                </a>
                                 <a href="#" class="impact-partner">
                                     <img src="{{ asset('assets/shapersPartners/8.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
