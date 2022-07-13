@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    @if (count($alumunis) == 0)
+                    @if (count($alumunis) !== 0)
                         <center>
                             <p>There are no any founding curators.</p>
                         </center>
