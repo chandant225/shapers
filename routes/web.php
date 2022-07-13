@@ -68,6 +68,4 @@ Route::group(['prefix' => 'admin'], function () {
 // Auth::routes();
 Route::get('/thankyou', [PageController::class,'thankyou']);
 
-Route::get('/founders', function () {
-    return view('founders');
-});
+

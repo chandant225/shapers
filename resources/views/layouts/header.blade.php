@@ -37,9 +37,7 @@
                                         <li>
                                             <a class="dropdown-item" href="/alumni">Alumni</a>
                                         </li>
-                                        <li>
-                                            <a class="dropdown-item" href="/founders">Founding Curators</a>
-                                        </li>
+                                       
                                         {{-- <li>
                                             <a class="dropdown-item" href="/">
                                                 Shapers Learning and
