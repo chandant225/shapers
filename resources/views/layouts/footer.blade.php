@@ -131,6 +131,9 @@
                 <li>
                     <a href="/alumni">Alumni</a>
                 </li>
+                <li>
+                    <a href="/founders">Founding Curators</a>
+                </li>
                 {{-- <li>
                     <a href="/"> Shapers Learning and Social Engagements</a>
                 </li> --}}
