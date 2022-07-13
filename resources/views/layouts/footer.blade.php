@@ -71,7 +71,7 @@
                                                 @endif @if ($social_links->gmail_link)
                                                     <li>
                                                         <a href="https://{{ $social_links->gmail_link }}" target="blanc"><i
-                                                                class="fa-solid fa-envelope"></i></a>
+                                                                class="fa fa-envelope"></i></a>
                                                     </li>
                                                     @endif @if ($social_links->youtube_link)
                                                         <li>
