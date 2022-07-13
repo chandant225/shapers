@@ -17,9 +17,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    @if (count($alumunis) !== 0)
+                    @if (count($alumunis) == 0)
                         <center>
-                            <p>There are no any alumunis available.</p>
+                            <p>There are no any founding curators.</p>
                         </center>
                     @elseif(count($alumunis) >= 1)
                         @foreach ($alumunis as $alumuni)
@@ -94,7 +94,7 @@
                 <div class="row">
                     @if (count($alumunis) === 0)
                         <center>
-                            <p>There are no any alumunis available.</p>
+                            <p>There are no any alumnis available.</p>
                         </center>
                     @elseif(count($alumunis) >= 1)
                         @foreach ($alumunis as $alumuni)
