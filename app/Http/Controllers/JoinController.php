@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Joinus;
+use App\Exports\FormDataExport;
+use Excel;
 
 class JoinController extends Controller
 {
@@ -64,16 +66,19 @@ class JoinController extends Controller
 
 
             $mail_data = [
-                'recipient' => 'Globalshapersktm@gmail.com',
+                'recipient' => 'chandant225@gmail.com',
                 'fromEmail' => $request->email,
                 'fromName'=> $request->fullname,
                 'subject'=> 'A join us form has been submitted,Please check it.'
             ];
 
-            \Mail::send('email_template',$mail_data,function($message) use($mail_data){
+            $file = public_path(`storage/pdf_storage/{$fileName}`);
+
+            \Mail::send('email_template',$mail_data,function($message) use($mail_data, $file){
                 $message->to($mail_data['recipient'])
                 ->from($mail_data['fromEmail'],$mail_data['fromName'])
                 ->subject($mail_data['subject']);
+                $message->attach($file);
             });
            return redirect('/thankyou');
         }
@@ -122,5 +127,9 @@ class JoinController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function exportIntoExcel() {
+        return Excel::download(new FormDataExport,'joinUsFormList.xlsx');
     }
 }

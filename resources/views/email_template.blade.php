@@ -11,6 +11,7 @@
 <body>
     <div>
         <h4>A new form has been submitted, please click on the link below to visit.</h4>
+        {{$fromEmail}}
         <a href="https://ktmshapers.org/admin/joinuses"><button>click here</button></a>
     </div>
 </body>

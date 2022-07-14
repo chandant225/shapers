@@ -23,6 +23,7 @@
 
         .btn-wrapper {
             padding: 20px 20px;
+            margin-bottom: 10px;
         }
 
         .pdf_btn {
@@ -112,7 +113,7 @@
                 <td>{{ $details->hours_per_week }}</td>
             </tr>
         </table>
-        <div class="btn-wrapper">
+        <div class="btn-wrapper py-4 my-2">
             <a href="{{ route('download_pdf', ['id' => $details->id]) }}"><button class="pdf_btn">Download
                     PDF</button></a>
             <a href="/storage/pdf_storage/{{ $details->cv_file }}"><button class="cv_btn">Download CV</button></a>

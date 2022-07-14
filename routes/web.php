@@ -54,6 +54,8 @@ Route::get('/shaper_details/{name}',[PageController::class,'shaper_details'])->n
 
 Route::get('/download-pdf/{id}',[PageController::class,'downloadJoinusPdf'])->name('download_pdf');
 
+// Route::get("/export-excel", [JoinController::class,'exportIntoExcel']);
+
 Route::get('/blogs', [PageController::class, 'blogs']);
 Route::get('/blogs/{slug}',[PageController::class,'blog_details']);
 Route::get('/endowment_fund',[PageController::class, 'endowment_fund']);
