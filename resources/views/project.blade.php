@@ -71,6 +71,7 @@
                                 <h2 class="wow fadeInUp" data-wow-delay=".4s">
                                     OUR PARTNERS
                                 </h2>
+                                <p>(past and present)</p>
                             </div>
                             {{-- <p class="my-2 text-center">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -79,37 +80,51 @@
                             ipsam fugit consequuntur impedit at!
                         </p> --}}
                             <div class="impact-partners-cards">
-                                <a href="#" class="impact-partner">
+                                <a href="#" class="impact-partner" target="blanc">
                                     <img src="{{ asset('assets/shapersPartners/index.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
                                 </a>
-                                <a href="#" class="impact-partner">
+                                <a href="#" class="impact-partner" target="blanc">
                                     <img src="{{ asset('assets/shapersPartners/2.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
                                 </a>
-                                <a href="#" class="impact-partner">
+                                <a href="#" class="impact-partner" target="blanc">
                                     <img src="{{ asset('assets/shapersPartners/3.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
                                 </a>
-                                <a href="#" class="impact-partner">
+                                <a href="#" class="impact-partner" target="blanc">
                                     <img src="{{ asset('assets/shapersPartners/4.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
                                 </a>
-                                <a href="#" class="impact-partner">
+                                <a href="#" class="impact-partner" target="blanc">
                                     <img src="{{ asset('assets/shapersPartners/5.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
                                 </a>
-                                <a href="#" class="impact-partner">
+                                <a href="#" class="impact-partner" target="blanc">
                                     <img src="{{ asset('assets/shapersPartners/6.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
                                 </a>
-                               {{-- <a href="#" class="impact-partner">
+                                <a href="#" class="impact-partner" target="blanc">
                                     <img src="{{ asset('assets/shapersPartners/7.jpeg') }}" alt="" />
-                                     <h5>John Doe</h5> 
-                                </a> --}}
-                                <a href="#" class="impact-partner">
+                                </a>
+                                <a href="#" class="impact-partner" target="blanc">
                                     <img src="{{ asset('assets/shapersPartners/8.jpeg') }}" alt="" />
                                     {{-- <h5>John Doe</h5> --}}
+                                </a>
+                                 <a href="#" class="impact-partner" target="blanc">
+                                    <img src="{{ asset('assets/shapersPartners/9.png') }}" alt="" />
+                                </a>
+                                 <a href="#" class="impact-partner" target="blanc">
+                                    <img src="{{ asset('assets/shapersPartners/10.jpeg') }}" alt="" />
+                                </a> 
+                                 <a href="#" class="impact-partner" target="blanc">
+                                    <img src="{{ asset('assets/shapersPartners/11.jpeg') }}" alt="" />
+                                </a>
+                                 <a href="#" class="impact-partner" target="blanc">
+                                    <img src="{{ asset('assets/shapersPartners/12.png') }}" alt="" />
+                                </a>
+                                 <a href="#" class="impact-partner" target="blanc">
+                                    <img src="{{ asset('assets/shapersPartners/13.png') }}" alt="" />
                                 </a>
                             </div>
                         </div>

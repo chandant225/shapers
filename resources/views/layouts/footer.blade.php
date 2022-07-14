@@ -55,33 +55,33 @@
                                 <ul class="text-xl">
                                     @if ($social_links->facebook_link)
                                         <li>
-                                            <a href="https://{{ $social_links->facebook_link }}"><i
-                                                    class="fab fa-facebook-square" target="blanc"></i></a>
+                                            <a href="https://{{ $social_links->facebook_link }}"  target="blanc"><i
+                                                    class="fab fa-facebook-square"></i></a>
                                         </li>
                                         @endif @if ($social_links->twitter_link)
                                             <li>
-                                                <a href="https://{{ $social_links->twitter_link }}"><i
-                                                        class="fab fa-twitter-square" target="blanc"></i></a>
+                                                <a href="https://{{ $social_links->twitter_link }}" target="blanc"><i
+                                                        class="fab fa-twitter-square"></i></a>
                                             </li>
                                             @endif @if ($social_links->linkedin_link)
                                                 <li>
-                                                    <a href="https://{{ $social_links->linkedin_link }}"><i
-                                                            class="fab fa-linkedin" target="blanc"></i></a>
+                                                    <a href="https://{{ $social_links->linkedin_link }}" target="blanc"><i
+                                                            class="fab fa-linkedin"></i></a>
                                                 </li>
                                                 @endif @if ($social_links->gmail_link)
                                                     <li>
-                                                        <a href="https://{{ $social_links->gmail_link }}"><i
-                                                                class="fab fa-google" target="blanc"></i></a>
+                                                        <a href="https://{{ $social_links->gmail_link }}" target="blanc"><i
+                                                                class="fa fa-envelope"></i></a>
                                                     </li>
                                                     @endif @if ($social_links->youtube_link)
                                                         <li>
-                                                            <a href="https://{{ $social_links->youtube_link }}"><i
-                                                                    class="fab fa-youtube" target="blanc"></i></a>
+                                                            <a href="https://{{ $social_links->youtube_link }}"  target="blanc"><i
+                                                                    class="fab fa-youtube"></i></a>
                                                         </li>
                                                         @endif @if ($social_links->insta_link)
                                                             <li>
-                                                                <a href="https://{{ $social_links->insta_link }}"><i
-                                                                        class="fab fa-instagram" target="blanc"></i></a>
+                                                                <a href="https://{{ $social_links->insta_link }}"  target="blanc"><i
+                                                                        class="fab fa-instagram"></i></a>
                                                             </li>
                                                         @endif
                                 </ul>
@@ -131,6 +131,7 @@
                 <li>
                     <a href="/alumni">Alumni</a>
                 </li>
+                
                 {{-- <li>
                     <a href="/"> Shapers Learning and Social Engagements</a>
                 </li> --}}
