@@ -78,7 +78,7 @@ class JoinController extends Controller
                 $message->to($mail_data['recipient'])
                 ->from($mail_data['fromEmail'],$mail_data['fromName'])
                 ->subject($mail_data['subject']);
-                $message->attach($file);
+                // $message->attach($file);
             });
            return redirect('/thankyou');
         }
