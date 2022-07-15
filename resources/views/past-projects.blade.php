@@ -2,6 +2,7 @@
 
 
 @section('content')
+<div>
     <!-- Portfolio-Section -->
     <section class="portfolio-section section">
         <div id="container" class="container">
@@ -38,5 +39,5 @@
 
     </section>
     <!-- End Portfolio-Section -->
-
+</div>
 @endsection

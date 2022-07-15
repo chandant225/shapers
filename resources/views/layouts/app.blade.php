@@ -19,7 +19,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="{{ asset('css/mmenu.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.073') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css?v=1.074') }}">
     <style>
         body.modal-open .mm-slideout {
             z-index: inherit !important;

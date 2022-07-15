@@ -2,6 +2,7 @@
 
 
 @section('content')
+ <div>
     <!-- Section Blog-Single -->
     <section class="section blog-single">
         <div class="container">
@@ -37,4 +38,5 @@
         </div>
     </section>
     <!-- End Section Blog-Single -->
+</div>
 @endsection

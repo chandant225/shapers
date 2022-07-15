@@ -1736,7 +1736,6 @@ ol {
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-    color: #333;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -4678,6 +4677,8 @@ ol {
     background-color: #fff;
     padding: 30px;
     border-radius: 0 0 40px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .latest-news-area .single-news .content-body .cat {
@@ -4713,7 +4714,7 @@ ol {
 
 .latest-news-area .single-news .content-body .button {
     margin-top: 45px;
-    margin-left: 50%;
+    align-self: flex-end;
 }
 
 .latest-news-area .single-news:hover .image .thumb {
