@@ -8463,3 +8463,8 @@ section.blog-section {
     width: 1rem !important
 
 }
+.page-item.active .page-link{
+    background-color:rgb(0, 92, 156);
+    border-color:rgb(0, 92, 156)
+}
+
