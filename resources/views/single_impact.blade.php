@@ -31,6 +31,14 @@
                                 <li><span>Location : </span>
                                     {{ $impact_details->location }}
                                 </li>
+                                <li>
+                                    <div class="downloadPDF_Card position-relative" style="background-image: url(https://dummyimage.com/600x400/000000/ffffff&text=pdf+thumbnail);">
+                                        <div class="PDF_details position-absolute">
+                                            <div class="d-flex align-items-center"><i class="fa fa-file-pdf"></i>&nbsp;&nbsp; <a href="#" class="text-white">FileName.pdf</a></div>
+                                            <a href="" class="downloadpdf"><i class="fa fa-file-download"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
 
