@@ -68,22 +68,27 @@
                                                     <a href="https://{{ $social_links->linkedin_link }}"
                                                         target="blanc"><i class="fab fa-linkedin"></i></a>
                                                 </li>
-                                                @endif @if ($social_links->gmail_link)
-                                                    <li>
-                                                        <a href="https://{{ $social_links->gmail_link }}"
-                                                            target="blanc"><i class="fa fa-envelope"></i></a>
-                                                    </li>
-                                                    @endif @if ($social_links->youtube_link)
-                                                        <li>
-                                                            <a href="https://{{ $social_links->youtube_link }}"
-                                                                target="blanc"><i class="fab fa-youtube"></i></a>
-                                                        </li>
-                                                        @endif @if ($social_links->insta_link)
-                                                            <li>
-                                                                <a href="https://{{ $social_links->insta_link }}"
-                                                                    target="blanc"><i class="fab fa-instagram"></i></a>
-                                                            </li>
-                                                        @endif
+                                            @endif
+
+                                            @if ($social_links->gmail_link)
+                                                <li>
+                                                    <a href="{{ $social_links->gmail_link }}" target="blanc"><i
+                                                            class="fa fa-envelope"></i></a>
+                                                </li>
+                                            @endif
+                                            @if ($social_links->youtube_link)
+                                                <li>
+                                                    <a href="https://{{ $social_links->youtube_link }}"
+                                                        target="blanc"><i class="fab fa-youtube"></i></a>
+                                                </li>
+                                            @endif
+                                            @if ($social_links->insta_link)
+                                                <li>
+                                                    <a href="https://{{ $social_links->insta_link }}"
+                                                        target="blanc"><i class="fab fa-instagram"></i></a>
+                                                </li>
+                                            @endif
+
                                 </ul>
                             @endif
                         </div>
