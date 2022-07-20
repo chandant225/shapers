@@ -15,9 +15,9 @@ class CreateImpactGalleriesTable extends Migration
     {
         Schema::create('impact_galleries', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('impacts_id');
-            $table->string('impacts_slug');
-            $table->string('filename');
+            $table->integer('impacts_id')->nullable();
+            $table->string('impacts_slug')->nullable();
+            $table->string('filename')->nullable();
             $table->timestamps();
         });
     }
