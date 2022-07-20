@@ -98,8 +98,7 @@ $add = is_null($dataTypeContent->getKey());
                                 </div>
                             @endforeach
                             <p>Impacts Gallery</p>
-                            <input required type="file" class="form-control" name="images[]" placeholder="address"
-                                multiple>
+                            <input type="file" class="form-control" name="images[]" placeholder="address" multiple>
                         </div><!-- panel-body -->
                         <div class="panel-footer">
                         @section('submit-buttons')
