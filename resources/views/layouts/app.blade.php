@@ -9,6 +9,7 @@
     <META NAME="author" CONTENT="">
     <META NAME="description" CONTENT="Kathmandu Shapers">
     <META NAME="keywords" CONTENT="Kathmandu Shapers">
+    <link rel="icon" type="image/x-icon" href="{{ asset('/Logo.svg') }}">
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
