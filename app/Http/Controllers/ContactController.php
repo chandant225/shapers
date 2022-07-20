@@ -42,7 +42,23 @@ class ContactController extends Controller
         $contact->subject = $request->input('subject');
         $contact->message = $request->input('message');
         $contact->save();
-        return redirect()->back()->with('message','Message Sent Successfully');
+        $mail_data = [
+                'recipient' => 'globalshapersktm@gmail.com',
+                'fromEmail' => $request->email,
+                'fromName'=> $request->fullname,
+                'subject'=> $request->subject,
+                'phone'=> $request->phone,
+                'message'=> $request->message
+            ];
+
+
+            \Mail::send('email_template1',$mail_data,function($message) use($mail_data){
+                $message->to($mail_data['recipient'])
+                ->from($mail_data['fromEmail'],$mail_data['fromName'])
+                ->subject($mail_data['subject']);
+            });
+           return redirect('/thankyou');
+        // return redirect()->back()->with('message','Message Sent Successfully');
     }
 
     /**
