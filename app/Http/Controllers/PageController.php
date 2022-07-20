@@ -18,6 +18,7 @@ use App\Models\News;
 use App\Models\Impact_gallery;
 use App\Models\Joinus;
 use PDF;
+use App\Models\Curator;
 
 
 class PageController extends Controller
@@ -42,8 +43,9 @@ class PageController extends Controller
 
     public function alumni() {
         $alumunis = Alumuni::orderBy('updated_at','desc')->get();
+        $curator = Curator::orderBy('updated_at','desc')->first();
         return view('alumni')
-        ->with(['alumunis' => $alumunis]);
+        ->with(['alumunis' => $alumunis,'curator' => $curator]);
     }
 
     public function shaper() {
