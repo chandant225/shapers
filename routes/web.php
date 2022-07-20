@@ -63,6 +63,8 @@ Route::get('/become_a_partner', function () {
     return view('become_a_partner');
 });
 
+Route::post('/subscribe/add', [PageController::class,'upload_subscriber'])->name('add_subscriber');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

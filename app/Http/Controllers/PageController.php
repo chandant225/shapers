@@ -19,6 +19,8 @@ use App\Models\Impact_gallery;
 use App\Models\Joinus;
 use PDF;
 use App\Models\Curator;
+use App\Models\subscribe;
+
 
 
 class PageController extends Controller
@@ -120,5 +122,12 @@ class PageController extends Controller
            $details = Joinus::where('id',$id)->first();
            $pdf = PDF::loadView('vendor.voyager.join_us.read',compact('details'));
            return $pdf->download($details->fullname . ".pdf");
+    }
+
+    public function upload_subscriber(Request $request) {
+        $subscribe = new subscribe;
+        $subscribe->subscriber = $request->input('email');
+        $subscribe->save();
+         return redirect()->back()->with('message','Successfully Subscibed');
     }
 }

@@ -256,6 +256,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-12">
+                        @if (Session::has('message'))
+                            <div class="message-wrapper">
+                                <div class="success-message">
+                                    <div>{{ Session::get('message') }}</div>
+                                </div>
+                            </div>
+                        @endif
+                        @if (Session::has('error'))
+                            <div>
+                                {{ Session::get('error') }}
+                            </div>
+                        @endif
                         <!-- Section-title -->
                         <div class="section-title">
                             <h2 class="wow fadeInDown" data-wow-delay=".2s"
@@ -284,12 +296,15 @@
                             animation-delay: 0.2s;
                             animation-name: fadeInUp;
                         ">
-                            <form class="newsletter-inner">
-                                <input name="EMAIL" placeholder="Your email address" class="common-input"
+
+                            <form class="newsletter-inner" method="post" action="{{ route('add_subscriber') }}">
+                                @csrf
+                                @method('post')
+                                <input name="email" placeholder="Your email address" class="common-input"
                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
                                     required="" type="email" />
                                 <div class="button">
-                                    <button class="btn">Count me in</button>
+                                    <button type="submit" class="btn">Count me in</button>
                                 </div>
                             </form>
                         </div>
@@ -321,8 +336,8 @@
     </div>
 @endsection
 @push('script')
-<script>
-    //========= testimonial
+    <script>
+        //========= testimonial
         tns({
             container: '.hero-slider',
             items: 1,
@@ -338,14 +353,14 @@
             ],
         });
 
-        //========= glightbox
-        GLightbox({
-            href: 'assets/images/video/video.mp4',
-            type: 'video',
-            source: 'youtube', //vimeo, youtube or local
-            width: 900,
-            autoplayVideos: true,
-        });
+        // //========= glightbox
+        // GLightbox({
+        //     href: 'assets/images/video/video.mp4',
+        //     type: 'video',
+        //     source: 'youtube', //vimeo, youtube or local
+        //     width: 900,
+        //     autoplayVideos: true,
+        // });
     </script>
     <script>
         const swiperIndex = new Swiper(
