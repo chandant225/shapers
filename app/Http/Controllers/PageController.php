@@ -44,14 +44,14 @@ class PageController extends Controller
     }
 
     public function alumni() {
-        $alumunis = Alumuni::orderBy('updated_at','desc')->get();
+        $alumunis = Alumuni::orderByRaw("position", "asc")->get();
         $curator = Curator::orderBy('updated_at','desc')->first();
         return view('alumni')
         ->with(['alumunis' => $alumunis,'curator' => $curator]);
     }
 
     public function shaper() {
-        $shapers = Shaper::orderBy('updated_at','desc')->get();
+        $shapers = Shaper::orderByRaw("position", "asc")->get();
         return view('shapers')
         ->with(['shapers' => $shapers]);
     }
