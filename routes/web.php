@@ -26,7 +26,7 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 
 Route::get('/alumni', [PageController::class, 'alumni'])->name('alumni');
 
-Route::get('/shaper', [PageController::class, 'shaper'])->name('shaper');
+Route::get('/shapers', [PageController::class, 'shaper'])->name('shapers');
 
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
@@ -56,9 +56,9 @@ Route::get('/download-pdf/{id}',[PageController::class,'downloadJoinusPdf'])->na
 
 // Route::get("/export-excel", [JoinController::class,'exportIntoExcel']);
 
-Route::get('/blogs', [PageController::class, 'blogs']);
-Route::get('/blogs/{slug}',[PageController::class,'blog_details']);
-Route::get('/endowment_fund',[PageController::class, 'endowment_fund']);
+Route::get('/news_and_article', [PageController::class, 'blogs'])->name("news_and_article");
+Route::get('/news_and_article/{slug}',[PageController::class,'blog_details']);
+Route::get('/endowment_fund',[PageController::class, 'endowment_fund'])->name('endowment_fund');
 Route::get('/become_a_partner', function () {
     return view('become_a_partner');
 });
