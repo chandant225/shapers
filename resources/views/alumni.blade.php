@@ -71,6 +71,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
                 <div class="row">
                     @if (count($alumunis) == 0)
                         <center>
@@ -283,5 +286,59 @@
             </div>
         </div>
     @endforeach
+
+    <div class="modal fade" id="open" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                {{-- <div class="modal-header"> --}}
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                {{-- </div> --}}
+                <div class="py-md-5 shaper-modal">
+                    <div class="">
+                        <div class="text-center">
+                            <h2>
+                                {{ $curator->name }}</h2>
+                            <p style="
+                          padding: 26px 0px 0px 0px;
+                      "
+                                class="mt-1">{!! $curator->description !!}</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        @if ($curator->image)
+                            <img class="img-fluid" src="/storage/{{ $curator->image }}" alt="#" />
+                        @endif
+
+                        <ul style="list-style: none;padding-top: 37px;" class="social d-flex flex-row mt-2">
+                            @if ($curator->facebook_link)
+                                <li class="ms-3">
+                                    <a href="https://{{ $curator->facebook_link }}"><i
+                                            class="lni lni-facebook-original" target="blanc"></i></a>
+                                </li>
+                            @endif
+                            @if ($curator->twitter_link)
+                                <li class="ms-3">
+                                    <a href="https://{{ $curator->twitter_link }}"><i class="lni lni-twitter-original"
+                                            target="blanc"></i></a>
+                                </li>
+                            @endif
+                            @if ($curator->linkedin_link)
+                                <li class="ms-3">
+                                    <a href="https://{{ $curator->linkedin_link }}" target="blanc"><i
+                                            class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                                </li>
+                            @endif
+                            @if ($curator->instagram_link)
+                                <li class="ms-3">
+                                    <a href="https://{{ $curator->instagram_link }}" target="blanc"><i
+                                            class="fab fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                            @endif
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @endsection
