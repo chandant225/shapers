@@ -56,8 +56,8 @@ Route::get('/download-pdf/{id}',[PageController::class,'downloadJoinusPdf'])->na
 
 // Route::get("/export-excel", [JoinController::class,'exportIntoExcel']);
 
-Route::get('/news_and_article', [PageController::class, 'blogs'])->name("news_and_article");
-Route::get('/news_and_article/{slug}',[PageController::class,'blog_details']);
+Route::get('/news', [PageController::class, 'blogs'])->name("news");
+Route::get('/news/{slug}',[PageController::class,'blog_details']);
 Route::get('/endowment_fund',[PageController::class, 'endowment_fund'])->name('endowment_fund');
 Route::get('/become_a_partner', function () {
     return view('become_a_partner');

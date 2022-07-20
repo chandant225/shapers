@@ -58,9 +58,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a style="color:{{ Route::currentRouteName() === 'news_and_article' ? 'rgb(0, 92, 156)' : '' }}"
-                                        class="nav-link" href="/news_and_article" role="button"
-                                        aria-expanded="false">News
+                                    <a style="color:{{ Route::currentRouteName() === 'news' ? 'rgb(0, 92, 156)' : '' }}"
+                                        class="nav-link" href="/news" role="button" aria-expanded="false">News
                                     </a>
                                 </li>
                                 <li class="nav-item">

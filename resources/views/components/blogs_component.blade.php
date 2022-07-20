@@ -13,9 +13,9 @@
                 @foreach ($news as $new)
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="rounded shadow blog-container">
-                            <a href="/news_and_article/{{ $new->slug }}"><img style="width: 100%;height: 20rem;"
+                            <a href="/news/{{ $new->slug }}"><img style="width: 100%;height: 20rem;"
                                     src="/storage/{{ $new->image }}" alt="blog image" class="blog-image" /></a>
-                            <a href="/news_and_article/{{ $new->slug }}">
+                            <a href="/news/{{ $new->slug }}">
                                 <h5 class="py-3 px-3 mt-2">{{ $new->title }}</h5>
                             </a>
                         </div>
@@ -26,7 +26,7 @@
 
         </div>
         <center class="py-4">
-            <a href="/news_and_article" class="blog-btn px-3">View all</a>
+            <a href="/news" class="blog-btn px-3">View all</a>
         </center>
     </div>
 </div>
