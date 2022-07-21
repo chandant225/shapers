@@ -10,7 +10,7 @@
                         <div class="section-title align-center gray-bg">
 
                             <h2 class="wow fadeInUp" data-wow-delay=".4s">
-                                Founding Curators
+                                Founding Curator
                             </h2>
                             @if ($curator)
                                 <div class="row">

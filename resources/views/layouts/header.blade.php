@@ -18,28 +18,28 @@
                         <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
                             <ul class="navbar-nav mb-2 mb-lg-0" id="navbar-nav">
                                 <li class="nav-item">
-                                    <a style="color:{{ Route::currentRouteName() === 'home' ? 'rgb(0, 92, 156)' : '' }}"
+                                    <a style="color:{{ Route::currentRouteName() === 'home' ? 'rgb(0, 92, 156)' : '' }};text-decoration: {{ Route::currentRouteName() === 'home' ? 'underline' : '' }}"
                                         class="nav-link" href="/" id="navbarDropdown" role="button"
                                         aria-expanded="false">Home
                                     </a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a style="color:{{ Route::currentRouteName() === 'about' ? 'rgb(0, 92, 156)' : '' }}"
+                                    <a style="color:{{ Route::currentRouteName() === 'about' ? 'rgb(0, 92, 156)' : '' }};text-decoration: {{ Route::currentRouteName() === 'about' ? 'underline' : '' }}"
                                         class="nav-link dropdown-toggle" href="/about" id="navbarDropdown"
                                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         About
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li>
-                                            <a style="color:{{ Route::currentRouteName() === 'about' ? 'rgb(0, 92, 156)' : '' }}"
+                                            <a style="color:{{ Route::currentRouteName() === 'about' ? 'rgb(0, 92, 156)' : '' }};text-decoration: {{ Route::currentRouteName() === 'about' ? 'underline' : '' }}"
                                                 class="dropdown-item" href="/about">About Us</a>
                                         </li>
                                         <li>
-                                            <a style="color:{{ Route::currentRouteName() === 'shapers' ? 'rgb(0, 92, 156)' : '' }}"
+                                            <a style="color:{{ Route::currentRouteName() === 'shapers' ? 'rgb(0, 92, 156)' : '' }};text-decoration: {{ Route::currentRouteName() === 'shapers' ? 'underline' : '' }}"
                                                 class="dropdown-item" href="/shapers">Shapers</a>
                                         </li>
                                         <li>
-                                            <a style="color:{{ Route::currentRouteName() === 'alumni' ? 'rgb(0, 92, 156)' : '' }}"
+                                            <a style="color:{{ Route::currentRouteName() === 'alumni' ? 'rgb(0, 92, 156)' : '' }};text-decoration: {{ Route::currentRouteName() === 'alumni' ? 'underline' : '' }}"
                                                 class="dropdown-item" href="/alumni">Alumni</a>
                                         </li>
 
@@ -52,24 +52,24 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a style="color:{{ Route::currentRouteName() === 'projects' ? 'rgb(0, 92, 156)' : '' }}"
+                                    <a style="color:{{ Route::currentRouteName() === 'projects' ? 'rgb(0, 92, 156)' : '' }};text-decoration: {{ Route::currentRouteName() === 'projects' ? 'underline' : '' }}"
                                         class="nav-link" href="/projects" id="navbarDropdown" role="button"
                                         aria-expanded="false">Projects
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a style="color:{{ Route::currentRouteName() === 'news' ? 'rgb(0, 92, 156)' : '' }}"
+                                    <a style="color:{{ Route::currentRouteName() === 'news' ? 'rgb(0, 92, 156)' : '' }} ;text-decoration: {{ Route::currentRouteName() === 'news' ? 'underline' : '' }}"
                                         class="nav-link" href="/news" role="button" aria-expanded="false">News
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a style="color:{{ Route::currentRouteName() === 'endowment_fund' ? 'rgb(0, 92, 156)' : '' }}"
+                                    <a style="color:{{ Route::currentRouteName() === 'endowment_fund' ? 'rgb(0, 92, 156)' : '' }} ;text-decoration: {{ Route::currentRouteName() === 'endowment_fund' ? 'underline' : '' }}"
                                         class="nav-link" href="/endowment_fund" role="button" aria-expanded="false">
                                         Endowment Fund
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a style="color:{{ Route::currentRouteName() === 'contact' ? 'rgb(0, 92, 156)' : '' }}"class="nav-link"
+                                    <a style="color:{{ Route::currentRouteName() === 'contact' ? 'rgb(0, 92, 156)' : '' }} ;text-decoration: {{ Route::currentRouteName() === 'contact' ? 'underline' : '' }}"class="nav-link"
                                         href="{{ route('contact') }}">Contact Us</a>
                                 </li>
                                 <li class="nav-item">

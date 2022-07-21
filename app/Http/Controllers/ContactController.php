@@ -57,7 +57,7 @@ class ContactController extends Controller
                 ->from($mail_data['fromEmail'],$mail_data['fromName'])
                 ->subject($mail_data['subject']);
             });
-           return redirect('/thankyou');
+           return redirect('/thankyou1');
         // return redirect()->back()->with('message','Message Sent Successfully');
     }
 
