@@ -1,6 +1,8 @@
 <div>
     <div>
-        <button wire:click="exportIntoExcel" class="btn btn-primary float-right">Export into Excel</button>
+        <button wire:click="downloadZip" class="btn btn-danger float-right ">Download all CV</button>
+        <button style="margin: 5px 8px 0px 0px;" wire:click="exportIntoExcel"
+            class="btn btn-primary float-right me-2">Export into Excel</button>
     </div>
     <div>
         @if (session()->has('message'))

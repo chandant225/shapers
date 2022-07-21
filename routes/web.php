@@ -6,6 +6,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PastProjectController;
 use App\Http\Controllers\JoinController;
+use App\Http\Controllers\ZipController;
 
 
 /*
@@ -71,5 +72,6 @@ Route::group(['prefix' => 'admin'], function () {
 
 // Auth::routes();
 Route::get('/thankyou', [PageController::class,'thankyou']);
+Route::get('download-zip', [ZipController::class, 'downloadZip']);
 
 
