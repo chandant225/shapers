@@ -120,7 +120,7 @@ class PageController extends Controller
 
     public function downloadJoinusPdf($id) {
            $details = Joinus::where('id',$id)->first();
-           $pdf = PDF::loadView('vendor.voyager.join_us.read',compact('details'));
+           $pdf = PDF::loadView('vendor.voyager.joinuses.read',compact('details'));
            return $pdf->download($details->fullname . ".pdf");
     }
 
