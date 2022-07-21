@@ -37,7 +37,7 @@
                     <td>
                         <div>
                             <button class="btn btn-success"><a style="text-decoration: none;color:white"
-                                    href="/admin/join_us/{{ $data->id }}">View
+                                    href="/admin/joinuses/{{ $data->id }}">View
                                     More</a></button>
                             <button wire:click="deleteItem('{{ $data->id }}')"
                                 class="btn btn-danger">Delete</button>
