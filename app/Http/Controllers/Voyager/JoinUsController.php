@@ -220,7 +220,7 @@ class JoinUsController extends VoyagerBaseController
     public function show(Request $request, $id)
     {
         $details = Joinus::where('id', $id)->first();
-        return view('vendor.voyager.join_us.read',compact('details'));
+        return view('vendor.voyager.joinuses.read',compact('details'));
         // $slug = $this->getSlug($request);
 
         // $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
